@@ -414,6 +414,9 @@ label {
 .mt-8 {
   margin-top: 8rem;
 }
+.lh-20 {
+  line-height: 2rem !important;
+}
 
 .lh-20 {
   line-height: 2rem !important;
@@ -1591,11 +1594,13 @@ section.about-us-text .about-text p {
 }
 
 .sign-up .card.card-body .register-button .as-register-btn:hover {
-  background-color: #0098DB;
+  background-color: var(--as-primary-color-4);
   color: var(--as-black-1) !important;
   transform: translateY(-2px);
   box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.2);
 }
+
+
 
 @media screen and (max-width:578px) {
 
@@ -1616,6 +1621,54 @@ section.about-us-text .about-text p {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
+}
+
+
+.sign-up .tab-content .doc-persona .card.card-body{
+  background-color: #F4FCFF66;
+  transition: all .4s;
+}
+.sign-up .tab-content .doc-persona .card.card-body img{
+  -webkit-transition: all .5s ease-out 0s;
+  -o-transition: all .5s ease-out 0s;
+  -moz-transition: all .5s ease-out 0s;
+  transition: all .5s ease-out 0s;
+}
+.sign-up .tab-content .doc-persona .card.card-body:hover img{
+  -webkit-transform: scaleX(1.05);
+  -ms-transform: scaleX(1.05);
+  transform: scaleX(1.05);
+}
+.sign-up .tab-content .doc-persona .card.card-body:hover{
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transform: translate(2px,5px);
+}
+.sign-up .tab-content .doc-persona .doc-left-component {
+  text-align: left;
+  padding-left: 1rem;
+}
+.sign-up .tab-content .doc-persona .doc-left-component .cta-div a{
+  color: #bce5f6;
+  border-bottom: solid #bce5f6 1px;
+}
+.sign-up .tab-content .doc-persona .doc-left-component .doc-star{
+  color: #facb4a;
+}
+
+.sign-up .tab-content .doc-persona .doc-left-component .doc-persona-btn,
+.sign-up .tab-content .doc-persona .doc-left-component .doc-persona-btn:link{
+  padding: 1rem 4rem;
+  border-radius: 50px;
+  background-color: var(--as-primary-color-4);
+  transition: all .5s;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.sign-up .tab-content .doc-persona .doc-left-component .doc-persona-btn:hover{
+  color: var(--as-primary-color-3);
+  
 }
 
 .form-group .nice-select {
@@ -1735,4 +1788,12 @@ section.about-us-text .about-text p {
   text-align: center;
   padding-top: 5rem;
   padding-bottom: 5rem;
+}
+
+
+/*********************************
+         VACCINATIONS
+**********************************/
+.vaccination-types{
+  background-color:#F0FBFF;
 }
