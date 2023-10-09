@@ -170,6 +170,7 @@ textarea:focus,
 input[type="button"]:focus,
 input[type="reset"]:focus,
 input[type="submit"]:focus,
+input[type="file"]:focus,
 select:focus {
   outline: none;
   -webkit-box-shadow: none;
@@ -305,6 +306,47 @@ label {
   font-size: 3rem !important;
 }
 
+@media screen and (min-width: 560px) and (max-width: 768) {
+  .f-12{
+    font-size: 1.1rem !important;
+  }
+  .f-16 {
+    font-size: 1.5rem !important;
+  }
+  
+  .f-18 {
+    font-size: 1.7rem !important;
+  }
+  
+  .f-20 {
+    font-size: 1.8rem !important;
+  }
+  
+  .f-30 {
+    font-size: 2.8rem !important;
+  }
+}
+@media screen and (max-width: 559px){
+  .f-12{
+    font-size: 1rem !important;
+  }
+  .f-16 {
+    font-size: 1.4rem !important;
+  }
+  
+  .f-18 {
+    font-size: 1.6rem !important;
+  }
+  
+  .f-20 {
+    font-size: 1.7rem !important;
+  }
+  
+  .f-30 {
+    font-size: 2.6rem !important;
+  }
+}
+
 .fw-600 {
   font-weight: 600 !important;
 }
@@ -322,6 +364,7 @@ label {
   padding-left: 13% !important;
   padding-right: 13% !important;
 }
+
 
 
 
@@ -402,7 +445,30 @@ label {
   padding-top: 10rem;
   padding-bottom: 10rem;
 }
+@media (min-width:768px) and (max-width:991px) {
 
+  .p-10tb {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+}
+@media (min-width:560px) and (max-width:767px) {
+
+  .p-10tb {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+}
+@media (max-width:559px) {
+
+  .p-10tb {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+}
 .mt-6 {
   margin-top: 6rem;
 }
@@ -549,10 +615,13 @@ label {
   background-color: #f0fbff;
 }
 
+
 .bg-as-primary {
   background-color: var(--as-primary-color);
 }
-
+.bg-as-primary-1 {
+  background-color: var(--as-primary-color-4);
+}
 /*-------------------------------------------
             header styling
 -------------------------------------------*/
@@ -710,6 +779,24 @@ header .header-nav.sticky {
   transform: translateX(5px);
 
 }
+.header-nav .navbar-brand{
+  display: none;
+}
+.header-nav .border{
+  display: none;
+}
+
+@media screen and (max-width:991px) {
+  .header-nav .navbar-brand{
+    display: inline-block;
+  }
+  .header-nav .border{
+    display: inline-flex;
+    justify-content: space-between;
+  }
+  
+}
+
 
 /*hero-section*/
 main {
@@ -717,8 +804,12 @@ main {
 }
 
 .hero-section {
-  background-color: var(--as-primary-color-3);
-  padding: 10rem 0;
+  background-image: linear-gradient(to bottom right, rgba(221, 244, 255), rgba(221, 244, 255, 0.911)), url('../images/bg-img/home-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: center center;
+
 }
 
 .hero-title h1 {
@@ -726,6 +817,21 @@ main {
   line-height: 7.2rem;
   font-weight: 600;
 }
+@media screen and (min-width:768px) and (max-width:991px) {
+  .hero-title h1 {
+    text-align: left;
+    line-height: 7rem;
+    font-weight: 600;
+  }
+}
+@media screen and (max-width:765px) {
+  .hero-title h1 {
+    text-align: left;
+    line-height: 6rem;
+    font-weight: 600;
+  }
+}
+
 
 .hero-sub-title {
   width: 95%;
@@ -741,13 +847,22 @@ main {
   -o-transition: all 3.5s ease-out 0s;
   -moz-transition: all 3.5s ease-out 0s;
   transition: all 3.5s ease-out 0s;
-  border-radius: 2rem;
+  
 }
 
 .hero-img img:hover {
   -ms-transform: scale(1.2);
   transform: scale(1.2);
   -webkit-transform: scale(1.2);
+}
+.hero-section .hero-call-to-action a{
+  display: inline-block;
+}
+@media screen and (max-width:399px) {
+  .hero-section .hero-call-to-action a{
+    display: inline-block;
+    margin-bottom: 10px;
+  }
 }
 
 /*vaccination section */
@@ -757,44 +872,87 @@ main {
   padding-bottom: 3rem;
 }
 
+.vac-bg img.vac-img-1 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border-radius: 10rem;
+  -webkit-transition: all 3.5s ease-out 0s;
+  -o-transition: all 3.5s ease-out 0s;
+  -moz-transition: all 3.5s ease-out 0s;
+  transition: all 3.5s ease-out 0s;
+  
+}
 .vac-bg img.vac-img-2 {
   margin-top: 5rem;
   margin-left: -50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border-radius: 10rem;
+  -webkit-transition: all 3.5s ease-out 0s;
+  -o-transition: all 3.5s ease-out 0s;
+  -moz-transition: all 3.5s ease-out 0s;
+  transition: all 3.5s ease-out 0s;
+  
+}
+.vac-bg img:hover {
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
 }
 @media screen and (max-width:1100px) {
   .vac-bg img.vac-img-2 {
     margin-left: -10px;
   }
 }
+@media screen and (min-width:769px) and (max-width:992px) {
+  .vac-bg img {
+    width: 40%;
+  }
+}
+@media screen and (max-width:500px) {
+  .vac-bg img {
+    width: 40%;
+  }
+}
 
 
-.vac-bg span.vac-bg-img-2 {
-  background-image: url(../images/vaccination-2.png);
+.vaccination-section .custom-card {
+  width: 95%;
+  background-image: url(../images/bg-img/vac-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
   background-position: center center;
-  width: 35%;
-  height: 50rem;
-  display: block;
-  margin-top: 5rem;
-}
-
-.vaccination-section .custom-card {
-  width: 95%;
-  background-color: var(--as-white-3);
   padding: 6rem 3rem;
+  border-radius: 1rem;
+  -webkit-transition: all .4s ease-out 0s;
+  -o-transition: all .4s ease-out 0s;
+  -moz-transition: all .4s ease-out 0s;
+  transition: all .4s ease-out 0s;
+}
+.vaccination-section .custom-card:hover {
+  -ms-transform: translateY(10px);
+  transform: translateY(10px);
+  -webkit-transform: translateY(10px);
+  box-shadow: 0 4px 8px 0 rgba(3, 1, 102, .7), 0 6px 20px 0 rgba(3, 1, 102, .2);
 }
 
 .vaccination-section .custom-card h3 {
   width: 85%;
   margin-bottom: 2.5rem;
+  color: rgba(3, 1, 102, 1);
+  line-height: 4.8rem;
 }
 
 .vaccination-section .custom-card p {
+  color: rgba(3, 1, 102, 1);
+  line-height: 2.8rem;
   width: 80%;
+  font-weight: 500;
   margin-bottom: 5rem;
 }
+
+
 
 /*packages section*/
 .packages-section {
@@ -1002,6 +1160,11 @@ main {
   font-size: 2rem;
   font-weight: 400;
   color: var(--as-black-3);
+}
+@media screen and (max-width:600px) {
+  .accordion .accordion-item .accordion-button {
+    font-size: 1.5rem;
+  }
 }
 
 
@@ -1259,7 +1422,7 @@ section.about-us::before {
   content: '';
   position: absolute;
   z-index: -1;
-  opacity: .6;
+  opacity: .2;
   top: 0;
   left: 0;
   background: #000000;
@@ -1282,7 +1445,10 @@ section.about-us::after {
 }
 
 section.about-us.item-bg2 {
-  background-image: linear-gradient(to bottom right, rgba(3, 1, 102, 0.6), rgba(3, 1, 102, 0.322)), url(../images/footer-bg.jpg);
+  background-image:url(../images/bg-img/pages-bg.png);
+}
+section.about-us.item-bg-2{
+  background-image: linear-gradient(to bottom right, rgba(3, 1, 102, 0.6), rgba(3, 1, 102, 0.322)), url(../images/bg-img/doc-consult-bg.png);
 }
 
 .about-us .about-content {
@@ -1516,6 +1682,29 @@ section.about-us-text .about-text p {
 .sign-up .card.card-body .sign-up-form .sign-up-bottom .search-component input[type="text"]::-webkit-input-placeholder {
   color: #dddddd;
   font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.sign-up .card.card-body .sign-up-form .select-img input[type='file'] {
+  width: 100%;
+  padding:0 0 0 0;
+  border: .8px solid #DDDDDD;
+  border-radius: 5px;
+}
+.sign-up .card.card-body .sign-up-form .select-img input[type='file'].form-control::file-selector-button {
+  padding: 2rem 1rem 2rem .75rem;
+  margin:  0 1rem 0 0;
+  border: .8px solid #DDDDDD;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.sign-up .card.card-body .sign-up-form .select-img input[type='file'].form-control::-webkit-file-upload-button {
+  padding: 2rem 1rem 2rem .75rem;
+  margin:  -.375rem 1rem -.75rem -.375rem;
+  border: .8px solid #DDDDDD;
+  border-radius: 5px;
+  font-size: 1.4rem;
   font-weight: 400;
 }
 
@@ -1792,8 +1981,43 @@ section.about-us-text .about-text p {
 
 
 /*********************************
-         VACCINATIONS
+         VACCINATIONS PAGE
 **********************************/
 .vaccination-types{
   background-color:#F0FBFF;
+}
+
+.vaccination-types .card.card-body{
+  border: none;
+  border-radius: 2rem;
+  -webkit-box-shadow: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.2);
+  transition: ease-out .4s;
+}
+.vaccination-types .card.card-body:hover{
+  transform: translateY(10px);
+  -webkit-box-shadow: none;
+  box-shadow:none;
+}
+
+/***************************************
+      PHARMACY CONSULTATION PAGE
+***************************************/
+.tab-pane#pharm-consult-2 .pharm-consult-tab .nav-item{
+ 
+}
+.tab-pane#pharm-consult-2 .pharm-consult-tab .nav-item .nav-link.active{
+  border: solid 1px var(--as-primary-color-4);
+  border-radius: 5px;
+  background-color: #DCF0F9;
+  padding: 1rem 3rem;
+}
+.tab-pane#pharm-consult-2 .pharm-consult-tab .nav-item .nav-link{
+  border: solid 1px #D0D5DD;
+  border-radius: 5px;
+  background-color: #F0F2F5;
+  padding: 1rem 3rem;
+}
+.tab-pane#pharm-consult-2 .pharm-consult-tab .nav-item:not(:last-child){
+  margin-right: 1rem;
 }
