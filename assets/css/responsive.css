@@ -1,64 +1,42 @@
 /* ====================================================
     Responsive
 ==================================================== */
+html {
+    font-size: 62.5%;
+  }
+  
 /* Desktop 1200 - up */
-@media (min-width: 1200px) {
-    .container {
-        max-width: 1200px;
-    }
-}
 
-/* Normal desktop :992px. (Laptop 14") */
-@media (min-width: 992px) and (max-width: 1199px) {
-    /* Global */
-    h1 {
-        font-size: 30px;
-    }
-    h2 {
-        font-size: 26px;
-    }
-    h3 {
-        font-size: 22px;
-    }
-    h4 {
-        font-size: 20px;
-    }
-    h5 {
-        font-size: 18px;
-    }
-    h6 {
-        font-size: 16px;
-    }
 
-}
+
 
  
 /* Tablet device :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
     /* Global */
     body {
-        font-size: 14px;
+        font-size: 1.4rem;
     }
     h1 {
-        font-size: 26px;
+        font-size: 4.8rem;
     }
     h2 {
-        font-size: 22px;
+        font-size: 3.6rem;
     }
     h3 {
-        font-size: 20px;
+        font-size: 3rem;
     }
     h4 {
-        font-size: 18px;
+        font-size: 2rem;
     }
     h5 {
-        font-size: 16px;
+        font-size: 1.8rem;
     }
     h6 {
-        font-size: 15px;
+        font-size: 1.6rem;
     }
     p {
-        font-size: 14px;
+        font-size: 1.4rem !important;
     }
 
 }
@@ -68,28 +46,28 @@
 @media (max-width: 767px) {
     /* Global */
     body {
-        font-size: 14px;
+        font-size: 1.4rem;
     }
     h1 {
-        font-size: 24px;
+        font-size: 4rem;
     }
     h2 {
-        font-size: 20px;
+        font-size: 3rem;
     }
     h3 {
-        font-size: 18px;
+        font-size: 2.5rem;
     }
     h4 {
-        font-size: 17px;
+        font-size: 1.8rem;
     }
     h5 {
-        font-size: 16px;
+        font-size: 1.6rem;
     }
     h6 {
-        font-size: 14px;
+        font-size: 1.4rem;
     }
     p {
-        font-size: 14px;
+        font-size: 1.4rem !important;
     }
 
 }
