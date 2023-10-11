@@ -28,5 +28,6 @@ $('.responsive-header-left .search-btn i').on('click', ()=>{
    
     $('.responsive-header-left .search-btn i').toggleClass('fa-times');
     $('.header-top-responsive .search-box').toggleClass('open');
+    $('.header-top-responsive').toggleClass('mb-5');
     $('.header-nav .border').toggleClass('mt-5');
 })
