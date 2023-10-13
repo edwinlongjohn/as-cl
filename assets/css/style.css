@@ -552,6 +552,7 @@ label {
   text-transform: capitalize;
 }
 
+
 .btn-as-primary:hover {
   background-color: var(--as-secondary-color);
   color: var(--as-white);
@@ -1104,7 +1105,10 @@ main {
 }
 
 .package-content-1:hover {
-  transform: translateY(-1rem);
+  transform: translateY(1rem);
+}
+.package-content-1:hover .card.shadow{
+  box-shadow: none !important;
 }
 
 .package-content-1 .card {
@@ -1113,6 +1117,19 @@ main {
   border: none;
   border-radius: 2rem;
   margin-bottom: 5rem;
+}
+.package-content-1 .card .d-flex a{
+  border-bottom: #0098DB solid 2px;
+
+}
+.package-content-1 .card .d-flex .more:hover a{
+  border-bottom:var(--as-secondary-color) solid 2px;
+  color: var(--as-secondary-color);
+  cursor: pointer;
+}
+.package-content-1 .card .d-flex .more:hover i{
+  color: var(--as-secondary-color) !important;
+  cursor: fade-in-up;
 }
 
 .package-components {
@@ -1133,7 +1150,6 @@ main {
 }
 
 .card .services-bg {
-  background-image: url(../images/home-service-img.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
@@ -1143,7 +1159,23 @@ main {
   height: 11rem;
   display: block;
 }
+.card .services-bg.img-1{
+  background-image: url(../images/home-services/home-lab-test.png);
+}
+.card .services-bg.img-2{
+  background-image: url(../images/home-services/book-lab.png);
+}
+.card .services-bg.img-3{
+  background-image: url(../images/home-services/home-care-nurse.png);
+}
+.card .services-bg.img-4{
+  background-image: url(../images/home-services/pharm-consult.png);
 
+}
+.card .services-bg.img-5{
+  background-image: url(../images/home-services/doc-consult.png);
+  
+}
 /*book section */
 .book-section {
   background-image: linear-gradient(to right bottom, rgba(251, 251, 251, 0.445), rgba(219, 219, 215, 0.301)), url(../images/book-bg.png);
