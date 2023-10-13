@@ -646,6 +646,7 @@ label {
 
 header .header-nav.sticky {
   position: fixed;
+  overflow-x: hidden !important;
   top: 0;
   z-index: 1020;
   width: 100%;
@@ -876,7 +877,7 @@ header .header-nav.sticky {
   .header-nav .border {
     display: inline-flex;
     width: 100%;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     justify-content: space-between;
     z-index: 0;
   }
@@ -895,6 +896,7 @@ main {
   background-size: cover;
   background-attachment: scroll;
   background-position: center center;
+  overflow-x: hidden !important;
 
 }
 
@@ -927,7 +929,7 @@ main {
 }
 
 .hero-img {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .hero-img img {
@@ -960,6 +962,7 @@ main {
   padding-top: 10rem;
   background-color: var(--as-white-4);
   padding-bottom: 3rem;
+  overflow-x: hidden !important;
 }
 
 
