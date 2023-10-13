@@ -719,6 +719,7 @@ header .header-nav.sticky {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow-x: hidden;
 }
 
 .header-left,
@@ -765,6 +766,7 @@ header .header-nav.sticky {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    overflow-x: none;
     justify-content: space-between;
   }
   .header-top-responsive .container i{
@@ -873,6 +875,8 @@ header .header-nav.sticky {
 
   .header-nav .border {
     display: inline-flex;
+    width: 100%;
+    overflow-x: hidden;
     justify-content: space-between;
     z-index: 0;
   }
