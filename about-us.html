@@ -30,91 +30,134 @@
 
     <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="assets/css/fa/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/plugin/animate.css">
+    <link rel="stylesheet" href="assets/css/plugin/aos.css">
     <link rel="stylesheet" href="assets/css/plugin/slick.css">
     <link rel="stylesheet" href="assets/css/bs-css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/plugin/animate.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
 <body>
-  <!-- Start Heading Area -->
-  <header class="header mt-5">
-    <div class="header-top mb-5">
-        <div class="container">
-            <div class="header-left me-2">
-                <img src="assets/images/logo.png" alt="logo">
-            </div>
-            <div class="header-center ">
-                <span class="header-search-icon"><i class="fa fa-search"></i></span>
-                <input type="text" class="header-search-input" placeholder="search for test">
-            </div>
-            <div class="header-right">
-                <button class="btn btn-outline-as-primary me-4">
-                    View Test Result
-                </button>
-                <i class="fa fa-shopping-cart"></i>
-            </div>
+    <!-- Start Heading Area -->
+    <header class="header mt-5">
+        <div class="header-top mb-5">
+            <div class="container">
+                <div class="header-left me-2">
+                    <a href="index.html">
+                        <img src="assets/images/logo.png" alt="logo">
+                    </a>
 
-            <!-- End of DropDown Menu -->
-        </div>
-    </div>
-   
-    <!-- End of Header Top -->
-    <!-- start of main nav -->
-    <div class="header-nav bg-white  pt-2">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light ">
-                <div class="container-fluid">
-                    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav-scroll"
-                            style="--bs-scroll-height:100px;">
-                            <li class="nav-item me-5">
-                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item me-5">
-                                <a class="nav-link active " aria-current="page" href="about-us.html">About Us</a>
-                            </li>
-                            <li class="nav-item dropdown me-5">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">Services</a>
-                                <ul class="dropdown-menu ps-2 pt-4 pb-5 pe-5" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item f-16 fw-400 " href="home-lab-test.html">Home Lab Test</a></li>
-                                    <li><a class="dropdown-item f-16 fw-400 " href="lab-visit.html">Book Lab Visit</a></li>
-                                    <li><a class="dropdown-item f-16 fw-400 " href="home-care-nurse.html">Home Care Nurse</a></li>
-                                    <li><a class="dropdown-item f-16 fw-400 " href="#">Pharmacist Consultation</a></li>
-                                    <li><a class="dropdown-item f-16 fw-400 " href="doc-consult.html">Doctor Consultation</a></li>
-                                </ul>
-                            </li>
-
-                            <li class="nav-item me-5">
-                                <a class="nav-link" href="membership.html" tabindex="-1"
-                                    aria-disabled="true">Membership</a>
-                            </li>
-                            <li class="nav-item me-5">
-                                <a class="nav-link" href="pharm-supply.html" tabindex="-1" aria-disabled="true">
-                                    pharmaceutical
-                                    Supply</a>
-                            </li>
-                        </ul>
-                        <form class="d-flex">
-
-                            <button class="btn btn-outline-as-primary me-3" type="submit">Download app</button>
-                            <button class="btn btn-as-primary" type="submit">Login</button>
-                        </form>
-                    </div>
                 </div>
-            </nav>
+                <div class="header-center ">
+                    <span class="header-search-icon"><i class="fa fa-search"></i></span>
+                    <input type="text" class="header-search-input" placeholder="search for test">
+                </div>
+
+                <div class="header-right">
+                    <button class="btn btn-outline-as-primary me-4">
+                        View Test Result
+                    </button>
+                    <i class="ti ti-shopping-cart fa-2x"></i>
+                </div>
+
+                <!-- End of DropDown Menu -->
+            </div>
         </div>
-    </div>
-    <!-- end of main nav -->
-</header>
+        <div class="header-top-responsive ">
+            <div class="container">
+                <div class="header-logo me-2">
+                    <a href="index.html">
+                        <img src="assets/images/logo.png" alt="logo">
+                    </a>
+
+                </div>
+                <div class="search-box mb-5">
+                    <form id="#" action="#">
+                        <input type="text" class="responsive-search-input" name="search" placeholder="Search here..." />
+                        <button type="submit">
+                            <span><i class="fa fa-search"></i></span>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="responsive-header-left">
+                    <span class="me-4 search-btn"><i class="fa fa-search"></i></span>
+                    <i class="ti ti-shopping-cart me-3"></i>
+
+                </div>
+
+
+
+                <!-- End of DropDown Menu -->
+            </div>
+        </div>
+        </div>
+        <!-- End of Header Top -->
+        <!-- start of main nav -->
+        <div class="header-nav bg-white  pt-2">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light ">
+                    <div class="container-fluid">
+                        <span class="border  p-3">
+                            <a class="navbar-brand text-dark" href="#">Menu</a>
+                            <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </span>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav-scroll"
+                                style="--bs-scroll-height:500px;">
+                                <li class="nav-item me-5">
+                                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item me-5">
+                                    <a class="nav-link active" aria-current="page" href="about-us.html">About Us</a>
+                                </li>
+                                <li class="nav-item dropdown me-5">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                                    <ul class="dropdown-menu ps-2 pt-4 pb-5 pe-5" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item f-16 fw-400 " href="home-lab-test.html">Home Lab
+                                                Test</a></li>
+                                        <li><a class="dropdown-item f-16 fw-400 " href="lab-visit.html">Book Lab
+                                                Visit</a></li>
+                                        <li><a class="dropdown-item f-16 fw-400 " href="home-care-nurse.html">Home Care
+                                                Nurse</a></li>
+                                        <li><a class="dropdown-item f-16 fw-400 " href="pharm-consult.html">Pharmacist
+                                                Consultation</a></li>
+                                        <li><a class="dropdown-item f-16 fw-400 " href="doc-consult.html">Doctor
+                                                Consultation</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item me-5">
+                                    <a class="nav-link" href="membership.html" tabindex="-1"
+                                        aria-disabled="true">Membership</a>
+                                </li>
+                                <li class="nav-item me-5">
+                                    <a class="nav-link" href="pharm-supply.html" tabindex="-1" aria-disabled="true">
+                                        pharmaceutical
+                                        Supply</a>
+                                </li>
+                            </ul>
+                            <form class="d-flex">
+
+                                <button class="btn btn-outline-as-primary me-3" type="submit">Download app</button>
+                                <button class="btn btn-as-primary" type="submit">Login</button>
+
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- end of main nav -->
+    </header>
     <!-- start main content -->
     <main>
         <section class="about-us item-bg2">
@@ -122,26 +165,31 @@
                 <h1 class="text-white">About Us</h1>
             </div>
         </section>
-        <section class="about-us-text">
+        <section class="about-us-text p-13tb">
             <div class="container">
                 <div class="about-text d-flex align-items-center justify-content-center">
-                    <p>Allsmart Healthcare is a leading Healthcare and Pharmaceutical company based here in Nigeria. With the
-                        primary objective of bridging the gap between healthcare providers and patients ensuring the prompt
-                        distribution of pharmaceutical products and healthcare services. Our comprehensive offerings cater to a
-                        diverse clientele, encompassing Individuals, Corporate Entities, NGOs, Government Agencies, Smaller
-                        Retail Pharmacies, and Esteemed healthcare professionals. Our commitment lies in providing both generic
+                    <p>Allsmart Healthcare is a leading Healthcare and Pharmaceutical company based here in Nigeria.
+                        With the
+                        primary objective of bridging the gap between healthcare providers and patients ensuring the
+                        prompt
+                        distribution of pharmaceutical products and healthcare services. Our comprehensive offerings
+                        cater to a
+                        diverse clientele, encompassing Individuals, Corporate Entities, NGOs, Government Agencies,
+                        Smaller
+                        Retail Pharmacies, and Esteemed healthcare professionals. Our commitment lies in providing both
+                        generic
                         and branded medications to our valued customers</p>
                 </div>
-                
+
             </div>
-          
+
         </section>
         <section class="v-m-section">
-            <div class="container">
+            <div class="container pwlr-sm-5">
                 <div class="row">
                     <div class="col-md-6 mb-5">
                         <div class="v-m-img">
-                            <img src="assets/images/single-img-07.jpg" class="img-fluid" alt="image">
+                            <img src="assets/images/about-pic.png" class="img-fluid" alt="image">
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -174,17 +222,18 @@
             </div>
         </section>
         <section class="core-value pt-5 pb-5 mt-5 mb-5">
-            <div class="container">
+            <div class="container pwlr-sm-5">
                 <div class="custom-pg-title">
                     <h2>Our Core Values</h2>
                     <p>We offer a variety of services tailored to meet your health needs</p>
                 </div>
                 <div class="row">
-                   
-                    <div class="col-lg-4 col-sm-6 col-md-6 mb-3">
+
+                    <div class="col-lg-4 col-sm-6 col-md-6 mb-3" data-aos="fade-right" data-aos-duration="300"
+                        data-aos-easing="ease-in-sine">
                         <div class="card card-body shadow p-5 mb-5">
                             <div class="row">
-                            
+
                                 <div class="col-12">
                                     <div class="value-icon mb-4 d-flex justify-content-center align-items-center">
                                         <i class="fa fa-gratipay "></i>
@@ -194,121 +243,131 @@
                                     <h5 class="f-18 fw-500">Client - Centric</h5>
                                 </div>
                                 <div class="col-12">
-                                    <p>Your Health, Your Way. Discover care that revolves around you – your preferences, your
+                                    <p>Your Health, Your Way. Discover care that revolves around you – your preferences,
+                                        your
                                         needs, your voice. It's healthcare designed just for you.</p>
                                 </div>
-                            </div>      
+                            </div>
                         </div>
-                       
+
                     </div>
-                    <div class="col-lg-4 col-sm-6 col-md-6 mb-3">
+                    <div class="col-lg-4 col-sm-6 col-md-6 mb-3" data-aos="fade-right" data-aos-duration="500"
+                        data-aos-easing="ease-in-sine">
                         <div class="card card-body shadow p-5 mb-5">
                             <div class="row">
-                            
+
                                 <div class="col-12">
                                     <div class="value-icon mb-4 d-flex justify-content-center align-items-center">
                                         <i class="fa fa-gratipay "></i>
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <h5 class="f-18 fw-500">Client - Centric</h5>
+                                    <h5 class="f-18 fw-500">Empathy</h5>
                                 </div>
                                 <div class="col-12">
-                                    <p>Your Health, Your Way. Discover care that revolves around you – your preferences, your
-                                        needs, your voice. It's healthcare designed just for you.</p>
+                                    <p>Healthcare with Heart. We understand health is more than a diagnosis. With
+                                        empathy as our guide, we are here to support your journey to well-being.</p>
                                 </div>
-                            </div>      
+                            </div>
                         </div>
-                       
+
                     </div>
-                    <div class="col-lg-4 col-sm-6 col-md-6 mb-3">
+                    <div class="col-lg-4 col-sm-6 col-md-6 mb-3" data-aos="fade-right" data-aos-duration="700"
+                        data-aos-easing="ease-in-sine">
                         <div class="card card-body shadow p-5 mb-5">
                             <div class="row">
-                            
+
                                 <div class="col-12">
                                     <div class="value-icon mb-4 d-flex justify-content-center align-items-center">
                                         <i class="fa fa-gratipay "></i>
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <h5 class="f-18 fw-500">Client - Centric</h5>
+                                    <h5 class="f-18 fw-500">Innovation</h5>
                                 </div>
                                 <div class="col-12">
-                                    <p>Your Health, Your Way. Discover care that revolves around you – your preferences, your
-                                        needs, your voice. It's healthcare designed just for you.</p>
+                                    <p>Healthcare Beyond Limits. Embrace the future with us. From cutting-edge
+                                        treatments to pioneering solutions, we're redefining healthcare for you</p>
                                 </div>
-                            </div>      
+                            </div>
                         </div>
-                       
+
                     </div>
-                    <div class="col-lg-4 col-sm-6 col-md-6 mb-3">
-                        <div class="card card-body shadow p-5 mb-5">
+                    <div class="col-lg-4 col-sm-6 col-md-6 mb-3 ms-auto" data-aos="fade-right" data-aos-duration="300"
+                    data-aos-easing="ease-in-sine">
+                        <div class="card card-body shadow p-5 mb-5 w-100 " >
                             <div class="row">
-                            
+
                                 <div class="col-12">
                                     <div class="value-icon mb-4 d-flex justify-content-center align-items-center">
                                         <i class="fa fa-gratipay "></i>
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <h5 class="f-18 fw-500">Client - Centric</h5>
+                                    <h5 class="f-18 fw-500">Excellent Service</h5>
                                 </div>
                                 <div class="col-12">
-                                    <p>Your Health, Your Way. Discover care that revolves around you – your preferences, your
-                                        needs, your voice. It's healthcare designed just for you.</p>
+                                    <p>More Than Care, It is Connection. Experience care that goes beyond medical
+                                        expertise. With us, you are not just a client – you are part of our healthcare
+                                        family.</p>
                                 </div>
-                            </div>      
+                            </div>
                         </div>
-                       
+
                     </div>
-                    <div class="col-lg-4 col-sm-6 col-md-6 mb-3">
-                        <div class="card card-body shadow p-5 mb-5">
+                    <div class="col-lg-4 col-sm-6 col-md-6 mb-3 me-auto" data-aos="fade-right" data-aos-duration="500"
+                    data-aos-easing="ease-in-sine">
+                        <div class="card card-body shadow p-5 mb-5 w-100 " >
                             <div class="row">
-                            
+
                                 <div class="col-12">
                                     <div class="value-icon mb-4 d-flex justify-content-center align-items-center">
                                         <i class="fa fa-gratipay "></i>
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <h5 class="f-18 fw-500">Client - Centric</h5>
+                                    <h5 class="f-18 fw-500">Accountability</h5>
                                 </div>
                                 <div class="col-12">
-                                    <p>Your Health, Your Way. Discover care that revolves around you – your preferences, your
-                                        needs, your voice. It's healthcare designed just for you.</p>
+                                    <p>We Stand by Our Care. When it comes to health we take responsibility. Our
+                                        commitment to accounta -bility ensures your health is our top priority</p>
                                 </div>
-                            </div>      
+                            </div>
                         </div>
-                       
+
                     </div>
-                    
-                   
-    
+
+
+
                 </div>
             </div>
 
         </section>
         <section class="explore p-10tb">
-            <div class="container">
+            <div class="container ">
                 <div class="explore-text pwlr-20">
-                    <h4 class="mb-4 fw-600 text-white">Enjoy a New Era of Health Management with our Different Packages Tailored for you
+                    <h4 class="mb-4 fw-600 text-white">Enjoy a New Era of Health Management with our Different Packages
+                        Tailored for you
                     </h4>
                     <span class="custom-span-title f-16 fw-500">Your well being is our priority</span>
                 </div>
                 <div class="explore-btn">
-                    <button class="btn custom-as-light-btn">Explore Packages</button>
+                    <a href="packages.html">
+                        <button class="btn custom-as-light-btn">Explore Packages</button>
+                    </a>
+
                 </div>
             </div>
         </section>
         <section class="download">
-            <div class="container">
+            <div class="container ">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="download-img">
                             <img src="assets/images/app-img.png" class="img-fluid" alt="download-image">
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 pwlr-sm-5">
                         <div class="download-content">
                             <div class="download-text">
                                 <h3 class="mb-3">
@@ -339,14 +398,15 @@
     <!-- end main content -->
     <!--  -->
     <footer>
-        <div class="container">
+        <div class="container pwlr-sm-5" data-aos="fade-up-right" data-aos-duration="200"
+            data-aos-easing="ease-in-sine">
             <div class="row">
                 <div class="col-md-3 mb-5">
                     <div class="logo-div">
                         <a href="index.html">
                             <img src="assets/images/logo.png" alt="logo">
                         </a>
-                        
+
                     </div>
                     <div class="footer-text pe-5 mt-4">
                         <p>Allsmart Healthcare is a reputable and well established healthcare company dedicated to
@@ -359,41 +419,62 @@
                         <a href="#"><i class="fa fa-instagram text-primary"></i></a>
                     </div>
                 </div>
-                <div class="col-md-2 mb-5">
-                    <div class="footer-heading mb-lg-5 mb-sm-2">
-                        <h5>
-                            Company
-                        </h5>
-                    </div>
-                    <div class="footer-section-content">
-                        <a href="index.html"> <p>Home</p></a>
-                        <a href="about-us.html">
-                            <p>About Us</p>
-                        </a>
-                        <a href="membership.html">
-                            <p>Members</p>
-                        </a>
-                       <a href="pharm-supply.html">
-                        <p>pharmaceutical Supply</p>
-                       </a>
-                        
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-6">
 
-                    </div>
-                </div>
-                <div class="col-md-2 mb-5">
-                    <div class="footer-heading mb-lg-5 mb-sm-2">
-                        <h5>
-                            Services
-                        </h5>
-                    </div>
-                    <div class="footer-section-content">
-                        <a href="#"><p>Book a lab Visit </p></a>
-                        <a href="#"><p>Home Lab Test</p></a>
-                        <a href="#"><p>Home Care Nurse</p></a>
-                        <a href="#"><p>Doctor Consult</p></a>
+                            <div class="footer-heading mb-lg-5 mb-sm-2">
+                                <h5>
+                                    Company
+                                </h5>
+                            </div>
+                            <div class="footer-section-content">
+                                <a href="index.html">
+                                    <p>Home</p>
+                                </a>
+                                <a href="about-us.html">
+                                    <p>About Us</p>
+                                </a>
+                                <a href="membership.html">
+                                    <p>Members</p>
+                                </a>
+                                <a href="pharm-supply.html">
+                                    <p>pharmaceutical Supply</p>
+                                </a>
 
+
+
+                            </div>
+                        </div>
+                        <div class="col-6 mb-5">
+
+                            <div class="footer-heading mb-lg-5 mb-sm-2">
+                                <h5>
+                                    Services
+                                </h5>
+                            </div>
+                            <div class="footer-section-content">
+                                <a href="lab-visit.html">
+                                    <p>Book a lab Visit </p>
+                                </a>
+                                <a href="home-lab-test.html">
+                                    <p>Home Lab Test</p>
+                                </a>
+                                <a href="home-care-nurse.html">
+                                    <p>Home Care Nurse</p>
+                                </a>
+                                <a href="doc-consult.html">
+                                    <p>Doctor Consult</p>
+                                </a>
+
+                            </div>
+
+                        </div>
                     </div>
+
                 </div>
+
+
                 <div class="col-md-5 mb-5">
                     <div class="row">
                         <div class="col-md-6">
@@ -404,10 +485,18 @@
 
                             </div>
                             <div class="footer-section-content mb-5 ">
-                                <a href="#"><p>Vaccination</p></a>
-                                <a href="packages.html"><p>Packages</p></a>
-                                <a href="faq.html"><p>FAQS</p></a>
-                                <a href="privacy.html"><p>privacy</p></a>
+                                <a href="vaccination.html">
+                                    <p>Vaccination</p>
+                                </a>
+                                <a href="packages.html">
+                                    <p>Packages</p>
+                                </a>
+                                <a href="faq.html">
+                                    <p>FAQS</p>
+                                </a>
+                                <a href="contact.html">
+                                    <p>Contact Us</p>
+                                </a>
 
                             </div>
                         </div>
@@ -443,7 +532,7 @@
                         <div class="col-md-6 mb-3">
                             <div class="subscribe-email">
                                 <input type="text" placeholder="enter email">
-                                
+
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -452,16 +541,19 @@
                             </div>
                         </div>
                     </div>
-                   
+
                 </div>
             </div>
         </div>
     </footer>
-
     <script src="assets/js/bs-js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/plugin/slick.js"></script>
+    <script src="assets/js/plugin/aos.js"></script>
     <script src="assets/js/plugin.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
