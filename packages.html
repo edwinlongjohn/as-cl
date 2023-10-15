@@ -30,10 +30,13 @@
 
     <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="assets/css/fa/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
     <link rel="stylesheet" href="assets/css/plugin/slick.css">
+    <link rel="stylesheet" href="assets/css/plugin/aos.css">
     <link rel="stylesheet" href="assets/css/bs-css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
 </head>
 
 <body>
@@ -42,40 +45,75 @@
         <div class="header-top mb-5">
             <div class="container">
                 <div class="header-left me-2">
-                    <img src="assets/images/logo.png" alt="logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo.png" alt="logo">
+                    </a>
+
                 </div>
                 <div class="header-center ">
                     <span class="header-search-icon"><i class="fa fa-search"></i></span>
                     <input type="text" class="header-search-input" placeholder="search for test">
                 </div>
+
                 <div class="header-right">
                     <button class="btn btn-outline-as-primary me-4">
                         View Test Result
                     </button>
-                    <i class="fa fa-shopping-cart"></i>
+                    <i class="ti ti-shopping-cart fa-2x"></i>
                 </div>
 
                 <!-- End of DropDown Menu -->
             </div>
         </div>
+        <div class="header-top-responsive ">
+            <div class="container">
+                <div class="header-logo me-2">
+                    <a href="index.html">
+                        <img src="assets/images/logo.png" alt="logo">
+                    </a>
 
+                </div>
+                <div class="search-box mb-5">
+                    <form id="#" action="#">
+                        <input type="text" class="responsive-search-input" name="search" placeholder="Search here..." />
+                        <button type="submit">
+                            <span><i class="fa fa-search"></i></span>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="responsive-header-left">
+                    <span class="me-4 search-btn"><i class="fa fa-search"></i></span>
+                    <i class="ti ti-shopping-cart me-3"></i>
+
+                </div>
+
+
+
+                <!-- End of DropDown Menu -->
+            </div>
+        </div>
+        </div>
         <!-- End of Header Top -->
         <!-- start of main nav -->
         <div class="header-nav bg-white  pt-2">
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light ">
                     <div class="container-fluid">
-                        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
+                        <span class="border  p-3">
+                            <a class="navbar-brand text-dark" href="#">Menu</a>
+                            <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </span>
+
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav-scroll"
-                                style="--bs-scroll-height:100px;">
+                                style="--bs-scroll-height:500px;">
                                 <li class="nav-item me-5">
-                                    <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                                    <a class="nav-link active " aria-current="page" href="index.html">Home</a>
                                 </li>
                                 <li class="nav-item me-5">
                                     <a class="nav-link " aria-current="page" href="about-us.html">About Us</a>
@@ -84,11 +122,16 @@
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                         data-bs-toggle="dropdown" aria-expanded="false">Services</a>
                                     <ul class="dropdown-menu ps-2 pt-4 pb-5 pe-5" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item f-16 fw-400 " href="home-lab-test.html">Home Lab Test</a></li>
-                                        <li><a class="dropdown-item f-16 fw-400 " href="lab-visit.html">Book Lab Visit</a></li>
-                                        <li><a class="dropdown-item f-16 fw-400 " href="home-care-nurse.html">Home Care Nurse</a></li>
-                                        <li><a class="dropdown-item f-16 fw-400 " href="#">Pharmacist Consultation</a></li>
-                                        <li><a class="dropdown-item f-16 fw-400 " href="doc-consult.html">Doctor Consultation</a></li>
+                                        <li><a class="dropdown-item f-16 fw-400 " href="home-lab-test.html">Home Lab
+                                                Test</a></li>
+                                        <li><a class="dropdown-item f-16 fw-400 " href="lab-visit.html">Book Lab
+                                                Visit</a></li>
+                                        <li><a class="dropdown-item f-16 fw-400 " href="home-care-nurse.html">Home Care
+                                                Nurse</a></li>
+                                        <li><a class="dropdown-item f-16 fw-400 " href="pharm-consult.html">Pharmacist
+                                                Consultation</a></li>
+                                        <li><a class="dropdown-item f-16 fw-400 " href="doc-consult.html">Doctor
+                                                Consultation</a></li>
                                     </ul>
                                 </li>
 
@@ -106,6 +149,7 @@
 
                                 <button class="btn btn-outline-as-primary me-3" type="submit">Download app</button>
                                 <button class="btn btn-as-primary" type="submit">Login</button>
+
                             </form>
                         </div>
                     </div>
@@ -116,7 +160,7 @@
     </header>
     <!-- start main content -->
     <main>
-        <section class="about-us item-bg2">
+        <section class="about-us item-bg6">
             <div class="about-content">
                 <h1 class="text-white">Our Packages</h1>
             </div>
@@ -127,7 +171,7 @@
                 <div class="package-search">
                     <div class="row">
                         <div class="col-md-9 mb-4   ">
-                            <i class="fa fa-search">
+                            <i class="ti ti-search">
                             </i>
                             <input type="text" class="package-search-input me-3"
                                 placeholder="Search for test or package">
@@ -137,7 +181,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="card card-body bg-card-package mb-5 p-5">
+                <div class="card card-body bg-card-package mb-5 p-5" data-aos="fade-right" data-aos-duration="100"
+                data-aos-easing="ease-in-sine">
                     <div class="row">
                         <div class="col-md-2">
                             <h2 class="f-20">
@@ -157,21 +202,49 @@
                                     </div>
                                     <div class="d-flex">
                                         <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
+                                        <p>Blood Sugar Test (RBS/FBS)</p>
                                     </div>
                                     <div class="d-flex">
                                         <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
+                                        <p>MP/Widal (Malaria Parasite/Widal)</p>
                                     </div>
                                     <div class="d-flex">
                                         <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
+                                        <p>Urea/Creatinine</p>
                                     </div>
                                     <div class="d-flex">
                                         <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
+                                        <p>ALT/AST</p>
                                     </div>
                                 </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="d-flex">
+                                <h2 class="f-20 me-5 ">
+                                    NGN 19,800
+                                </h2>
+                                <button class="btn btn-package-as-primary f-12 fw-600 plr-4 bg-as-primary">Order
+                                    Test</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-body bg-card-package mb-5 p-5" data-aos="fade-right" data-aos-duration="200"
+                data-aos-easing="ease-in-sine">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <h2 class="f-20">
+                                Silver Package
+                            </h2>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="package-text mb-5">
+                                Set off on a journey with our Silver Package, where your health takes center stage and
+                                we are your trusted compass every step of the way.
+                            </div>
+                            <div class="row">
                                 <div class="col-md-6">
                                     <div class="d-flex">
                                         <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
@@ -179,16 +252,235 @@
                                     </div>
                                     <div class="d-flex">
                                         <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
+                                        <p>Erythrocyte Sedimentation Rate (ESR)</p>
                                     </div>
+                                    <div class="d-flex">
+                                        <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
+                                        <p>Liver Function Test</p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
+                                        <p>Kidney Function Test</p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
+                                        <p>Blood Sugar Test</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex">
+                                        <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
+                                        <p>Widal Test</p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
+                                        <p>C-Reactive Protein</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="d-flex">
+                                <h2 class="f-20 me-5 ">
+                                    NGN 33,000
+                                </h2>
+                                <button class="btn btn-package-as-primary f-12 fw-600 plr-4 bg-as-primary">Order
+                                    Test</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-body bg-card-package mb-5 p-5" data-aos="fade-right" data-aos-duration="300"
+                data-aos-easing="ease-in-sine">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <h2 class="f-20">
+                                Gold Package
+                            </h2>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="package-text mb-5">
+                                There is no reason to feel uncomfortable when evaluating your health. Our Gold Package
+                                offers a thorough home test, quick results, and a doctor's opinion on your next course
+                                of action. Accompanied with a free doctor consultation session.
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
                                     <div class="d-flex">
                                         <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
                                         <p>Full Blood Count</p>
                                     </div>
                                     <div class="d-flex">
                                         <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
+                                        <p>Erythrocyte Sedimentation Rate (ESR)</p>
                                     </div>
+                                    <div class="d-flex">
+                                        <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
+                                        <p>Liver Function Test</p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
+                                        <p>Kidney Function Test</p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
+                                        <p>Lipid Profile Test</p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
+                                        <p>Blood Sugar Test</p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
+                                        <p>Malaria Parasite</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+
+                                    <div class="d-flex">
+                                        <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
+                                        <p>HbAIC</p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
+                                        <p>H. pylori Test (Serum)</p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
+                                        <p>Stool M/C/S</p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
+                                        <p>Troponin T</p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
+                                        <p>PSA (Male)</p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
+                                        <p>Thyroid Function (T3,T4,TSH)</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="d-flex">
+                                <h2 class="f-20 me-5 ">
+                                    NGN 87,600
+                                </h2>
+                                <button class="btn btn-package-as-primary f-12 fw-600 plr-4 bg-as-primary">Order
+                                    Test</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-body bg-card-package mb-5 p-5" data-aos="fade-right" data-aos-duration="400"
+                data-aos-easing="ease-in-sine">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <h2 class="f-20">
+                                Pre-Wedding Screening Test
+                            </h2>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="package-text mb-5">
+                                We believe in starting your journey to 'happily ever after' with confidence and clarity.
+                                Our Pre-Wedding Health Screening is tailored to ensure both partners are in the best of
+                                health before you say 'I do’.
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="d-flex">
+                                        <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
+                                        <p>HIV 1&2 screening</p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
+                                        <p>Heptatitis B</p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
+                                        <p>Hepatitis C</p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
+                                        <p>Syphilis</p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
+                                        <p>Pregnancy Test</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex">
+                                        <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
+                                        <p>Genotype Test</p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
+                                        <p>Blood Group</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="d-flex">
+                                <h2 class="f-20 me-5 ">
+                                    NGN 49,200
+                                </h2>
+                                <button class="btn btn-package-as-primary f-12 fw-600 plr-4 bg-as-primary">Order
+                                    Test</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-body bg-card-package mb-5 p-5" data-aos="fade-right" data-aos-duration="500"
+                data-aos-easing="ease-in-sine">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <h2 class="f-20">
+                                Pre Employment Test
+                            </h2>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="package-text mb-5">
+                                As an employer, identify the health concerns of your staff before they become major
+                                problems. Remember, a healthy workforce is a key to productivity.
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="d-flex">
+                                        <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
+                                        <p>HIV 1&2 screening</p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
+                                        <p>Heptatitis B</p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
+                                        <p>Heptatitis C</p>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex">
+                                        <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
+                                        <p>Syphilis B</p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
+                                        <p>Tuberculosis (Blood)</p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
+                                        <p>Urinalysis</p>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -203,58 +495,50 @@
                         </div>
                     </div>
                 </div>
-                <div class="card card-body bg-card-package mb-5 p-5">
+                <div class="card card-body bg-card-package mb-5 p-5" data-aos="fade-right" data-aos-duration="600"
+                data-aos-easing="ease-in-sine">
                     <div class="row">
                         <div class="col-md-2">
                             <h2 class="f-20">
-                                Bronze Package
+                                Domestic Staff Test
                             </h2>
                         </div>
                         <div class="col-md-6">
                             <div class="package-text mb-5">
-                                Our Bronze Package is designed with foundational tests all conveniently conducted in
-                                your desired location. Take responsibility for your health
+                                Are you relying on the services of stewards, caregivers, nannies, chefs, drivers, etc to
+                                keep your home running smoothly? Detect and address their health concerns to ensure
+                                their well being and your peace of mind
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="d-flex">
                                         <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
+                                        <p>HIV 1&2 screening</p>
                                     </div>
                                     <div class="d-flex">
                                         <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
+                                        <p>Heptatitis B</p>
                                     </div>
                                     <div class="d-flex">
                                         <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
+                                        <p>Heptatitis C</p>
                                     </div>
-                                    <div class="d-flex">
-                                        <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
-                                    </div>
-                                    <div class="d-flex">
-                                        <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
-                                    </div>
+
                                 </div>
                                 <div class="col-md-6">
                                     <div class="d-flex">
                                         <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
+                                        <p>Syphilis B</p>
                                     </div>
                                     <div class="d-flex">
                                         <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
+                                        <p>Tuberculosis (Blood)</p>
                                     </div>
                                     <div class="d-flex">
                                         <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
+                                        <p>Urinalysis</p>
                                     </div>
-                                    <div class="d-flex">
-                                        <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
-                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -269,57 +553,56 @@
                         </div>
                     </div>
                 </div>
-                <div class="card card-body bg-card-package mb-5 p-5">
+                <div class="card card-body bg-card-package mb-5 p-5" data-aos="fade-right" data-aos-duration="700"
+                data-aos-easing="ease-in-sine">
                     <div class="row">
                         <div class="col-md-2">
                             <h2 class="f-20">
-                                Bronze Package
+                                Food Handlers Test
                             </h2>
                         </div>
                         <div class="col-md-6">
                             <div class="package-text mb-5">
-                                Our Bronze Package is designed with foundational tests all conveniently conducted in
-                                your desired location. Take responsibility for your health
+                                As an employer of restaurant food handlers, identify potential health issues early to
+                                safeguard both your team and your customers. Invest in the quality of your service, and
+                                the satisfaction of your customers.
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="d-flex">
                                         <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
+                                        <p>HIV 1&2 screening</p>
                                     </div>
                                     <div class="d-flex">
                                         <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
+                                        <p>Hepatitis B</p>
                                     </div>
                                     <div class="d-flex">
                                         <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
+                                        <p>Hepatitis C</p>
                                     </div>
                                     <div class="d-flex">
                                         <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
+                                        <p>Syphilis</p>
                                     </div>
-                                    <div class="d-flex">
-                                        <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
-                                    </div>
+
                                 </div>
                                 <div class="col-md-6">
                                     <div class="d-flex">
                                         <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
+                                        <p>Urinalysis</p>
                                     </div>
                                     <div class="d-flex">
                                         <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
+                                        <p>Hepatitis A</p>
                                     </div>
                                     <div class="d-flex">
                                         <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
+                                        <p>Tuberculosis (Sputum M/C/S)</p>
                                     </div>
                                     <div class="d-flex">
                                         <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
+                                        <p>Stool M/C/S</p>
                                     </div>
                                 </div>
                             </div>
@@ -327,7 +610,7 @@
                         <div class="col-md-4">
                             <div class="d-flex">
                                 <h2 class="f-20 me-5 ">
-                                    NGN 19,800
+                                    NGN 36,000
                                 </h2>
                                 <button class="btn btn-package-as-primary f-12 fw-600 plr-4 bg-as-primary">Order
                                     Test</button>
@@ -335,65 +618,55 @@
                         </div>
                     </div>
                 </div>
-                <div class="card card-body bg-card-package mb-5 p-5">
+
+                <div class="card card-body bg-card-package mb-5 p-5" data-aos="fade-right" data-aos-duration="800"
+                data-aos-easing="ease-in-sine">
                     <div class="row">
                         <div class="col-md-2">
                             <h2 class="f-20">
-                                Bronze Package
+                                Male Sexual Health
                             </h2>
                         </div>
                         <div class="col-md-6">
                             <div class="package-text mb-5">
-                                Our Bronze Package is designed with foundational tests all conveniently conducted in
-                                your desired location. Take responsibility for your health
+                                Our Men’s Sexual Health Test Package provides a comprehensive panel of tests designed to
+                                empower you with knowledge and protect your health at an affordable price point.
                             </div>
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-7">
                                     <div class="d-flex">
                                         <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
+                                        <p>HIV 1&2 screening</p>
                                     </div>
                                     <div class="d-flex">
                                         <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
+                                        <p>Hepatitis B</p>
                                     </div>
                                     <div class="d-flex">
                                         <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
+                                        <p>Hepatitis C</p>
                                     </div>
                                     <div class="d-flex">
                                         <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
+                                        <p>Syphilis (VDRL)</p>
                                     </div>
                                     <div class="d-flex">
                                         <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
+                                        <p>Urine M/C/S</p>
                                     </div>
+                                    <div class="d-flex">
+                                        <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
+                                        <p>Herpes Simplex Virus Antibodies Test 1&2</p>
+                                    </div>
+
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="d-flex">
-                                        <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
-                                    </div>
-                                    <div class="d-flex">
-                                        <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
-                                    </div>
-                                    <div class="d-flex">
-                                        <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
-                                    </div>
-                                    <div class="d-flex">
-                                        <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
-                                    </div>
-                                </div>
+
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="d-flex">
                                 <h2 class="f-20 me-5 ">
-                                    NGN 19,800
+                                    NGN 39,000
                                 </h2>
                                 <button class="btn btn-package-as-primary f-12 fw-600 plr-4 bg-as-primary">Order
                                     Test</button>
@@ -401,65 +674,67 @@
                         </div>
                     </div>
                 </div>
-                <div class="card card-body bg-card-package mb-5 p-5">
+
+                <div class="card card-body bg-card-package mb-5 p-5" data-aos="fade-right" data-aos-duration="900"
+                data-aos-easing="ease-in-sine">
                     <div class="row">
                         <div class="col-md-2">
                             <h2 class="f-20">
-                                Bronze Package
+                                Female Sexual Health
                             </h2>
                         </div>
                         <div class="col-md-6">
                             <div class="package-text mb-5">
-                                Our Bronze Package is designed with foundational tests all conveniently conducted in
-                                your desired location. Take responsibility for your health
+                                Our Women’s Sexual Health Test Package provides a comprehensive panel of tests designed
+                                to empower you with knowledge and protect your health at an affordable price point.
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="d-flex">
                                         <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
+                                        <p>HIV 1&2 screening</p>
                                     </div>
                                     <div class="d-flex">
                                         <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
+                                        <p>Hepatitis B</p>
                                     </div>
                                     <div class="d-flex">
                                         <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
+                                        <p>Hepatitis C</p>
                                     </div>
                                     <div class="d-flex">
                                         <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
+                                        <p>Syphilis (VDRL)</p>
                                     </div>
                                     <div class="d-flex">
                                         <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
+                                        <p>Urine M/C/S</p>
                                     </div>
+
                                 </div>
                                 <div class="col-md-6">
                                     <div class="d-flex">
                                         <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
+                                        <p>High Vagina Swab/Endocervical Swab</p>
                                     </div>
                                     <div class="d-flex">
                                         <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
+                                        <p>Pap Smear/lipid-based cytology/cervical screening</p>
                                     </div>
                                     <div class="d-flex">
                                         <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
+                                        <p>Herpes Simplex Virus antibodies test</p>
                                     </div>
-                                    <div class="d-flex">
-                                        <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
-                                    </div>
+
+
                                 </div>
+
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="d-flex">
                                 <h2 class="f-20 me-5 ">
-                                    NGN 19,800
+                                    NGN 61,800
                                 </h2>
                                 <button class="btn btn-package-as-primary f-12 fw-600 plr-4 bg-as-primary">Order
                                     Test</button>
@@ -467,65 +742,45 @@
                         </div>
                     </div>
                 </div>
-                <div class="card card-body bg-card-package mb-5 p-5">
+
+                <div class="card card-body bg-card-package mb-5 p-5" data-aos="fade-right" data-aos-duration="1000"
+                data-aos-easing="ease-in-sine">
                     <div class="row">
                         <div class="col-md-2">
                             <h2 class="f-20">
-                                Bronze Package
+                                Male Fertility Test
                             </h2>
                         </div>
                         <div class="col-md-6">
                             <div class="package-text mb-5">
-                                Our Bronze Package is designed with foundational tests all conveniently conducted in
-                                your desired location. Take responsibility for your health
+                                Gentlemen, your aspirations of starting a family are significant, and your path should
+                                be marked by confidence and assurance. Our comprehensive package includes all essential
+                                tests ensuring a thorough assessment of your fertility status
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="d-flex">
                                         <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
+                                        <p>STD Tests</p>
                                     </div>
                                     <div class="d-flex">
                                         <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
+                                        <p>Testosterone</p>
                                     </div>
                                     <div class="d-flex">
                                         <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
+                                        <p>Seminal  Fluid Analysis (SFA)</p>
                                     </div>
-                                    <div class="d-flex">
-                                        <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
-                                    </div>
-                                    <div class="d-flex">
-                                        <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
-                                    </div>
+                                    
+
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="d-flex">
-                                        <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
-                                    </div>
-                                    <div class="d-flex">
-                                        <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
-                                    </div>
-                                    <div class="d-flex">
-                                        <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
-                                    </div>
-                                    <div class="d-flex">
-                                        <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
-                                    </div>
-                                </div>
+                               
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="d-flex">
                                 <h2 class="f-20 me-5 ">
-                                    NGN 19,800
+                                    NGN 31,200
                                 </h2>
                                 <button class="btn btn-package-as-primary f-12 fw-600 plr-4 bg-as-primary">Order
                                     Test</button>
@@ -533,65 +788,92 @@
                         </div>
                     </div>
                 </div>
-                <div class="card card-body bg-card-package mb-5 p-5">
+                <div class="card card-body bg-card-package mb-5 p-5" data-aos="fade-right" data-aos-duration="1100"
+                data-aos-easing="ease-in-sine">
                     <div class="row">
                         <div class="col-md-2">
                             <h2 class="f-20">
-                                Bronze Package
+                                Female Fertility Test
                             </h2>
                         </div>
                         <div class="col-md-6">
                             <div class="package-text mb-5">
-                                Our Bronze Package is designed with foundational tests all conveniently conducted in
-                                your desired location. Take responsibility for your health
+                                Ladies, your dreams of starting a family are precious, and your journey should be defined by confidence and certainty. Our package encompasses all vital tests, leaving no stone unturned in understanding your fertility status.
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="d-flex">
                                         <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
+                                        <p>STD Tests (HIV, HCV, HBsag, VDRL)</p>
                                     </div>
                                     <div class="d-flex">
                                         <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
+                                        <p>Follicle Stimulating Hormone (FSH)</p>
                                     </div>
                                     <div class="d-flex">
                                         <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
+                                        <p>Luteinizing Hormone (LH)</p>
                                     </div>
                                     <div class="d-flex">
                                         <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
+                                        <p>Estradiol (E2)</p>
                                     </div>
-                                    <div class="d-flex">
-                                        <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
-                                    </div>
+                                    
+
                                 </div>
                                 <div class="col-md-6">
                                     <div class="d-flex">
                                         <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
+                                        <p>Prolactin</p>
                                     </div>
                                     <div class="d-flex">
                                         <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
-                                    </div>
-                                    <div class="d-flex">
-                                        <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
-                                    </div>
-                                    <div class="d-flex">
-                                        <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
+                                        <p>Progesterone</p>
                                     </div>
                                 </div>
+                               
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="d-flex">
                                 <h2 class="f-20 me-5 ">
-                                    NGN 19,800
+                                    NGN 49,800
+                                </h2>
+                                <button class="btn btn-package-as-primary f-12 fw-600 plr-4 bg-as-primary">Order
+                                    Test</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-body bg-card-package mb-5 p-5" data-aos="fade-right" data-aos-duration="1200"
+                data-aos-easing="ease-in-sine">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <h2 class="f-20">
+                                Drug Test
+                            </h2>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="package-text mb-5">
+                                Our commitment to accuracy and confidentiality makes us the top choice for your drug testing needs. Trust us for reliable, timely and discreet testing solutions.
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="d-flex">
+                                        <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
+                                        <p>Urine Toxicology</p>
+                                    </div>
+                                  
+                                    
+
+                                </div>
+                               
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="d-flex">
+                                <h2 class="f-20 me-5 ">
+                                    NGN 15,000
                                 </h2>
                                 <button class="btn btn-package-as-primary f-12 fw-600 plr-4 bg-as-primary">Order
                                     Test</button>
@@ -605,26 +887,30 @@
             </div>
         </section>
         <section class="explore p-10tb">
-            <div class="container">
+            <div class="container ">
                 <div class="explore-text pwlr-20">
-                    <h4 class="mb-4 fw-600 text-white">Enjoy a New Era of Health Management with our Different Packages Tailored for you
+                    <h4 class="mb-4 fw-600 text-white">Enjoy a New Era of Health Management with our Different Packages
+                        Tailored for you
                     </h4>
                     <span class="custom-span-title f-16 fw-500">Your well being is our priority</span>
                 </div>
                 <div class="explore-btn">
-                    <button class="btn custom-as-light-btn">Explore Packages</button>
+                    <a href="packages.html">
+                        <button class="btn custom-as-light-btn">Explore Packages</button>
+                    </a>
+
                 </div>
             </div>
         </section>
         <section class="download">
-            <div class="container">
+            <div class="container ">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="download-img">
                             <img src="assets/images/app-img.png" class="img-fluid" alt="download-image">
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 pwlr-sm-5">
                         <div class="download-content">
                             <div class="download-text">
                                 <h3 class="mb-3">
@@ -655,14 +941,15 @@
     <!-- end main content -->
     <!--  -->
     <footer>
-        <div class="container">
+        <div class="container pwlr-sm-5" data-aos="fade-up-right" data-aos-duration="100"
+            data-aos-easing="ease-in-sine">
             <div class="row">
                 <div class="col-md-3 mb-5">
                     <div class="logo-div">
                         <a href="index.html">
                             <img src="assets/images/logo.png" alt="logo">
                         </a>
-                        
+
                     </div>
                     <div class="footer-text pe-5 mt-4">
                         <p>Allsmart Healthcare is a reputable and well established healthcare company dedicated to
@@ -675,41 +962,62 @@
                         <a href="#"><i class="fa fa-instagram text-primary"></i></a>
                     </div>
                 </div>
-                <div class="col-md-2 mb-5">
-                    <div class="footer-heading mb-lg-5 mb-sm-2">
-                        <h5>
-                            Company
-                        </h5>
-                    </div>
-                    <div class="footer-section-content">
-                        <a href="index.html"> <p>Home</p></a>
-                        <a href="about-us.html">
-                            <p>About Us</p>
-                        </a>
-                        <a href="membership.html">
-                            <p>Members</p>
-                        </a>
-                       <a href="pharm-supply.html">
-                        <p>pharmaceutical Supply</p>
-                       </a>
-                        
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-6">
 
-                    </div>
-                </div>
-                <div class="col-md-2 mb-5">
-                    <div class="footer-heading mb-lg-5 mb-sm-2">
-                        <h5>
-                            Services
-                        </h5>
-                    </div>
-                    <div class="footer-section-content">
-                        <a href="#"><p>Book a lab Visit </p></a>
-                        <a href="#"><p>Home Lab Test</p></a>
-                        <a href="#"><p>Home Care Nurse</p></a>
-                        <a href="#"><p>Doctor Consult</p></a>
+                            <div class="footer-heading mb-lg-5 mb-sm-2">
+                                <h5>
+                                    Company
+                                </h5>
+                            </div>
+                            <div class="footer-section-content">
+                                <a href="index.html">
+                                    <p>Home</p>
+                                </a>
+                                <a href="about-us.html">
+                                    <p>About Us</p>
+                                </a>
+                                <a href="membership.html">
+                                    <p>Members</p>
+                                </a>
+                                <a href="pharm-supply.html">
+                                    <p>pharmaceutical Supply</p>
+                                </a>
 
+
+
+                            </div>
+                        </div>
+                        <div class="col-6 mb-5">
+
+                            <div class="footer-heading mb-lg-5 mb-sm-2">
+                                <h5>
+                                    Services
+                                </h5>
+                            </div>
+                            <div class="footer-section-content">
+                                <a href="lab-visit.html">
+                                    <p>Book a lab Visit </p>
+                                </a>
+                                <a href="home-lab-test.html">
+                                    <p>Home Lab Test</p>
+                                </a>
+                                <a href="home-care-nurse.html">
+                                    <p>Home Care Nurse</p>
+                                </a>
+                                <a href="doc-consult.html">
+                                    <p>Doctor Consult</p>
+                                </a>
+
+                            </div>
+
+                        </div>
                     </div>
+
                 </div>
+
+
                 <div class="col-md-5 mb-5">
                     <div class="row">
                         <div class="col-md-6">
@@ -720,10 +1028,18 @@
 
                             </div>
                             <div class="footer-section-content mb-5 ">
-                                <a href="#"><p>Vaccination</p></a>
-                                <a href="packages.html"><p>Packages</p></a>
-                                <a href="faq.html"><p>FAQS</p></a>
-                                <a href="privacy.html"><p>privacy</p></a>
+                                <a href="vaccination.html">
+                                    <p>Vaccination</p>
+                                </a>
+                                <a href="packages.html">
+                                    <p>Packages</p>
+                                </a>
+                                <a href="faq.html">
+                                    <p>FAQS</p>
+                                </a>
+                                <a href="contact.html">
+                                    <p>Contact Us</p>
+                                </a>
 
                             </div>
                         </div>
@@ -759,7 +1075,7 @@
                         <div class="col-md-6 mb-3">
                             <div class="subscribe-email">
                                 <input type="text" placeholder="enter email">
-                                
+
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -768,7 +1084,7 @@
                             </div>
                         </div>
                     </div>
-                   
+
                 </div>
             </div>
         </div>
@@ -778,5 +1094,10 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/plugin/slick.js"></script>
     <script src="assets/js/plugin.js"></script>
+    <script src="assets/js/plugin/aos.js"></script>
     <script src="assets/js/main.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 </body>

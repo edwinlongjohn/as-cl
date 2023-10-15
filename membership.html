@@ -30,52 +30,89 @@
 
     <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="assets/css/fa/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
     <link rel="stylesheet" href="assets/css/plugin/slick.css">
     <link rel="stylesheet" href="assets/css/plugin/nice-select.css">
     <link rel="stylesheet" href="assets/css/bs-css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <!-- <link rel="stylesheet" href="responsive.css"> -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
 <body>
+      <!-- Start Heading Area -->
     <header class="header mt-5">
         <div class="header-top mb-5">
             <div class="container">
                 <div class="header-left me-2">
-                    <img src="assets/images/logo.png" alt="logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo.png" alt="logo">
+                    </a>
+
                 </div>
                 <div class="header-center ">
                     <span class="header-search-icon"><i class="fa fa-search"></i></span>
                     <input type="text" class="header-search-input" placeholder="search for test">
                 </div>
+
                 <div class="header-right">
                     <button class="btn btn-outline-as-primary me-4">
                         View Test Result
                     </button>
-                    <i class="fa fa-shopping-cart"></i>
+                    <i class="ti ti-shopping-cart fa-2x"></i>
                 </div>
 
                 <!-- End of DropDown Menu -->
             </div>
         </div>
-       
+        <div class="header-top-responsive ">
+            <div class="container">
+                <div class="header-logo me-2">
+                    <a href="index.html">
+                        <img src="assets/images/logo.png" alt="logo">
+                    </a>
+
+                </div>
+                <div class="search-box mb-5">
+                    <form id="#" action="#">
+                        <input type="text" class="responsive-search-input" name="search" placeholder="Search here..." />
+                        <button type="submit">
+                            <span><i class="fa fa-search"></i></span>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="responsive-header-left">
+                    <span class="me-4 search-btn"><i class="fa fa-search"></i></span>
+                    <i class="ti ti-shopping-cart me-3"></i>
+
+                </div>
+
+
+
+                <!-- End of DropDown Menu -->
+            </div>
+        </div>
+        </div>
         <!-- End of Header Top -->
         <!-- start of main nav -->
         <div class="header-nav bg-white  pt-2">
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light ">
                     <div class="container-fluid">
-                        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
+                        <span class="border  p-3">
+                            <a class="navbar-brand text-dark" href="#">Menu</a>
+                            <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </span>
+
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav-scroll"
-                                style="--bs-scroll-height:100px;">
+                                style="--bs-scroll-height:500px;">
                                 <li class="nav-item me-5">
-                                    <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
                                 </li>
                                 <li class="nav-item me-5">
                                     <a class="nav-link " aria-current="page" href="about-us.html">About Us</a>
@@ -84,16 +121,21 @@
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                         data-bs-toggle="dropdown" aria-expanded="false">Services</a>
                                     <ul class="dropdown-menu ps-2 pt-4 pb-5 pe-5" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item f-16 fw-400 " href="home-lab-test.html">Home Lab Test</a></li>
-                                        <li><a class="dropdown-item f-16 fw-400 " href="lab-visit.html">Book Lab Visit</a></li>
-                                        <li><a class="dropdown-item f-16 fw-400 " href="home-care-nurse.html">Home Care Nurse</a></li>
-                                        <li><a class="dropdown-item f-16 fw-400 " href="#">Pharmacist Consultation</a></li>
-                                        <li><a class="dropdown-item f-16 fw-400 " href="doc-consult.html">Doctor Consultation</a></li>
+                                        <li><a class="dropdown-item f-16 fw-400 " href="home-lab-test.html">Home Lab
+                                                Test</a></li>
+                                        <li><a class="dropdown-item f-16 fw-400 " href="lab-visit.html">Book Lab
+                                                Visit</a></li>
+                                        <li><a class="dropdown-item f-16 fw-400 " href="home-care-nurse.html">Home Care
+                                                Nurse</a></li>
+                                        <li><a class="dropdown-item f-16 fw-400 " href="pharm-consult.html">Pharmacist
+                                                Consultation</a></li>
+                                        <li><a class="dropdown-item f-16 fw-400 " href="doc-consult.html">Doctor
+                                                Consultation</a></li>
                                     </ul>
                                 </li>
 
                                 <li class="nav-item me-5">
-                                    <a class="nav-link" href="membership.html" tabindex="-1"
+                                    <a class="nav-link active" href="membership.html" tabindex="-1"
                                         aria-disabled="true">Membership</a>
                                 </li>
                                 <li class="nav-item me-5">
@@ -106,6 +148,7 @@
 
                                 <button class="btn btn-outline-as-primary me-3" type="submit">Download app</button>
                                 <button class="btn btn-as-primary" type="submit">Login</button>
+
                             </form>
                         </div>
                     </div>
@@ -118,21 +161,21 @@
     <!-- start main content -->
     <main>
 
-        <section class="about-us item-bg2">
+        <section class="about-us item-bg3">
             <div class="about-content">
                 <h1 class="text-white">Membership</h1>
-                <div class="wplr-10 wplr-sm-10">
+                <div class="pwlr-10 pwlr-sm-10">
                     <p class="f-18 text-white lh-28">Enjoy access to a world of benefits, including discounted health
                         services and prescription supplies</p>
                 </div>
             </div>
         </section>
         <section class="membership-discount p-10tb bg-membership">
-            <div class="container">
+            <div class="container pwlr-sm-5">
                 <div class="row">
                     <div class="col-md-6 mb-5">
                         <div class="membership-discount-img">
-                            <img src="assets/images/membership.png" class="img-fluid" alt="mem-img">
+                            <img src="assets/images/banners/membership-banner.png" class="img-fluid" alt="mem-img">
                         </div>
                     </div>
                     <div class="col-md-6 ">
@@ -185,10 +228,9 @@
                         <div class="form-group mb-5">
                             <label for="gender"  class="mb-2"> Your Gender</label>
                             <select class="nice-select wide" id="gender">
-                                <option data-display="Select">Nothing</option>
+                                <option data-display="Select Gender">Select Gender</option>
                                 <option value="male">Male</option>
                                 <option value="female">Female</option>
-                                <option value="other">Others</option>
                               </select>
                         </div>
                         <div class="form-group mb-5 mt-5">
@@ -207,10 +249,6 @@
                             <label for="confirm"  class="mb-2">Confirm Password</label>
                             <input type="password" id="confirm" placeholder="Confirm password" class="form-control">
                         </div>
-                        <!-- <label class="checkbox-inline">
-                            <input type="checkbox" value="" required>
-                            By clicking "create account", I consent to the privacy policy.
-                        </label> -->
                     </div>
                     <div class="register-button pt-5 pb-5">
                         <button class="btn as-register-btn f-16 fw-600 text-white"> Register</button>
@@ -219,26 +257,30 @@
             </div>
         </section>
         <section class="explore p-10tb">
-            <div class="container">
-                <div class="explore-text pwlr-20">
-                    <h4 class="mb-4 fw-600 text-white">Enjoy a New Era of Health Management with our Different Packages Tailored for you
+            <div class="container ">
+                <div class="explore-text pwlr-20" >
+                    <h4 class="mb-4 fw-600 text-white">Enjoy a New Era of Health Management with our Different Packages
+                        Tailored for you
                     </h4>
                     <span class="custom-span-title f-16 fw-500">Your well being is our priority</span>
                 </div>
                 <div class="explore-btn">
-                    <button class="btn custom-as-light-btn">Explore Packages</button>
+                    <a href="packages.html">
+                        <button class="btn custom-as-light-btn">Explore Packages</button>
+                    </a>
+                    
                 </div>
             </div>
         </section>
         <section class="download">
-            <div class="container">
+            <div class="container ">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="download-img">
                             <img src="assets/images/app-img.png" class="img-fluid" alt="download-image">
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 pwlr-sm-5" >
                         <div class="download-content">
                             <div class="download-text">
                                 <h3 class="mb-3">
@@ -269,14 +311,14 @@
     <!-- end main content -->
     <!-- beginning of footer -->
     <footer>
-        <div class="container">
+        <div class="container pwlr-sm-5">
             <div class="row">
                 <div class="col-md-3 mb-5">
                     <div class="logo-div">
                         <a href="index.html">
                             <img src="assets/images/logo.png" alt="logo">
                         </a>
-                        
+
                     </div>
                     <div class="footer-text pe-5 mt-4">
                         <p>Allsmart Healthcare is a reputable and well established healthcare company dedicated to
@@ -289,41 +331,62 @@
                         <a href="#"><i class="fa fa-instagram text-primary"></i></a>
                     </div>
                 </div>
-                <div class="col-md-2 mb-5">
-                    <div class="footer-heading mb-lg-5 mb-sm-2">
-                        <h5>
-                            Company
-                        </h5>
-                    </div>
-                    <div class="footer-section-content">
-                        <a href="index.html"> <p>Home</p></a>
-                        <a href="about-us.html">
-                            <p>About Us</p>
-                        </a>
-                        <a href="membership.html">
-                            <p>Members</p>
-                        </a>
-                       <a href="pharm-supply.html">
-                        <p>pharmaceutical Supply</p>
-                       </a>
-                        
+                <div class="col-md-4"  >
+                    <div class="row">
+                        <div class="col-6">
 
-                    </div>
-                </div>
-                <div class="col-md-2 mb-5">
-                    <div class="footer-heading mb-lg-5 mb-sm-2">
-                        <h5>
-                            Services
-                        </h5>
-                    </div>
-                    <div class="footer-section-content">
-                        <a href="#"><p>Book a lab Visit </p></a>
-                        <a href="#"><p>Home Lab Test</p></a>
-                        <a href="#"><p>Home Care Nurse</p></a>
-                        <a href="#"><p>Doctor Consult</p></a>
+                            <div class="footer-heading mb-lg-5 mb-sm-2">
+                                <h5>
+                                    Company
+                                </h5>
+                            </div>
+                            <div class="footer-section-content">
+                                <a href="index.html">
+                                    <p>Home</p>
+                                </a>
+                                <a href="about-us.html">
+                                    <p>About Us</p>
+                                </a>
+                                <a href="membership.html">
+                                    <p>Members</p>
+                                </a>
+                                <a href="pharm-supply.html">
+                                    <p>pharmaceutical Supply</p>
+                                </a>
 
+
+
+                            </div>
+                        </div>
+                        <div class="col-6 mb-5">
+
+                            <div class="footer-heading mb-lg-5 mb-sm-2">
+                                <h5>
+                                    Services
+                                </h5>
+                            </div>
+                            <div class="footer-section-content">
+                                <a href="lab-visit.html">
+                                    <p>Book a lab Visit </p>
+                                </a>
+                                <a href="home-lab-test.html">
+                                    <p>Home Lab Test</p>
+                                </a>
+                                <a href="home-care-nurse.html">
+                                    <p>Home Care Nurse</p>
+                                </a>
+                                <a href="doc-consult.html">
+                                    <p>Doctor Consult</p>
+                                </a>
+
+                            </div>
+
+                        </div>
                     </div>
+
                 </div>
+
+
                 <div class="col-md-5 mb-5">
                     <div class="row">
                         <div class="col-md-6">
@@ -334,10 +397,18 @@
 
                             </div>
                             <div class="footer-section-content mb-5 ">
-                                <a href="#"><p>Vaccination</p></a>
-                                <a href="packages.html"><p>Packages</p></a>
-                                <a href="faq.html"><p>FAQS</p></a>
-                                <a href="privacy.html"><p>privacy</p></a>
+                                <a href="vaccination.html">
+                                    <p>Vaccination</p>
+                                </a>
+                                <a href="packages.html">
+                                    <p>Packages</p>
+                                </a>
+                                <a href="faq.html">
+                                    <p>FAQS</p>
+                                </a>
+                                <a href="contact.html">
+                                    <p>Contact Us</p>
+                                </a>
 
                             </div>
                         </div>
@@ -373,7 +444,7 @@
                         <div class="col-md-6 mb-3">
                             <div class="subscribe-email">
                                 <input type="text" placeholder="enter email">
-                                
+
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -382,7 +453,7 @@
                             </div>
                         </div>
                     </div>
-                   
+
                 </div>
             </div>
         </div>

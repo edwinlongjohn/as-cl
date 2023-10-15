@@ -368,16 +368,13 @@ label {
     padding-left: 5% !important;
     padding-right: 5% !important;
   }
+  
 }
 
 .pwlr-13 {
   padding-left: 13% !important;
   padding-right: 13% !important;
 }
-
-
-
-
 
 .pwlr-15 {
   padding-left: 15% !important;
@@ -455,12 +452,21 @@ label {
   padding-top: 10rem;
   padding-bottom: 10rem;
 }
+.p-13tb {
+  padding-top: 13rem;
+  padding-bottom: 13rem;
+}
 
 @media (min-width:768px) and (max-width:991px) {
 
   .p-10tb {
     padding-top: 8rem;
     padding-bottom: 8rem;
+  }
+
+  .p-13tb {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
   }
 
 }
@@ -472,6 +478,11 @@ label {
     padding-bottom: 6rem;
   }
 
+  .p-13tb {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
 }
 
 @media (max-width:559px) {
@@ -480,6 +491,11 @@ label {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
+  .p-13tb {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
 
 }
 
@@ -492,7 +508,24 @@ label {
 }
 
 .mt-8 {
-  margin-top: 8rem;
+  margin-top: 8rem ;
+}
+@media (min-width:560px) and (max-width:767px) {
+  .mt-8 {
+    margin-top: 6rem;
+  }
+ 
+ 
+
+}
+
+@media screen and (max-width:559px) {
+
+  .mt-8 {
+    margin-top: 3rem;
+  }
+
+
 }
 
 .lh-20 {
@@ -720,7 +753,6 @@ header .header-nav.sticky {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow-x: hidden;
 }
 
 .header-left,
@@ -767,7 +799,6 @@ header .header-nav.sticky {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    overflow-x: none;
     justify-content: space-between;
   }
   .header-top-responsive .container i{
@@ -877,7 +908,6 @@ header .header-nav.sticky {
   .header-nav .border {
     display: inline-flex;
     width: 100%;
-    overflow-x: hidden !important;
     justify-content: space-between;
     z-index: 0;
   }
@@ -896,7 +926,7 @@ main {
   background-size: cover;
   background-attachment: scroll;
   background-position: center center;
-  overflow-x: hidden !important;
+  overflow: hidden !important;
 
 }
 
@@ -929,7 +959,7 @@ main {
 }
 
 .hero-img {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .hero-img img {
@@ -963,13 +993,13 @@ main {
   background-color: var(--as-white-4);
   padding-bottom: 3rem;
   overflow-x: hidden !important;
+  overflow-y: hidden !important;
 }
 
 
 
 .vac-bg img.vac-img {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
-  overflow: hidden;
   border-radius: 3rem;
   -webkit-transition: all 3.5s ease-out 0s;
   -o-transition: all 3.5s ease-out 0s;
@@ -1114,7 +1144,7 @@ main {
 .package-content-1:hover {
   transform: translateY(1rem);
 }
-.package-content-1:hover .card.shadow{
+.packages-section .package-content-1:hover .card.shadow{
   box-shadow: none !important;
 }
 
@@ -1543,11 +1573,30 @@ footer .newsletter .subscribe-email button.sub-btn:hover {
 /*about us section*/
 section.about-us {
   position: relative;
-  padding: 20rem 0 20rem;
+  padding: 20rem 0;
   z-index: 2;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left center;
+
+}
+@media screen and (min-width:769px) and (max-width:991px) {
+  section.about-us {
+    padding: 15rem 0;
+  }
+
+}
+@media screen and (min-width:579px) and (max-width:768px) {
+  section.about-us {
+    padding: 10rem 0;
+  }
+
+}
+
+@media screen and (max-width:578px) {
+  section.about-us {
+    padding: 5rem 0;
+  }
 
 }
 
@@ -1578,11 +1627,32 @@ section.about-us::after {
 }
 
 section.about-us.item-bg2 {
-  background-image: url(../images/bg-img/pages-bg.png);
+  background-image: url(../images/bg-img/about-bg.png);
+}
+section.about-us.item-bg3 {
+  background-image: url(../images/bg-img/membership-bg.png);
+}
+section.about-us.item-bg4 {
+  background-image: url(../images/bg-img/pharm-supply-bg.png);
+}
+section.about-us.item-bg5 {
+  background-image: url(../images/bg-img/vaccination-bg.png);
+}
+section.about-us.item-bg6 {
+  background-image: url(../images/bg-img/package-bg.png);
+}
+section.about-us.item-bg7 {
+  background-image: url(../images/bg-img/contact-bg.png);
 }
 
 section.about-us.item-bg-2 {
   background-image: linear-gradient(to bottom right, rgba(3, 1, 102, 0.6), rgba(3, 1, 102, 0.322)), url(../images/bg-img/doc-consult-bg.png);
+}
+section.about-us.item-bg-3 {
+  background-image: linear-gradient(to bottom right, rgba(3, 1, 102, 0.6), rgba(3, 1, 102, 0.322)), url(../images/bg-img/faq.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
 }
 
 .about-us .about-content {
@@ -1590,8 +1660,12 @@ section.about-us.item-bg-2 {
 }
 
 section.about-us-text {
-  padding: 13rem 0;
   text-align: center;
+}
+@media screen and (max-width:568px) {
+  section.about-us-text {
+    text-align: left;
+  }
 }
 
 section.about-us-text .about-text p {
@@ -1635,22 +1709,6 @@ section.about-us-text .about-text p {
   line-height: 3rem;
 }
 
-/* .hidden{
-    opacity: 0;
-    filter: blur(5px);
-    transform: translateY(-100%);
-    transition: all 1s;
-   }
-   .show{
-    opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
-   }
-
-   @media(prefers-reduced-motion){
-    .hidden{
-      transition: none;
-    } */
 
 /*core-value*/
 .core-value .card.card-body {
@@ -1688,10 +1746,11 @@ section.about-us-text .about-text p {
   position: absolute;
   left: 0;
   top: 0;
+  border-radius: 30px;
   z-index: -1;
   width: 0;
   height: 100%;
-  background: linear-gradient(120deg, #35C6CB80 0%, rgba(13, 156, 228, 0.76) 100%);
+  background: linear-gradient(120deg, #35C6CB80 0%, #31d9dfde 50%, rgba(13, 156, 228, 0.76) 100%);
   border-radius: 30px;
   transition: 0.5s;
 }
@@ -1729,11 +1788,22 @@ section.about-us-text .about-text p {
 
 .all-packages .package-search i {
   position: absolute;
-  top: 1.4rem;
+  top: 1.7rem;
   left: 1.5%;
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: var(--as-black-2);
 }
+
+@media screen and (max-width:600px) {
+  .all-packages .package-search i {
+    position: absolute;
+    top: 1.7rem;
+    left: 5%;
+    font-size: 2rem;
+    color: var(--as-black-2);
+  }
+}
+
 
 /*search input*/
 .all-packages .package-search input[type='text'].package-search-input {
@@ -1755,7 +1825,6 @@ section.about-us-text .about-text p {
 .all-packages .card.card-body:hover {
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 5px 0 rgba(47, 48, 48, 0.568);
   transform: translateY(-2rem);
-
 }
 
 /*faq main */
@@ -2025,7 +2094,7 @@ section.about-us-text .about-text p {
          PHARM SUPPLY 
 **********************************/
 .pharm-supply-streamline .pharm-supply-streamline-btn {
-  margin-top: 5rem;
+  
 }
 
 .pharm-supply-streamline-btn button {
