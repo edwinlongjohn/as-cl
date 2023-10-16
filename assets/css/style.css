@@ -429,6 +429,10 @@ label {
     padding-left: 5% !important;
     padding-right: 5% !important;
   }
+  .plr-sm-4 {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
 
 }
 
