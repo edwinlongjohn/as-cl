@@ -440,10 +440,19 @@ label {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
+  
 
   .pwlr-13 {
     padding-left: 11% !important;
     padding-right: 11% !important;
+  }
+
+}
+@media (max-width:600px) {
+
+  .plr-8 {
+    padding-left: 4rem !important;
+    padding-right: 4rem !important;
   }
 
 }
@@ -1644,6 +1653,21 @@ section.about-us.item-bg6 {
 section.about-us.item-bg7 {
   background-image: url(../images/bg-img/contact-bg.png);
 }
+section.about-us.item-bg8 {
+  background-image: url(../images/bg-img/home-lab-bg.png);
+}
+section.about-us.item-bg9 {
+  background-image: url(../images/bg-img/home-care-nurse-bg.png);
+}
+section.about-us.item-bg10 {
+  background-image: url(../images/bg-img/lab-visit-bg.png);
+}
+section.about-us.item-bg11 {
+  background-image: url(../images/bg-img/pharm-consult-bg.png);
+}
+
+
+
 
 section.about-us.item-bg-2 {
   background-image: linear-gradient(to bottom right, rgba(3, 1, 102, 0.6), rgba(3, 1, 102, 0.322)), url(../images/bg-img/doc-consult-bg.png);
@@ -1784,6 +1808,16 @@ section.about-us-text .about-text p {
 .all-packages .package-search {
   position: relative;
   margin-bottom: 8rem;
+}
+@media screen and (max-width:767px){
+  .all-packages .package-search {
+    margin-bottom: 5rem;
+  }
+}
+@media screen and (max-width:568px){
+  .all-packages .package-search {
+    margin-bottom: 3rem;
+  }
 }
 
 .all-packages .package-search i {
@@ -2182,14 +2216,8 @@ section.about-us-text .about-text p {
   color: rgba(85, 85, 85, 0.267);
 }
 
-/*tab content*/
-.how-it-works .tab-img {
-  background-color: var(--as-primary-color-8);
-  border-radius: 10px;
-  text-align: center;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
+
+
 
 
 /*********************************
@@ -2234,4 +2262,25 @@ section.about-us-text .about-text p {
 
 .tab-pane#pharm-consult-2 .pharm-consult-tab .nav-item:not(:last-child) {
   margin-right: 1rem;
+}
+
+
+
+
+
+.js .slider-single > .list-group-item:nth-child(1n+2) { display: none }
+
+.js .slider-single.slick-initialized >.list-group-item:nth-child(1n+2) { display: block }
+
+
+
+
+
+
+
+.slider-nav .slick-slide { cursor: pointer; }
+
+.slick-slide.is-active h3 {
+	color: #c00;
+	background-color: #fff
 }
