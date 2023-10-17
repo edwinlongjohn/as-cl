@@ -561,6 +561,12 @@ label {
 .text-justify {
   text-align: justify;
 }
+@media screen and (max-width:578px) {
+  .mobile-hidden{
+    display:none;
+  }
+  
+}
 
 .btn-outline-as-primary,
 .btn-outline-as-primary:link,
@@ -1674,7 +1680,7 @@ section.about-us.item-bg11 {
 
 
 section.about-us.item-bg-2 {
-  background-image: linear-gradient(to bottom right, rgba(3, 1, 102, 0.6), rgba(3, 1, 102, 0.322)), url(../images/bg-img/doc-consult-bg.png);
+  background-image: linear-gradient(to bottom right, rgba(179, 178, 247, 0.6), rgba(3, 1, 102, 0.322)), url(../images/bg-img/doc-consult-bg.png);
 }
 section.about-us.item-bg-3 {
   background-image: linear-gradient(to bottom right, rgba(3, 1, 102, 0.6), rgba(3, 1, 102, 0.322)), url(../images/bg-img/faq.png);
@@ -1751,15 +1757,13 @@ section.about-us-text .about-text p {
   width: 6.5rem;
   height: 6.5rem;
   text-align: center;
-  background-color: var(--as-primary-color-4);
+  background-color: #F2FBFF;
   color: var(--as-white);
   border-radius: 50%;
   transition: all .4s;
 }
 
-.core-value .card.card-body .value-icon i::before {
-  font-size: 3rem;
-}
+
 
 .core-value .card.card-body h5 {
   transition: all .4s;
@@ -2220,8 +2224,22 @@ section.about-us-text .about-text p {
   color: rgba(85, 85, 85, 0.267);
 }
 
+@media screen and (min-width:769px) {
+  .how-it-works .mobile-view{
+    display: none;
+  }
+}
 
 
+@media screen and (max-width:768px) {
+  .how-it-works .desktop-view{
+    display: none;
+  }
+
+  .how-it-works .mobile-view{
+    display: block;
+  }
+}
 
 
 /*********************************
