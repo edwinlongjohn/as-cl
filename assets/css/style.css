@@ -561,6 +561,12 @@ label {
 .text-justify {
   text-align: justify;
 }
+@media screen and (max-width:578px) {
+  .mobile-hidden{
+    display:none;
+  }
+  
+}
 
 .btn-outline-as-primary,
 .btn-outline-as-primary:link,
@@ -1640,41 +1646,56 @@ section.about-us::after {
 }
 
 section.about-us.item-bg2 {
-  background-image: url(../images/bg-img/about-bg.png);
+  background-image:linear-gradient(to bottom right, rgba(3, 1, 102, 0.267), rgba(13, 10, 168, 0.199)), url(../images/bg-img/about-bg.jpg);
 }
 section.about-us.item-bg3 {
-  background-image: url(../images/bg-img/membership-bg.png);
+  background-image: linear-gradient(to bottom right, rgba(3, 1, 102, 0.671), rgba(13, 10, 168, 0.281)), url(../images/bg-img/membership-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:top;
 }
 section.about-us.item-bg4 {
-  background-image: url(../images/bg-img/pharm-supply-bg.png);
+  background-image:linear-gradient(to bottom right, rgba(3, 1, 102, 0.267), rgba(13, 10, 168, 0.336)), url(../images/bg-img/pharm-supply-bg.jpg);
 }
 section.about-us.item-bg5 {
-  background-image: url(../images/bg-img/vaccination-bg.png);
+  background-image:linear-gradient(to bottom right, rgba(3, 1, 102, 0.438), rgba(13, 10, 168, 0.171)), url(../images/bg-img/vaccination-bg.jpg);
 }
 section.about-us.item-bg6 {
-  background-image: url(../images/bg-img/package-bg.png);
+  position: relative;
+  padding: 20rem 0;
+  z-index: 2;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:0 -100px;
+  background-image:linear-gradient(to bottom right, rgba(3, 1, 102, 0.384), rgba(12, 10, 168, 0.322)), url(../images/bg-img/package-bg.jpg);
 }
 section.about-us.item-bg7 {
   background-image: url(../images/bg-img/contact-bg.png);
 }
 section.about-us.item-bg8 {
-  background-image: url(../images/bg-img/home-lab-bg.png);
+  background-image: linear-gradient(to bottom right, rgba(3, 1, 102, 0.384), rgba(12, 10, 168, 0.322)), url(../images/bg-img/home-lab-bg.jpg);
 }
 section.about-us.item-bg9 {
-  background-image: url(../images/bg-img/home-care-nurse-bg.png);
+  background-image:linear-gradient(to bottom right, rgba(3, 1, 102, 0.384), rgba(12, 10, 168, 0.322)), url(../images/bg-img/home-care-nurse-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:top;
 }
 section.about-us.item-bg10 {
-  background-image: url(../images/bg-img/lab-visit-bg.png);
+  background-image:linear-gradient(to bottom right, rgba(3, 1, 102, 0.158), rgba(3, 1, 102, 0.322)), url(../images/bg-img/lab-visit-bg.jpg);
 }
 section.about-us.item-bg11 {
-  background-image: url(../images/bg-img/pharm-consult-bg.png);
+  background-image:linear-gradient(to bottom right, rgba(3, 1, 102, 0.6), rgba(3, 1, 102, 0.322)), url(../images/bg-img/pharm-consult-bg.jpg);
 }
 
 
 
 
 section.about-us.item-bg-2 {
-  background-image: linear-gradient(to bottom right, rgba(3, 1, 102, 0.6), rgba(3, 1, 102, 0.322)), url(../images/bg-img/doc-consult-bg.png);
+  background-image: linear-gradient(to bottom right,rgba(3, 1, 102, 0.158), rgba(3, 1, 102, 0.322)), url(../images/bg-img/doc-consult-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:top;
 }
 section.about-us.item-bg-3 {
   background-image: linear-gradient(to bottom right, rgba(3, 1, 102, 0.6), rgba(3, 1, 102, 0.322)), url(../images/bg-img/faq.png);
@@ -1687,25 +1708,40 @@ section.about-us.item-bg-3 {
   text-align: center;
 }
 
-section.about-us-text {
-  text-align: center;
-}
+
 @media screen and (max-width:568px) {
   section.about-us-text {
     text-align: left;
   }
 }
 
-section.about-us-text .about-text p {
+section.about-us-info .about-text p {
   line-height: 2.8;
   font-weight: 400;
   font-size: 18px;
   color: var(--as-heading-color);
 }
-
-.about-us-text .about-text {
-  padding-left: 10%;
-  padding-right: 10%;
+@media screen and (max-width:568px) {
+  section.about-us-info .about-text.pe-5{
+    padding-right: 0 !important;
+  }
+}
+ 
+section.about-us-info .about-img img{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 7px 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+ border-top-right-radius: 5rem;
+ border-bottom-left-radius: 5rem;
+ -webkit-transition: all 1s ease-out 0s;
+  -o-transition: all 1s ease-out 0s;
+  -moz-transition: all 1s ease-out 0s;
+  transition: all 1s ease-out 0s;
+}
+section.about-us-info .about-img:hover img{
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+   border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 /*v-m-section*/
@@ -1751,15 +1787,13 @@ section.about-us-text .about-text p {
   width: 6.5rem;
   height: 6.5rem;
   text-align: center;
-  background-color: var(--as-primary-color-4);
+  background-color: #F2FBFF;
   color: var(--as-white);
   border-radius: 50%;
   transition: all .4s;
 }
 
-.core-value .card.card-body .value-icon i::before {
-  font-size: 3rem;
-}
+
 
 .core-value .card.card-body h5 {
   transition: all .4s;
@@ -2131,9 +2165,6 @@ section.about-us-text .about-text p {
 /*********************************
          PHARM SUPPLY 
 **********************************/
-.pharm-supply-streamline .pharm-supply-streamline-btn {
-  
-}
 
 .pharm-supply-streamline-btn button {
   font-family: 'Manrope', sans-serif;
@@ -2220,8 +2251,124 @@ section.about-us-text .about-text p {
   color: rgba(85, 85, 85, 0.267);
 }
 
+@media screen and (min-width:769px) {
+  .how-it-works .mobile-view{
+    display: none;
+  }
+}
 
 
+@media screen and (max-width:768px) {
+  .how-it-works .desktop-view{
+    display: none;
+  }
+
+  .how-it-works .mobile-view{
+    display: block;
+    
+  }
+  .how-it-works .mobile-view .how-bg{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center center;
+    text-align: center;
+    text-align: left;
+    position: relative;
+    border-radius: 2rem;
+    -webkit-transition: all .5s ease-out 0s;
+    -o-transition: all .5s ease-out 0s;
+    -moz-transition: all .5s ease-out 0s;
+    transition: all .5s ease-out 0s;
+  }
+  .how-it-works .mobile-view .how-bg.img-1{
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.479),rgba(0, 0, 0, 0.274) ),url('../images/services/home-lab-1.png');
+  }
+
+  .how-it-works .mobile-view .how-bg.img-2{
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.479),rgba(0, 0, 0, 0.274) ),url('../images/services/home-lab-2.jpg');
+  }
+  .how-it-works .mobile-view .how-bg.img-3{
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.479),rgba(0, 0, 0, 0.274) ),url('../images/services/home-lab-3.png');
+  }
+  /* images for lab-visit */
+  .how-it-works .mobile-view .how-bg.img-4{
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.479),rgba(0, 0, 0, 0.274) ),url('../images/services/lab-visit-1.png');
+  }
+
+  .how-it-works .mobile-view .how-bg.img-5{
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.479),rgba(0, 0, 0, 0.274) ),url('../images/services/lab-visit-2.png');
+  }
+  .how-it-works .mobile-view .how-bg.img-6{
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.479),rgba(0, 0, 0, 0.274) ),url('../images/services/lab-visit-3.jpg');
+  }
+  /* images for home-care nurse */
+  .how-it-works .mobile-view .how-bg.img-7{
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.479),rgba(0, 0, 0, 0.274) ),url('../images/services/nurse-1.png');
+  }
+
+  .how-it-works .mobile-view .how-bg.img-8{
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.479),rgba(0, 0, 0, 0.274) ),url('../images/services/nurse-2.png');
+  }
+  .how-it-works .mobile-view .how-bg.img-9{
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.479),rgba(0, 0, 0, 0.274) ),url('../images/services/nurse-3.png');
+  }
+  .how-it-works .mobile-view .how-bg.img-10{
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.479),rgba(0, 0, 0, 0.274) ),url('../images/services/nurse-4.png');
+  }
+    /* images for pharm-consult nurse */
+    .how-it-works .mobile-view .how-bg.img-11{
+      background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.479),rgba(0, 0, 0, 0.274) ),url('../images/services/pharm-consult-1.png');
+    }
+  
+    .how-it-works .mobile-view .how-bg.img-12{
+      background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.479),rgba(0, 0, 0, 0.274) ),url('../images/services/pharm-consult-2.png');
+    }
+    .how-it-works .mobile-view .how-bg.img-13{
+      background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.781),rgba(0, 0, 0, 0.445) ),url('../images/services/pharm-consult-3.png');
+    }
+    .how-it-works .mobile-view .how-bg.img-14{
+      background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.479),rgba(0, 0, 0, 0.274) ),url('../images/services/pharm-consult-4.png');
+    }
+    /* images for doc consult*/
+    .how-it-works .mobile-view .how-bg.img-11{
+      background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.479),rgba(0, 0, 0, 0.274) ),url('../images/services/doc-consult-1.png');
+    }
+  
+    .how-it-works .mobile-view .how-bg.img-12{
+      background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.479),rgba(0, 0, 0, 0.274) ),url('../images/services/doc-consult-2.png');
+    }
+    .how-it-works .mobile-view .how-bg.img-13{
+      background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.438),rgba(0, 0, 0, 0.288) ),url('../images/services/doc-consult-3.png');
+    }
+    .how-it-works .mobile-view .how-bg.img-14{
+      background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.479),rgba(0, 0, 0, 0.274) ),url('../images/services/doc-consult-4.png');
+    }
+
+  .how-it-works .mobile-view .how-bg .custom-number{
+    font-size: 170px;
+    line-height: 1;
+    display: inline-block;
+    position: absolute;
+    z-index: 0;
+    right: 15px;
+    font-weight: 600;
+    top: 5px;
+    font-family: "Poppins", sans-serif;
+    opacity: 0.5;
+  }
+
+  .how-it-works .mobile-view .how-bg:hover .custom-number{
+    visibility: none;
+    opacity:0;
+  }
+  
+  .how-it-works .mobile-view .how-bg:hover .how-bg.img-1{
+    transform: scaleX(1.1);
+  }
+
+
+}
 
 
 /*********************************
