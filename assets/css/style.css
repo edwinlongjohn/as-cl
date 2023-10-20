@@ -691,7 +691,48 @@ label {
 .bg-as-primary-1 {
   background-color: var(--as-primary-color-4);
 }
+/*custom check-box */
+.check-box-component input[type="checkbox"] {
+  position: relative;
+  cursor: pointer;
+}
 
+.check-box-component input[type=checkbox]:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 33.75px;
+  height: 33.75px;
+  top: 0;
+  left: 0;
+  border: 3px solid #111111;
+  border-radius: 2px;
+  background-color: white;
+}
+
+.check-box-component input[type=checkbox]:checked:after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 10px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+.multiple-text-component{
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2%;
+  margin-bottom: 2rem;
+}
+.multiple-text-component:hover h5{
+  color: var(--as-secondary-color);
+}
 /*-------------------------------------------
             header styling
 -------------------------------------------*/
@@ -1666,7 +1707,7 @@ section.about-us.item-bg6 {
   z-index: 2;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position:0 -100px;
+  background-position:top;
   background-image:linear-gradient(to bottom right, rgba(3, 1, 102, 0.384), rgba(12, 10, 168, 0.322)), url(../images/bg-img/package-bg.jpg);
 }
 section.about-us.item-bg7 {
@@ -2391,6 +2432,8 @@ section.about-us-info .about-img:hover img{
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+
+
 
 /***************************************
       PHARMACY CONSULTATION PAGE
