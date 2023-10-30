@@ -34,12 +34,20 @@
     <link rel="stylesheet" href="assets/css/plugin/animate.css">
     <link rel="stylesheet" href="assets/css/plugin/aos.css">
     <link rel="stylesheet" href="assets/css/plugin/slick.css">
+    <link rel="stylesheet" href="assets/css/plugin/sweet-alert.css">
     <link rel="stylesheet" href="assets/css/bs-css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
 <body>
+    <!-- preloader starts -->
+    <div class="loader-bg">
+        <div class="loader">
+            <img src="assets/images/logo-2.png" alt="all_smart">
+        </div>
+    </div>
+    <!-- preloader ends -->
     <!-- Start Heading Area -->
     <header class="header mt-5">
         <div class="header-top mb-5">
@@ -95,70 +103,68 @@
         </div>
         </div>
         <!-- End of Header Top -->
-        <!-- start of main nav -->
-        <div class="header-nav bg-white  pt-2">
-            <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light ">
-                    <div class="container-fluid">
-                        <span class="border  p-3">
-                            <a class="navbar-brand text-dark" href="#">Menu</a>
-                            <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                        </span>
-
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav-scroll"
-                                style="--bs-scroll-height:500px;">
-                                <li class="nav-item me-5">
-                                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                                </li>
-                                <li class="nav-item me-5">
-                                    <a class="nav-link active" aria-current="page" href="about-us.html">About Us</a>
-                                </li>
-                                <li class="nav-item dropdown me-5">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">Services</a>
-                                    <ul class="dropdown-menu ps-2 pt-4 pb-5 pe-5" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item f-16 fw-400 " href="home-lab-test.html">Home Lab
-                                                Test</a></li>
-                                        <li><a class="dropdown-item f-16 fw-400 " href="lab-visit.html">Book Lab
-                                                Visit</a></li>
-                                        <li><a class="dropdown-item f-16 fw-400 " href="home-care-nurse.html">Home Care
-                                                Nurse</a></li>
-                                        <li><a class="dropdown-item f-16 fw-400 " href="pharm-consult.html">Pharmacist
-                                                Consultation</a></li>
-                                        <li><a class="dropdown-item f-16 fw-400 " href="doc-consult.html">Doctor
-                                                Consultation</a></li>
-                                    </ul>
-                                </li>
-
-                                <li class="nav-item me-5">
-                                    <a class="nav-link" href="membership.html" tabindex="-1"
-                                        aria-disabled="true">Membership</a>
-                                </li>
-                                <li class="nav-item me-5">
-                                    <a class="nav-link" href="pharm-supply.html" tabindex="-1" aria-disabled="true">
-                                        Pharmaceutical
-                                        Supply</a>
-                                </li>
-                            </ul>
-                            <form class="d-flex">
-
-                                <button class="btn btn-outline-as-primary me-3" type="submit">Download app</button>
-                                <button class="btn btn-as-primary" type="submit">Login</button>
-
-                            </form>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </div>
-        <!-- end of main nav -->
     </header>
-    <!-- start main content -->
+    <!-- start of main nav -->
+    <div class="header-nav bg-white  pt-2 pb-2">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <div class="container-fluid">
+                    <span class="border  p-3">
+                        <a class="navbar-brand text-dark" href="#">Menu</a>
+                        <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </span>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav-scroll" style="--bs-scroll-height:500px;">
+                            <li class="nav-item me-5">
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item me-5">
+                                <a class="nav-link active" aria-current="page" href="about-us.html">About Us</a>
+                            </li>
+                            <li class="nav-item dropdown me-5">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                                <ul class="dropdown-menu ps-2 pt-4 pb-5 pe-5" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item f-16 fw-400 " href="home-lab-test.html">Home Lab
+                                            Test</a></li>
+                                    <li><a class="dropdown-item f-16 fw-400 " href="lab-visit.html">Book Lab
+                                            Visit</a></li>
+                                    <li><a class="dropdown-item f-16 fw-400 " href="home-care-nurse.html">Home Care
+                                            Nurse</a></li>
+                                    <li><a class="dropdown-item f-16 fw-400 " href="pharm-consult.html">Pharmacist
+                                            Consultation</a></li>
+                                    <li><a class="dropdown-item f-16 fw-400 " href="doc-consult.html">Doctor
+                                            Consultation</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item me-5">
+                                <a class="nav-link" href="membership.html" tabindex="-1"
+                                    aria-disabled="true">Membership</a>
+                            </li>
+                            <li class="nav-item me-5">
+                                <a class="nav-link" href="pharm-supply.html" tabindex="-1" aria-disabled="true">
+                                    Pharmaceutical
+                                    Supply</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+
+                            <button class="btn btn-outline-as-primary me-3" onclick="download()" type="button">Download app</button>
+                            <button class="btn btn-as-primary" type="submit">Login</button>
+
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- end of main nav -->
     <main>
         <section class="about-us item-bg2">
             <div class="about-content">
@@ -170,15 +176,20 @@
                 <div class="row">
                     <div class="col-md-6 mb-3">
                         <div class="about-text pe-5">
-                            <p>Allsmart Healthcare is a leading Healthcare and Pharmaceutical company based here in Nigeria.
+                            <p>Allsmart Healthcare is a leading Healthcare and Pharmaceutical company based here in
+                                Nigeria.
                                 With the
-                                primary objective of bridging the gap between healthcare providers and clients ensuring the
+                                primary objective of bridging the gap between healthcare providers and clients ensuring
+                                the
                                 prompt
-                                distribution of pharmaceutical products and healthcare services. Our comprehensive offerings
+                                distribution of pharmaceutical products and healthcare services. Our comprehensive
+                                offerings
                                 cater to a
-                                diverse clientele, encompassing Individuals, Corporate Entities, NGOs, Government Agencies,
+                                diverse clientele, encompassing Individuals, Corporate Entities, NGOs, Government
+                                Agencies,
                                 Smaller
-                                Retail Pharmacies, and Esteemed healthcare professionals. Our commitment lies in providing both
+                                Retail Pharmacies, and Esteemed healthcare professionals. Our commitment lies in
+                                providing both
                                 generic
                                 and branded medications to our valued customers.</p>
                         </div>
@@ -187,11 +198,11 @@
                         <div class="about-img">
                             <img src="assets/images/banners/about-img.jpg" class="img-fluid" alt="about-img">
                         </div>
-                       
+
                     </div>
                 </div>
-                
-              
+
+
 
             </div>
 
@@ -212,7 +223,8 @@
                             <p class="vision-text f-16">
                                 Our vision is to ensure that we are the preferred Healthcare Company in Nigeria,
                                 distinguished by our supply of superior-quality drugs and healthcare services that
-                                encompasses comfort, accessibility, affordability, and prompt results. Furthermore, we are dedicated to
+                                encompasses comfort, accessibility, affordability, and prompt results. Furthermore, we
+                                are dedicated to
                                 providing our valued customers with the most competitive prices for these essential
                                 services. As we progress, we also aspire to ascend as the foremost brand in the
                                 industry by the year 2025.
@@ -225,7 +237,8 @@
                             <p class="mission-text f-16">
                                 Our mission at Allsmart Healthcare is to empower individuals and communities with
                                 accessible, high-quality healthcare solutions. We are here to provide top-notch
-                                healthcare services that is easy to access, personalized, and effective. Together, we aim to
+                                healthcare services that is easy to access, personalized, and effective. Together, we
+                                aim to
                                 create a healthier and happier world.
                             </p>
                         </div>
@@ -248,7 +261,7 @@
 
                                 <div class="col-12">
                                     <div class="value-icon mb-4 d-flex justify-content-center align-items-center">
-                                       <img src="assets/images/about-icons/lovely.png" alt="love-emoji">
+                                        <img src="assets/images/about-icons/lovely.png" alt="love-emoji">
                                     </div>
                                 </div>
                                 <div class="col-12">
@@ -270,7 +283,7 @@
 
                                 <div class="col-12">
                                     <div class="value-icon mb-4 d-flex justify-content-center align-items-center">
-                                       <img src="assets/images/about-icons/happyemoji.png" alt="">
+                                        <img src="assets/images/about-icons/happyemoji.png" alt="">
                                     </div>
                                 </div>
                                 <div class="col-12">
@@ -291,7 +304,7 @@
 
                                 <div class="col-12">
                                     <div class="value-icon mb-4 d-flex justify-content-center align-items-center">
-                                       <img src="assets/images/about-icons/power.png" alt="">
+                                        <img src="assets/images/about-icons/power.png" alt="">
                                     </div>
                                 </div>
                                 <div class="col-12">
@@ -306,13 +319,13 @@
 
                     </div>
                     <div class="col-lg-4 col-sm-6 col-md-6 mb-3 ms-auto" data-aos="fade-right" data-aos-duration="300"
-                    data-aos-easing="ease-in-sine">
-                        <div class="card card-body shadow p-5 mb-5 w-100 " >
+                        data-aos-easing="ease-in-sine">
+                        <div class="card card-body shadow p-5 mb-5 w-100 ">
                             <div class="row">
 
                                 <div class="col-12">
                                     <div class="value-icon mb-4 d-flex justify-content-center align-items-center">
-                                       <img src="assets/images/about-icons/Vector.png" alt="">
+                                        <img src="assets/images/about-icons/Vector.png" alt="">
                                     </div>
                                 </div>
                                 <div class="col-12">
@@ -328,13 +341,13 @@
 
                     </div>
                     <div class="col-lg-4 col-sm-6 col-md-6 mb-3 me-auto" data-aos="fade-right" data-aos-duration="500"
-                    data-aos-easing="ease-in-sine">
-                        <div class="card card-body shadow p-5 mb-5 w-100 " >
+                        data-aos-easing="ease-in-sine">
+                        <div class="card card-body shadow p-5 mb-5 w-100 ">
                             <div class="row">
 
                                 <div class="col-12">
                                     <div class="value-icon mb-4 d-flex justify-content-center align-items-center">
-                                       <img src="assets/images/about-icons/user-tick.png" alt="">
+                                        <img src="assets/images/about-icons/user-tick.png" alt="">
                                     </div>
                                 </div>
                                 <div class="col-12">
@@ -389,16 +402,16 @@
                                     mobile app</span>
                             </div>
                             <div class="downonlod-btn">
-                                <a href="https://play.google.com/store/apps" target="_blank" class="store-btn mb-3">
+                                <button   type="button" onclick="download()" class="store-btn mb-3">
                                     <img src="assets/images/g-play-logo.png" class=""></img>
                                     <span>Download on</span>
                                     <p class="f-16">Google Play</p>
-                                </a>
-                                <a href="https://www.apple.com/store" target="_blank" class="store-btn active">
+                                </button>
+                                <button type="button" onclick="download()" class="store-btn active">
                                     <i class="fa fa-apple"></i>
                                     <span>Download on</span>
                                     <p class="f-16">Apple Store</p>
-                                </a>
+                                </button>
                             </div>
                         </div>
 
@@ -558,10 +571,16 @@
             </div>
         </div>
     </footer>
+       <!--back-to-top start-->
+       <a id="totop" href="#top">
+        <i class="fa fa-angle-up"></i>
+    </a>
+    <!--back-to-top end-->
     <script src="assets/js/bs-js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/plugin/slick.js"></script>
     <script src="assets/js/plugin/aos.js"></script>
+    <script src="assets/js/plugin/sweet-alert.js"></script>
     <script src="assets/js/plugin.js"></script>
     <script src="assets/js/main.js"></script>
     <script>

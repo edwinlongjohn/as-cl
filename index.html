@@ -34,13 +34,21 @@
     <link rel="stylesheet" href="assets/css/plugin/animate.css">
     <link rel="stylesheet" href="assets/css/plugin/aos.css">
     <link rel="stylesheet" href="assets/css/plugin/slick.css">
+    <link rel="stylesheet" href="assets/css/plugin/sweet-alert.css">
     <link rel="stylesheet" href="assets/css/bs-css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
-    
+
 </head>
 
 <body>
+    <!-- preloader starts -->
+    <div class="loader-bg">
+        <div class="loader">
+            <img src="assets/images/logo-2.png" alt="all_smart">
+        </div>
+    </div>
+    <!-- preloader ends -->
     <!-- Start Heading Area -->
     <header class="header mt-5">
         <div class="header-top mb-5">
@@ -96,69 +104,69 @@
         </div>
         </div>
         <!-- End of Header Top -->
-        <!-- start of main nav -->
-        <div class="header-nav bg-white  pt-2">
-            <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light ">
-                    <div class="container-fluid">
-                        <span class="border  p-3">
-                            <a class="navbar-brand text-dark" href="#">Menu</a>
-                            <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                        </span>
-
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav-scroll"
-                                style="--bs-scroll-height:500px;">
-                                <li class="nav-item me-5">
-                                    <a class="nav-link active " aria-current="page" href="index.html">Home</a>
-                                </li>
-                                <li class="nav-item me-5">
-                                    <a class="nav-link " aria-current="page" href="about-us.html">About Us</a>
-                                </li>
-                                <li class="nav-item dropdown me-5">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">Services</a>
-                                    <ul class="dropdown-menu ps-2 pt-4 pb-5 pe-5" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item f-16 fw-400 " href="home-lab-test.html">Home Lab
-                                                Test</a></li>
-                                        <li><a class="dropdown-item f-16 fw-400 " href="lab-visit.html">Book Lab
-                                                Visit</a></li>
-                                        <li><a class="dropdown-item f-16 fw-400 " href="home-care-nurse.html">Home Care
-                                                Nurse</a></li>
-                                        <li><a class="dropdown-item f-16 fw-400 " href="pharm-consult.html">Pharmacist
-                                                Consultation</a></li>
-                                        <li><a class="dropdown-item f-16 fw-400 " href="doc-consult.html">Doctor
-                                                Consultation</a></li>
-                                    </ul>
-                                </li>
-
-                                <li class="nav-item me-5">
-                                    <a class="nav-link" href="membership.html" tabindex="-1"
-                                        aria-disabled="true">Membership</a>
-                                </li>
-                                <li class="nav-item me-5">
-                                    <a class="nav-link" href="pharm-supply.html" tabindex="-1" aria-disabled="true">
-                                        Pharmaceutical
-                                        Supply</a>
-                                </li>
-                            </ul>
-                            <form class="d-flex">
-
-                                <button class="btn btn-outline-as-primary me-3" type="submit">Download app</button>
-                                <button class="btn btn-as-primary" type="submit">Login</button>
-
-                            </form>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </div>
-        <!-- end of main nav -->
     </header>
+    <!-- start of main nav -->
+    <div class="header-nav bg-white  pt-2 pb-2">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <div class="container-fluid">
+                    <span class="border  p-3">
+                        <a class="navbar-brand text-dark" href="#">Menu</a>
+                        <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </span>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav-scroll" style="--bs-scroll-height:500px;">
+                            <li class="nav-item me-5">
+                                <a class="nav-link active " aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item me-5">
+                                <a class="nav-link " aria-current="page" href="about-us.html">About Us</a>
+                            </li>
+                            <li class="nav-item dropdown me-5">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                                <ul class="dropdown-menu ps-2 pt-4 pb-5 pe-5" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item f-16 fw-400 " href="home-lab-test.html">Home Lab
+                                            Test</a></li>
+                                    <li><a class="dropdown-item f-16 fw-400 " href="lab-visit.html">Book Lab
+                                            Visit</a></li>
+                                    <li><a class="dropdown-item f-16 fw-400 " href="home-care-nurse.html">Home Care
+                                            Nurse</a></li>
+                                    <li><a class="dropdown-item f-16 fw-400 " href="pharm-consult.html">Pharmacist
+                                            Consultation</a></li>
+                                    <li><a class="dropdown-item f-16 fw-400 " href="doc-consult.html">Doctor
+                                            Consultation</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item me-5">
+                                <a class="nav-link" href="membership.html" tabindex="-1"
+                                    aria-disabled="true">Membership</a>
+                            </li>
+                            <li class="nav-item me-5">
+                                <a class="nav-link" href="pharm-supply.html" tabindex="-1" aria-disabled="true">
+                                    Pharmaceutical
+                                    Supply</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+
+                            <button class="btn btn-outline-as-primary me-3" onclick="download()" type="button">Download
+                                app</button>
+                            <button class="btn btn-as-primary" type="submit">Login</button>
+
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- end of main nav -->
 
     <!-- main content starts from here -->
     <main>
@@ -202,11 +210,11 @@
                         <a href="vaccination.html">
                             <div class="vac-bg ">
                                 <img src="assets/images/home-vac-img.png" class="img-fluid vac-img" alt="vac-img">
-    
-    
+
+
                             </div>
                         </a>
-                       
+
 
                     </div>
                     <div class="col-md-6 ">
@@ -255,8 +263,8 @@
                     <div class="tab-pane fade show active" id="pills-package-1" role="tabpanel"
                         aria-labelledby="pills-home-tab">
                         <div class="row">
-                            
-                           
+
+
                             <div class="col-md-4" data-aos="fade-right" data-aos-duration="700"
                                 data-aos-easing="ease-in-sine">
                                 <div class="package-content-1">
@@ -270,9 +278,12 @@
                                                     <h5 class="package-price-text">NGN19,800</h5>
                                                 </div>
                                                 <div class="col-6">
-                                                    <button class="btn btn-package-as-primary f-12 fw-600">
-                                                        Order Package
-                                                    </button>
+                                                    <a href="order-package.html">
+                                                        <button class="btn btn-package-as-primary f-12 fw-600">
+                                                            Order Package
+                                                        </button>
+                                                    </a>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -310,57 +321,60 @@
                                 </div>
                             </div>
                             <div class="col-md-4" data-aos="fade-right" data-aos-duration="500"
-                            data-aos-easing="ease-in-sine">
-                            <div class="package-content-1">
-                                <div class="card shadow">
-                                    <h5 class="custom-card-title mt-5">
-                                        Silver Package
-                                    </h5>
-                                    <div class="package-components mt-3">
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <h5 class="package-price-text">NGN 33,000</h5>
-                                            </div>
-                                            <div class="col-6">
-                                                <button class="btn btn-package-as-primary f-12 fw-600">
-                                                    Order Package
-                                                </button>
+                                data-aos-easing="ease-in-sine">
+                                <div class="package-content-1">
+                                    <div class="card shadow">
+                                        <h5 class="custom-card-title mt-5">
+                                            Silver Package
+                                        </h5>
+                                        <div class="package-components mt-3">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <h5 class="package-price-text">NGN 33,000</h5>
+                                                </div>
+                                                <div class="col-6">
+                                                    <a href="order-package.html">
+
+                                                    </a>
+                                                    <button class="btn btn-package-as-primary f-12 fw-600">
+                                                        Order Package
+                                                    </button>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="d-flex  mb-3">
-                                        <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <span>full blood count</span>
-                                    </div>
-                                    <div class="d-flex  mb-3">
-                                        <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <span>Erythrocyte Sedimentation Rate (ESR)</span>
-                                    </div>
-                                    <div class="d-flex  mb-3">
-                                        <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <span>Liver Function Test</span>
-                                    </div>
-                                    <div class="d-flex  mb-3">
-                                        <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <span>Kidney Function Test</span>
-                                    </div>
-                                    <div class="d-flex  mb-3">
-                                        <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <span>Blood Sugar Test</span>
-                                    </div>
-                                    <div class="d-flex  mb-3">
-                                        <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <span>Widal Test</span>
-                                    </div>
-                                    <div class="d-flex mt-3 mx-auto">
-                                        <div class="more">
-                                            <i class="ti ti-control-forward  mt-2 text-primary"></i>
-                                            <a href="packages.html" class="check-box-anchor">View More</a>
+                                        <div class="d-flex  mb-3">
+                                            <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
+                                            <span>full blood count</span>
+                                        </div>
+                                        <div class="d-flex  mb-3">
+                                            <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
+                                            <span>Erythrocyte Sedimentation Rate (ESR)</span>
+                                        </div>
+                                        <div class="d-flex  mb-3">
+                                            <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
+                                            <span>Liver Function Test</span>
+                                        </div>
+                                        <div class="d-flex  mb-3">
+                                            <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
+                                            <span>Kidney Function Test</span>
+                                        </div>
+                                        <div class="d-flex  mb-3">
+                                            <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
+                                            <span>Blood Sugar Test</span>
+                                        </div>
+                                        <div class="d-flex  mb-3">
+                                            <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
+                                            <span>Widal Test</span>
+                                        </div>
+                                        <div class="d-flex mt-3 mx-auto">
+                                            <div class="more">
+                                                <i class="ti ti-control-forward  mt-2 text-primary"></i>
+                                                <a href="packages.html" class="check-box-anchor">View More</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                             </div>
                             <div class="col-md-4" data-aos="fade-right" data-aos-duration="300"
                                 data-aos-easing="ease-in-sine">
                                 <div class="package-content-1">
@@ -374,9 +388,12 @@
                                                     <h5 class="package-price-text">NGN 87,600</h5>
                                                 </div>
                                                 <div class="col-6">
-                                                    <button class="btn btn-package-as-primary f-12 fw-600">
-                                                        Order Package
-                                                    </button>
+                                                    <a href="order-package.html">
+                                                        <button class="btn btn-package-as-primary f-12 fw-600">
+                                                            Order Package
+                                                        </button>
+                                                    </a>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -428,9 +445,12 @@
                                                     <h5 class="package-price-text">NGN 39,000</h5>
                                                 </div>
                                                 <div class="col-6">
-                                                    <button class="btn btn-package-as-primary f-12 fw-600">
-                                                        Order Package
-                                                    </button>
+                                                    <a href="order-package.html">
+                                                        <button class="btn btn-package-as-primary f-12 fw-600">
+                                                            Order Package
+                                                        </button>
+                                                    </a>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -480,9 +500,12 @@
                                                     <h5 class="package-price-text">NGN 61,800</h5>
                                                 </div>
                                                 <div class="col-6">
-                                                    <button class="btn btn-package-as-primary f-12 fw-600">
-                                                        Order Package
-                                                    </button>
+                                                    <a href="order-package.html">
+                                                        <button class="btn btn-package-as-primary f-12 fw-600">
+                                                            Order Package
+                                                        </button>
+                                                    </a>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -535,9 +558,12 @@
                                                     <h5 class="package-price-text">NGN 49,800</h5>
                                                 </div>
                                                 <div class="col-6">
-                                                    <button class="btn btn-package-as-primary f-12 fw-600 ">
-                                                        Order Package
-                                                    </button>
+                                                    <a href="order-package.html">
+                                                        <button class="btn btn-package-as-primary f-12 fw-600 ">
+                                                            Order Package
+                                                        </button>
+                                                    </a>
+                                                   
                                                 </div>
                                             </div>
                                         </div>
@@ -972,7 +998,7 @@
                         </div>
                     </div>
 
-                    
+
                 </div>
             </div>
         </section>
@@ -1010,16 +1036,16 @@
                                     mobile app</span>
                             </div>
                             <div class="downonlod-btn">
-                                <a href="https://play.google.com/store/apps" target="_blank" class="store-btn mb-3">
+                                <button type="button" onclick="download()" class="store-btn mb-3">
                                     <img src="assets/images/g-play-logo.png" class=""></img>
                                     <span>Download on</span>
                                     <p class="f-16">Google Play</p>
-                                </a>
-                                <a href="https://www.apple.com/store" target="_blank" class="store-btn active">
+                                </button>
+                                <button type="button" onclick="download()" class="store-btn active">
                                     <i class="fa fa-apple"></i>
                                     <span>Download on</span>
                                     <p class="f-16">Apple Store</p>
-                                </a>
+                                </button>
                             </div>
                         </div>
 
@@ -1181,12 +1207,18 @@
             </div>
         </div>
     </footer>
+       <!--back-to-top start-->
+       <a id="totop" href="#top">
+        <i class="fa fa-angle-up"></i>
+    </a>
+    <!--back-to-top end-->
 
     <script src="assets/js/bs-js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/plugin/slick.js"></script>
     <script src="assets/js/plugin/aos.js"></script>
     <script src="assets/js/plugin.js"></script>
+    <script src="assets/js/plugin/sweet-alert.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
         AOS.init();

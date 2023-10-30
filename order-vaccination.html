@@ -34,12 +34,19 @@
     <link rel="stylesheet" href="assets/css/plugin/nice-select.css">
     <link rel="stylesheet" href="assets/css/plugin/slick.css">
     <link rel="stylesheet" href="assets/css/plugin/aos.css">
+    <link rel="stylesheet" href="assets/css/plugin/sweet-alert.css">
     <link rel="stylesheet" href="assets/css/bs-css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
 <body>
+      <!-- preloader starts -->
+ <div class="loader-bg">
+    <div class="loader">
+        <img src="assets/images/logo-2.png" alt="all_smart">
+    </div>
+</div>
     <!-- Start Heading Area -->
     <header class="header mt-5">
         <div class="header-top mb-5">
@@ -95,69 +102,68 @@
         </div>
         </div>
         <!-- End of Header Top -->
-        <!-- start of main nav -->
-        <div class="header-nav bg-white  pt-2">
-            <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light ">
-                    <div class="container-fluid">
-                        <span class="border  p-3">
-                            <a class="navbar-brand text-dark" href="#">Menu</a>
-                            <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                        </span>
-
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav-scroll"
-                                style="--bs-scroll-height:500px;">
-                                <li class="nav-item me-5">
-                                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                                </li>
-                                <li class="nav-item me-5">
-                                    <a class="nav-link " aria-current="page" href="about-us.html">About Us</a>
-                                </li>
-                                <li class="nav-item dropdown me-5">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">Services</a>
-                                    <ul class="dropdown-menu ps-2 pt-4 pb-5 pe-5" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item f-16 fw-400 " href="home-lab-test.html">Home Lab
-                                                Test</a></li>
-                                        <li><a class="dropdown-item f-16 fw-400 " href="lab-visit.html">Book Lab
-                                                Visit</a></li>
-                                        <li><a class="dropdown-item f-16 fw-400 " href="home-care-nurse.html">Home Care
-                                                Nurse</a></li>
-                                        <li><a class="dropdown-item f-16 fw-400 " href="pharm-consult.html">Pharmacist
-                                                Consultation</a></li>
-                                        <li><a class="dropdown-item f-16 fw-400 " href="doc-consult.html">Doctor
-                                                Consultation</a></li>
-                                    </ul>
-                                </li>
-
-                                <li class="nav-item me-5">
-                                    <a class="nav-link" href="membership.html" tabindex="-1"
-                                        aria-disabled="true">Membership</a>
-                                </li>
-                                <li class="nav-item me-5">
-                                    <a class="nav-link" href="pharm-supply.html" tabindex="-1" aria-disabled="true">
-                                        Pharmaceutical
-                                        Supply</a>
-                                </li>
-                            </ul>
-                            <form class="d-flex">
-
-                                <button class="btn btn-outline-as-primary me-3" type="submit">Download app</button>
-                                <button class="btn btn-as-primary" type="submit">Login</button>
-
-                            </form>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </div>
-        <!-- end of main nav -->
     </header>
+    <!-- start of main nav -->
+    <div class="header-nav bg-white  pt-2 pb-2">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <div class="container-fluid">
+                    <span class="border  p-3">
+                        <a class="navbar-brand text-dark" href="#">Menu</a>
+                        <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </span>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav-scroll" style="--bs-scroll-height:500px;">
+                            <li class="nav-item me-5">
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item me-5">
+                                <a class="nav-link " aria-current="page" href="about-us.html">About Us</a>
+                            </li>
+                            <li class="nav-item dropdown me-5">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                                <ul class="dropdown-menu ps-2 pt-4 pb-5 pe-5" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item f-16 fw-400 " href="home-lab-test.html">Home Lab
+                                            Test</a></li>
+                                    <li><a class="dropdown-item f-16 fw-400 " href="lab-visit.html">Book Lab
+                                            Visit</a></li>
+                                    <li><a class="dropdown-item f-16 fw-400 " href="home-care-nurse.html">Home Care
+                                            Nurse</a></li>
+                                    <li><a class="dropdown-item f-16 fw-400 " href="pharm-consult.html">Pharmacist
+                                            Consultation</a></li>
+                                    <li><a class="dropdown-item f-16 fw-400 " href="doc-consult.html">Doctor
+                                            Consultation</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item me-5">
+                                <a class="nav-link" href="membership.html" tabindex="-1"
+                                    aria-disabled="true">Membership</a>
+                            </li>
+                            <li class="nav-item me-5">
+                                <a class="nav-link" href="pharm-supply.html" tabindex="-1" aria-disabled="true">
+                                    Pharmaceutical
+                                    Supply</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+
+                            <button class="btn btn-outline-as-primary me-3" onclick="download()" type="button">Download app</button>
+                            <button class="btn btn-as-primary" type="submit">Login</button>
+
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- end of main nav -->
     <!-- start main content -->
     <main>
         <section class="about-us item-bg5">
@@ -169,7 +175,7 @@
                 </div>
             </div>
         </section>
-        
+
         <section class="sign-up  p-10tb text-center">
             <div class="container pwlr-13">
                 <div class="card card-body p-5  shadow">
@@ -195,7 +201,8 @@
                             <div class="col-md-6">
                                 <div class="form-group mb-5">
                                     <label for="name" class="mb-2"> Your name</label>
-                                    <input type="text" required id="name" placeholder="Enter full name" class="form-control">
+                                    <input type="text" required id="name" placeholder="Enter full name"
+                                        class="form-control">
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -212,14 +219,16 @@
                         <div class="row">
                             <div class="form-group mb-5">
                                 <label for="age" class="mb-2"> Your Age</label>
-                                <input type="text" required id="phone" placeholder="Enter your age" class="form-control">
+                                <input type="text" required id="phone" placeholder="Enter your age"
+                                    class="form-control">
                             </div>
                             <div class="form-group mb-5">
                                 <label for="phone" class="mb-2"> Your Phone Number</label>
-                                <input type="tel" required id="phone" placeholder="Enter phone number" class="form-control">
+                                <input type="tel" required id="phone" placeholder="Enter phone number"
+                                    class="form-control">
                             </div>
                         </div>
-                       
+
 
                         <div class="form-group mb-5 ">
                             <label for="email" class="mb-2"> Your Email</label>
@@ -228,17 +237,20 @@
                         </div>
                         <div class="form-group mb-5">
                             <label for="address" class="mb-2"> Home Address</label>
-                            <input type="text" required id="address" placeholder="Enter home address" class="form-control">
+                            <input type="text" required id="address" placeholder="Enter home address"
+                                class="form-control">
                         </div>
                         <div class="form-group mb-5">
-                            <label for="gender" class="mb-2"> Have you done this vaccine test? </label>
-                            <select class="nice-select wide" id="gender">
+                            <label for="answer" class="mb-2"> Have you done this vaccine test? </label>
+                            <select class="nice-select wide" id="answer">
                                 <option data-display="Select answer">Answer</option>
                                 <option value="yes">Yes</option>
                                 <option value="no">No</option>
                             </select>
                         </div>
-
+                        <div class="no-pop-up-message p-5">
+                            Note: To ensure your vaccine is administered safely and effectively, we request you do a pre-vaccine test to know your health status. Please connect with us and we will guide you through the process.
+                        </div>
                     </div>
                     <div class="register-button pt-5 pb-5">
                         <button class="btn as-register-btn f-16 fw-600 text-white"> Submit</button>
@@ -281,16 +293,16 @@
                                     mobile app</span>
                             </div>
                             <div class="downonlod-btn">
-                                <a href="https://play.google.com/store/apps" target="_blank" class="store-btn mb-3">
+                                <button   type="button" onclick="download()" class="store-btn mb-3">
                                     <img src="assets/images/g-play-logo.png" class=""></img>
                                     <span>Download on</span>
                                     <p class="f-16">Google Play</p>
-                                </a>
-                                <a href="https://www.apple.com/store" target="_blank" class="store-btn active">
+                                </button>
+                                <button type="button" onclick="download()" class="store-btn active">
                                     <i class="fa fa-apple"></i>
                                     <span>Download on</span>
                                     <p class="f-16">Apple Store</p>
-                                </a>
+                                </button>
                             </div>
                         </div>
 
@@ -454,14 +466,20 @@
         </div>
     </footer>
 
+    <!--back-to-top start-->
+   <a id="totop" href="#top">
+    <i class="fa fa-angle-up"></i>
+</a>
+<!--back-to-top end-->
     <script src="assets/js/bs-js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/plugin/jquery.nice-select.min.js"></script>
     <script src="assets/js/plugin/slick.js"></script>
     <script src="assets/js/plugin.js"></script>
+    <script src="assets/js/plugin/sweet-alert.js"></script>
     <script src="assets/js/plugin/aos.js"></script>
     <script src="assets/js/main.js"></script>
-   
+
     <script>
         AOS.init();
         $('select').niceSelect();
