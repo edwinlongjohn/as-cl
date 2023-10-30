@@ -167,14 +167,13 @@
     <!-- end of main nav -->
     <!-- start main content -->
     <main>
-        <section class="about-us item-bg6">
+        <section class="about-us item-bg5">
             <div class="about-content">
-                <h1 class="text-white">Our Packages</h1>
-                <div class="pwlr-sm-10">
-                    <p class="f-18 text-white lh-28">Gain clarity and control on your health journey with Allsmartcare
-                        by your side. We're here to help you every step of the way.</p>
+                <h1 class="text-white p-1">Get Vaccinated with Allsmart Healthcare</h1>
+                <div class="pwlr-lg-28 pwlr-sm-10">
+                    <p class="f-18 text-white lh-28">Get vaccinated and protect yourself and your family from serious
+                        illnesses like Flu, Measles and Typhoid.</p>
                 </div>
-
             </div>
         </section>
 
@@ -183,12 +182,12 @@
                 <div class="card card-body p-5  shadow">
                     <div class="sign-up-header mt-5 mb-5">
                         <h3 class="fw-600">
-                            Package Test Form
+                            Order Vaccine
                         </h3>
-                        <p class="f-16 p-2">Fill this form below. Our team will get in touch with you shortly</p>
+                        <p class="f-16 p-2">Kindly fill in the details of the person that you are ordering this service
+                            for. Our team will get in touch with you shortly</p>
                     </div>
                     <div class="sign-up-form pwlr-5">
-
                         <div class="col-12">
                             <div class="form-group mb-5">
                                 <label for="gender" class="mb-2"> Preferred Gender of Attendant </label>
@@ -243,23 +242,20 @@
                             <input type="text" required id="address" placeholder="Enter home address"
                                 class="form-control">
                         </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group mb-5">
-                                    <label for="date" class="mb-2"> Test Date</label>
-                                    <input type="date" required id="date" placeholder="select date"
-                                        class="form-control">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group mb-5">
-                                    <label for="time" class="mb-2"> Test Time</label>
-                                    <input type="time" required id="time" placeholder="Select Time"
-                                        class="form-control">
-                                </div>
-                            </div>
+                        <div class="form-group mb-5">
+                            <label for="answer" class="mb-2"> Have the person you are ordering for done this vaccine
+                                test? </label>
+                            <select class="nice-select wide" id="answer">
+                                <option data-display="Select answer">Answer</option>
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
                         </div>
-
+                        <div class="no-pop-up-message p-5">
+                            Note: To ensure the vaccine is administered safely and effectively, we request the person
+                            does a pre-vaccine test to know his/her health status. Please connect with us and we will
+                            guide you through the process.
+                        </div>
                     </div>
                     <div class="register-button pt-5 pb-5">
                         <button class="btn as-register-btn f-16 fw-600 text-white"> Submit</button>
@@ -475,11 +471,14 @@
         </div>
     </footer>
 
+
+
     <!--back-to-top start-->
     <a id="totop" href="#top">
         <i class="fa fa-angle-up"></i>
     </a>
     <!--back-to-top end-->
+
     <script src="assets/js/bs-js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/plugin/jquery.nice-select.min.js"></script>

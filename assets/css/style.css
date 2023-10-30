@@ -1,6 +1,13 @@
 /*****
 TABLE OF CONTENT
 
+1.) Font family.
+2.) root variables.
+3.) custom styling elements.
+4.) custom styled classes.
+5.) header styling.
+6.) hero section styling.
+
 *********/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,900;1,500;1,600;1,700&family=Lato:ital,wght@0,100;1,100&family=Manrope:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
@@ -286,6 +293,11 @@ label {
   font-size: 1.2rem !important;
 }
 
+.f-11 {
+  font-size: 1.1rem !important;
+}
+
+
 .f-14 {
   font-size: 1.4rem !important;
 }
@@ -305,6 +317,7 @@ label {
 .f-30 {
   font-size: 3rem !important;
 }
+
 
 @media screen and (min-width: 560px) and (max-width: 768) {
   .f-12 {
@@ -358,6 +371,10 @@ label {
   font-weight: 500 !important;
 }
 
+.fw-300 {
+  font-weight: 300 !important;
+}
+
 .pwlr-5 {
   padding-left: 5% !important;
   padding-right: 5% !important;
@@ -368,7 +385,7 @@ label {
     padding-left: 5% !important;
     padding-right: 5% !important;
   }
-  
+
 }
 
 .pwlr-13 {
@@ -429,6 +446,7 @@ label {
     padding-left: 5% !important;
     padding-right: 5% !important;
   }
+
   .plr-sm-4 {
     padding-left: 2rem !important;
     padding-right: 2rem !important;
@@ -444,7 +462,7 @@ label {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
-  
+
 
   .pwlr-13 {
     padding-left: 11% !important;
@@ -452,6 +470,7 @@ label {
   }
 
 }
+
 @media (max-width:600px) {
 
   .plr-8 {
@@ -465,6 +484,11 @@ label {
   padding-top: 10rem;
   padding-bottom: 10rem;
 }
+
+.p-10b {
+  padding-bottom: 10rem;
+}
+
 .p-13tb {
   padding-top: 13rem;
   padding-bottom: 13rem;
@@ -474,6 +498,10 @@ label {
 
   .p-10tb {
     padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  .p-10b {
     padding-bottom: 8rem;
   }
 
@@ -491,6 +519,10 @@ label {
     padding-bottom: 6rem;
   }
 
+  .p-10b {
+    padding-bottom: 6rem;
+  }
+
   .p-13tb {
     padding-top: 8rem;
     padding-bottom: 8rem;
@@ -504,6 +536,11 @@ label {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
+
+  .p-10b {
+    padding-bottom: 5rem;
+  }
+
   .p-13tb {
     padding-top: 6rem;
     padding-bottom: 6rem;
@@ -521,14 +558,15 @@ label {
 }
 
 .mt-8 {
-  margin-top: 8rem ;
+  margin-top: 8rem;
 }
+
 @media (min-width:560px) and (max-width:767px) {
   .mt-8 {
     margin-top: 6rem;
   }
- 
- 
+
+
 
 }
 
@@ -561,11 +599,12 @@ label {
 .text-justify {
   text-align: justify;
 }
+
 @media screen and (max-width:578px) {
-  .mobile-hidden{
-    display:none;
+  .mobile-hidden {
+    display: none;
   }
-  
+
 }
 
 .btn-outline-as-primary,
@@ -691,6 +730,7 @@ label {
 .bg-as-primary-1 {
   background-color: var(--as-primary-color-4);
 }
+
 /*custom check-box */
 .check-box-component input[type="checkbox"] {
   position: relative;
@@ -724,30 +764,90 @@ label {
   top: 10px;
   left: 15px;
 }
-.multiple-text-component{
+
+.multiple-text-component {
   display: flex;
   justify-content: flex-end;
   padding-right: 2%;
   margin-bottom: 2rem;
 }
-.multiple-text-component:hover h5{
-  color: var(--as-secondary-color);
+
+.multiple-text-component .btn-multiple,
+.multiple-text-component .btn-multiple:link {
+  padding: 1.5rem 2.5rem;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  background-color: var(--as-secondary-color);
+  color: #fff;
+  font-size: inherit;
+  font-weight: bold;
+  backface-visibility: hidden;
+  display: inline-block;
+  transition: all .4s;
+  cursor: pointer;
 }
+
+.multiple-text-component .btn-multiple:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 -3px 10px rgba(10, 154, 116, 0.534), 0 -5px 20px rgba(142, 240, 214, 0.61);
+}
+
+.multiple-text-component .btn-multiple:active {
+  transform: translateY(-1px);
+  box-shadow: 0 -3px 10px rgba(10, 154, 116, 0.178), 0 -5px 20px rgba(142, 240, 214, 0.274);
+}
+
+/*styling modal component */
+.modal-component .modal .modal-content {
+  border-radius: 2rem;
+  width: 100%;
+}
+
+.modal-component .modal .modal-content .modal-header {
+  border-bottom: none;
+  padding-top: 2rem;
+  margin-right: 2rem;
+}
+
+.modal-component .modal .modal-content .modal-body {
+  text-align: center;
+}
+
+.modal-component .modal .modal-content .modal-body .modal-btn-container {
+  margin-top: 3rem;
+  margin-bottom: 7rem;
+}
+
+.modal-component .modal .modal-btn-container .modal-btn {
+  padding: 1.5rem 14rem;
+  border: #333333 solid 1px;
+  border-radius: 3rem;
+  font-size: 2rem;
+  line-height: 24.2px;
+  transition: all .5s ease;
+}
+
+.modal-component .modal .modal-btn-container .modal-btn.btn-1 {
+  padding: 1.5rem 15rem;
+}
+
+.modal-component .modal .modal-btn-container .modal-btn:hover {
+  background: #030166B2;
+  color: #fff;
+}
+
 /*-------------------------------------------
             header styling
 -------------------------------------------*/
 
-header .header-nav.sticky {
-  position: fixed;
-  overflow-x: hidden !important;
-  top: 0;
-  z-index: 1020;
+.header-nav.sticky-top {
   width: 100%;
   z-index: 999;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.2);
   animation: fadeInDown .5s steps(10, end) 0s 1 normal forwards;
   transition: all .4s;
 }
+
 
 @-webkit-keyframes fadeInDown {
   0% {
@@ -758,7 +858,7 @@ header .header-nav.sticky {
   }
 
   50% {
-    background: #0C9B74;
+
     opacity: 0.5;
 
   }
@@ -766,7 +866,6 @@ header .header-nav.sticky {
   100% {
     -webkit-transform: translateY(0);
     opacity: 1;
-    background-color: #0C9B74 !important;
     transform: translateY(0);
   }
 }
@@ -797,9 +896,10 @@ header .header-nav.sticky {
   color: #333;
 }
 
-.header-top-responsive .container{
+.header-top-responsive .container {
   display: none;
 }
+
 .header-top .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -850,30 +950,33 @@ header .header-nav.sticky {
 }
 
 @media screen and (max-width:767px) {
-  
+
   .header-top {
     display: none;
   }
-  
-  .header-top-responsive .container{
+
+  .header-top-responsive .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     justify-content: space-between;
   }
-  .header-top-responsive .container i{
-    color:  rgba(136, 136, 136, 1);
+
+  .header-top-responsive .container i {
+    color: rgba(136, 136, 136, 1);
     font-weight: 100;
     font-size: 2rem;
   }
-  .header-top-responsive .container span i{
+
+  .header-top-responsive .container span i {
     font-size: 2rem;
   }
-  .responsive-header-left{
-    position:relative;
+
+  .responsive-header-left {
+    position: relative;
   }
 
-  .header-top-responsive .search-box{
+  .header-top-responsive .search-box {
     display: none;
     position: absolute;
     top: 70px;
@@ -881,19 +984,21 @@ header .header-nav.sticky {
     right: 30px;
     margin-bottom: 2rem;
   }
-  .open{
+
+  .open {
     display: block !important;
   }
-  .header-top-responsive .search-box form input[type='text'].responsive-search-input{
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-  border-radius: 5rem;
-  padding-left: 5rem;
-  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 5px 0 rgba(210, 243, 245, 0.568);
-  ;
-}
 
-  .header-top-responsive .search-box form button{
+  .header-top-responsive .search-box form input[type='text'].responsive-search-input {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    border-radius: 5rem;
+    padding-left: 5rem;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 5px 0 rgba(210, 243, 245, 0.568);
+    ;
+  }
+
+  .header-top-responsive .search-box form button {
     position: absolute;
     top: 12px;
     right: 20px;
@@ -922,6 +1027,7 @@ header .header-nav.sticky {
 }
 
 /*main nav*/
+
 .header-nav .navbar-nav .nav-item.dropdown .dropdown-menu {
   min-width: 15vw;
   height: auto;
@@ -1093,7 +1199,7 @@ main {
 @media screen and (max-width:600px) {
   .vaccination-section .custom-card {
     width: 100%;
-   
+
   }
 }
 
@@ -1115,7 +1221,7 @@ main {
   .vaccination-section .custom-card h3 {
     width: 100%;
   }
-  
+
 }
 
 .vaccination-section .custom-card p {
@@ -1125,10 +1231,11 @@ main {
   font-weight: 500;
   margin-bottom: 5rem;
 }
+
 @media screen and (max-width:600px) {
   .vaccination-section .custom-card p {
     width: 95%;
-    
+
   }
 }
 
@@ -1204,7 +1311,8 @@ main {
 .package-content-1:hover {
   transform: translateY(1rem);
 }
-.packages-section .package-content-1:hover .card.shadow{
+
+.packages-section .package-content-1:hover .card.shadow {
   box-shadow: none !important;
 }
 
@@ -1215,16 +1323,19 @@ main {
   border-radius: 2rem;
   margin-bottom: 5rem;
 }
-.package-content-1 .card .d-flex a{
+
+.package-content-1 .card .d-flex a {
   border-bottom: #0098DB solid 2px;
 
 }
-.package-content-1 .card .d-flex .more:hover a{
-  border-bottom:var(--as-secondary-color) solid 2px;
+
+.package-content-1 .card .d-flex .more:hover a {
+  border-bottom: var(--as-secondary-color) solid 2px;
   color: var(--as-secondary-color);
   cursor: pointer;
 }
-.package-content-1 .card .d-flex .more:hover i{
+
+.package-content-1 .card .d-flex .more:hover i {
   color: var(--as-secondary-color) !important;
   cursor: fade-in-up;
 }
@@ -1256,23 +1367,29 @@ main {
   height: 11rem;
   display: block;
 }
-.card .services-bg.img-1{
+
+.card .services-bg.img-1 {
   background-image: url(../images/home-services/home-lab-test.png);
 }
-.card .services-bg.img-2{
+
+.card .services-bg.img-2 {
   background-image: url(../images/home-services/book-lab.png);
 }
-.card .services-bg.img-3{
+
+.card .services-bg.img-3 {
   background-image: url(../images/home-services/home-care-nurse.png);
 }
-.card .services-bg.img-4{
+
+.card .services-bg.img-4 {
   background-image: url(../images/home-services/pharm-consult.png);
 
 }
-.card .services-bg.img-5{
+
+.card .services-bg.img-5 {
   background-image: url(../images/home-services/doc-consult.png);
-  
+
 }
+
 /*book section */
 .book-section {
   background-image: linear-gradient(to right bottom, rgba(251, 251, 251, 0.445), rgba(219, 219, 215, 0.301)), url(../images/book-bg.png);
@@ -1640,12 +1757,14 @@ section.about-us {
   background-position: left center;
 
 }
+
 @media screen and (min-width:769px) and (max-width:991px) {
   section.about-us {
     padding: 15rem 0;
   }
 
 }
+
 @media screen and (min-width:579px) and (max-width:768px) {
   section.about-us {
     padding: 10rem 0;
@@ -1687,57 +1806,67 @@ section.about-us::after {
 }
 
 section.about-us.item-bg2 {
-  background-image:linear-gradient(to bottom right, rgba(3, 1, 102, 0.267), rgba(13, 10, 168, 0.199)), url(../images/bg-img/about-bg.jpg);
+  background-image: linear-gradient(to bottom right, rgba(3, 1, 102, 0.267), rgba(13, 10, 168, 0.199)), url(../images/bg-img/about-bg.jpg);
 }
+
 section.about-us.item-bg3 {
   background-image: linear-gradient(to bottom right, rgba(3, 1, 102, 0.671), rgba(13, 10, 168, 0.281)), url(../images/bg-img/membership-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position:top;
+  background-position: top;
 }
+
 section.about-us.item-bg4 {
-  background-image:linear-gradient(to bottom right, rgba(3, 1, 102, 0.267), rgba(13, 10, 168, 0.336)), url(../images/bg-img/pharm-supply-bg.jpg);
+  background-image: linear-gradient(to bottom right, rgba(3, 1, 102, 0.267), rgba(13, 10, 168, 0.336)), url(../images/bg-img/pharm-supply-bg.jpg);
 }
+
 section.about-us.item-bg5 {
-  background-image:linear-gradient(to bottom right, rgba(3, 1, 102, 0.438), rgba(13, 10, 168, 0.171)), url(../images/bg-img/vaccination-bg.jpg);
+  background-image: linear-gradient(to bottom right, rgba(3, 1, 102, 0.438), rgba(13, 10, 168, 0.171)), url(../images/bg-img/vaccination-bg.jpg);
 }
+
 section.about-us.item-bg6 {
   position: relative;
   padding: 20rem 0;
   z-index: 2;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position:top;
-  background-image:linear-gradient(to bottom right, rgba(3, 1, 102, 0.384), rgba(12, 10, 168, 0.322)), url(../images/bg-img/package-bg.jpg);
+  background-position: top;
+  background-image: linear-gradient(to bottom right, rgba(3, 1, 102, 0.384), rgba(12, 10, 168, 0.322)), url(../images/bg-img/package-bg.jpg);
 }
+
 section.about-us.item-bg7 {
   background-image: url(../images/bg-img/contact-bg.png);
 }
+
 section.about-us.item-bg8 {
   background-image: linear-gradient(to bottom right, rgba(3, 1, 102, 0.384), rgba(12, 10, 168, 0.322)), url(../images/bg-img/home-lab-bg.jpg);
 }
+
 section.about-us.item-bg9 {
-  background-image:linear-gradient(to bottom right, rgba(3, 1, 102, 0.384), rgba(12, 10, 168, 0.322)), url(../images/bg-img/home-care-nurse-bg.jpg);
+  background-image: linear-gradient(to bottom right, rgba(3, 1, 102, 0.384), rgba(12, 10, 168, 0.322)), url(../images/bg-img/home-care-nurse-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position:top;
+  background-position: top;
 }
+
 section.about-us.item-bg10 {
-  background-image:linear-gradient(to bottom right, rgba(3, 1, 102, 0.158), rgba(3, 1, 102, 0.322)), url(../images/bg-img/lab-visit-bg.jpg);
+  background-image: linear-gradient(to bottom right, rgba(3, 1, 102, 0.158), rgba(3, 1, 102, 0.322)), url(../images/bg-img/lab-visit-bg.jpg);
 }
+
 section.about-us.item-bg11 {
-  background-image:linear-gradient(to bottom right, rgba(3, 1, 102, 0.6), rgba(3, 1, 102, 0.322)), url(../images/bg-img/pharm-consult-bg.jpg);
+  background-image: linear-gradient(to bottom right, rgba(3, 1, 102, 0.6), rgba(3, 1, 102, 0.322)), url(../images/bg-img/pharm-consult-bg.jpg);
 }
 
 
 
 
 section.about-us.item-bg-2 {
-  background-image: linear-gradient(to bottom right,rgba(3, 1, 102, 0.158), rgba(3, 1, 102, 0.322)), url(../images/bg-img/doc-consult-bg.jpg);
+  background-image: linear-gradient(to bottom right, rgba(3, 1, 102, 0.158), rgba(3, 1, 102, 0.322)), url(../images/bg-img/doc-consult-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position:top;
+  background-position: top;
 }
+
 section.about-us.item-bg-3 {
   background-image: linear-gradient(to bottom right, rgba(3, 1, 102, 0.6), rgba(3, 1, 102, 0.322)), url(../images/bg-img/faq.png);
   background-repeat: no-repeat;
@@ -1757,31 +1886,33 @@ section.about-us.item-bg-3 {
 }
 
 section.about-us-info .about-text p {
-  line-height: 2.8;
+  line-height: 2.4;
   font-weight: 400;
   font-size: 18px;
   color: var(--as-heading-color);
 }
+
 @media screen and (max-width:568px) {
-  section.about-us-info .about-text.pe-5{
+  section.about-us-info .about-text.pe-5 {
     padding-right: 0 !important;
   }
 }
- 
-section.about-us-info .about-img img{
+
+section.about-us-info .about-img img {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 7px 0 rgba(0, 0, 0, 0.2);
   overflow: hidden;
- border-top-right-radius: 5rem;
- border-bottom-left-radius: 5rem;
- -webkit-transition: all 1s ease-out 0s;
+  border-top-right-radius: 5rem;
+  border-bottom-left-radius: 5rem;
+  -webkit-transition: all 1s ease-out 0s;
   -o-transition: all 1s ease-out 0s;
   -moz-transition: all 1s ease-out 0s;
   transition: all 1s ease-out 0s;
 }
-section.about-us-info .about-img:hover img{
+
+section.about-us-info .about-img:hover img {
   -ms-transform: scale(1.1);
   transform: scale(1.1);
-   border-top-right-radius: 0;
+  border-top-right-radius: 0;
   border-bottom-left-radius: 0;
 }
 
@@ -1888,12 +2019,14 @@ section.about-us-info .about-img:hover img{
   position: relative;
   margin-bottom: 8rem;
 }
-@media screen and (max-width:767px){
+
+@media screen and (max-width:767px) {
   .all-packages .package-search {
     margin-bottom: 5rem;
   }
 }
-@media screen and (max-width:568px){
+
+@media screen and (max-width:568px) {
   .all-packages .package-search {
     margin-bottom: 3rem;
   }
@@ -1971,6 +2104,79 @@ section.about-us-info .about-img:hover img{
   border-radius: 1.5rem;
   border: 2px solid var(--as-primary-color-3);
 }
+
+.sign-up.order-summary .summary-card.card.card-body {
+  border: 1px solid #333333B2;
+  border-radius: 1rem;
+  max-height: 25rem;
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+}
+
+.sign-up.order-summary .summary-card.card.card-body::-webkit-scrollbar {
+  width: 10px;
+}
+
+.sign-up.order-summary .summary-card.card.card-body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 5rem;
+}
+
+.sign-up.order-summary .summary-card.card.card-body::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.13);
+  border-radius: 5rem;
+
+}
+
+.sign-up .card.card-body .summary-button {
+  margin-top: 8rem;
+}
+
+.sign-up .card.card-body .successful-text {
+  margin: 15rem 5rem 25rem;
+}
+
+.sign-up .card.card-body .successful-text .successful-subtext {
+  color: #022527;
+  line-height: 50px;
+  text-align: center;
+}
+
+.sign-up .card.card-body .btn-as-primary {
+  padding: 1.5rem 4rem;
+  border-radius: 10px;
+
+}
+
+.sign-up .card.card-body .sign-up-profile-header .profile-img {
+
+  position: relative;
+
+}
+
+.sign-up .card.card-body .sign-up-profile-header .profile-icon {
+  position: absolute;
+  right: 5rem;
+  top: 7rem;
+}
+
+@media screen and (max-width:528px) and (min-width:400px) {
+  .sign-up .card.card-body .sign-up-profile-header .profile-icon {
+    position: absolute;
+    right: 2rem;
+    top: 7rem;
+  }
+}
+
+@media screen and (max-width:399px) {
+  .sign-up .card.card-body .sign-up-profile-header .profile-icon {
+    position: absolute;
+    right: .8rem;
+    top: 7rem;
+  }
+}
+
 
 .sign-up .card.card-body .sign-up-form {
   text-align: left;
@@ -2107,6 +2313,27 @@ section.about-us-info .about-img:hover img{
   box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.2);
 }
 
+.sign-up .sign-up-bottom-check-boxes .collapse .overflow {
+  max-height: 13rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.sign-up .sign-up-bottom-check-boxes .collapse .overflow::-webkit-scrollbar {
+  width: 10px;
+  overflow: hidden;
+}
+
+.sign-up .sign-up-bottom-check-boxes .collapse .overflow::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 5rem;
+}
+
+.sign-up .sign-up-bottom-check-boxes .collapse .overflow::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.13);
+  border-radius: 5rem;
+
+}
+
 
 
 @media screen and (max-width:578px) {
@@ -2183,6 +2410,13 @@ section.about-us-info .about-img:hover img{
 .sign-up .tab-content .doc-persona .doc-left-component .doc-persona-btn:hover {
   color: var(--as-primary-color-3);
 
+}
+
+.sign-up .no-pop-up-message {
+  border-radius: 2rem;
+  background: #030166B2;
+  color: #fff;
+  display: none;
 }
 
 .form-group .nice-select {
@@ -2293,22 +2527,23 @@ section.about-us-info .about-img:hover img{
 }
 
 @media screen and (min-width:769px) {
-  .how-it-works .mobile-view{
+  .how-it-works .mobile-view {
     display: none;
   }
 }
 
 
 @media screen and (max-width:768px) {
-  .how-it-works .desktop-view{
+  .how-it-works .desktop-view {
     display: none;
   }
 
-  .how-it-works .mobile-view{
+  .how-it-works .mobile-view {
     display: block;
-    
+
   }
-  .how-it-works .mobile-view .how-bg{
+
+  .how-it-works .mobile-view .how-bg {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
@@ -2322,71 +2557,84 @@ section.about-us-info .about-img:hover img{
     -moz-transition: all .5s ease-out 0s;
     transition: all .5s ease-out 0s;
   }
-  .how-it-works .mobile-view .how-bg.img-1{
-    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.479),rgba(0, 0, 0, 0.274) ),url('../images/services/home-lab-1.png');
+
+  .how-it-works .mobile-view .how-bg.img-1 {
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.479), rgba(0, 0, 0, 0.274)), url('../images/services/home-lab-1.png');
   }
 
-  .how-it-works .mobile-view .how-bg.img-2{
-    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.479),rgba(0, 0, 0, 0.274) ),url('../images/services/home-lab-2.jpg');
+  .how-it-works .mobile-view .how-bg.img-2 {
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.479), rgba(0, 0, 0, 0.274)), url('../images/services/home-lab-2.jpg');
   }
-  .how-it-works .mobile-view .how-bg.img-3{
-    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.479),rgba(0, 0, 0, 0.274) ),url('../images/services/home-lab-3.png');
+
+  .how-it-works .mobile-view .how-bg.img-3 {
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.479), rgba(0, 0, 0, 0.274)), url('../images/services/home-lab-3.png');
   }
+
   /* images for lab-visit */
-  .how-it-works .mobile-view .how-bg.img-4{
-    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.479),rgba(0, 0, 0, 0.274) ),url('../images/services/lab-visit-1.png');
+  .how-it-works .mobile-view .how-bg.img-4 {
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.479), rgba(0, 0, 0, 0.274)), url('../images/services/lab-visit-1.png');
   }
 
-  .how-it-works .mobile-view .how-bg.img-5{
-    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.479),rgba(0, 0, 0, 0.274) ),url('../images/services/lab-visit-2.png');
+  .how-it-works .mobile-view .how-bg.img-5 {
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.479), rgba(0, 0, 0, 0.274)), url('../images/services/lab-visit-2.png');
   }
-  .how-it-works .mobile-view .how-bg.img-6{
-    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.479),rgba(0, 0, 0, 0.274) ),url('../images/services/lab-visit-3.jpg');
+
+  .how-it-works .mobile-view .how-bg.img-6 {
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.479), rgba(0, 0, 0, 0.274)), url('../images/services/lab-visit-3.jpg');
   }
+
   /* images for home-care nurse */
-  .how-it-works .mobile-view .how-bg.img-7{
-    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.479),rgba(0, 0, 0, 0.274) ),url('../images/services/nurse-1.png');
+  .how-it-works .mobile-view .how-bg.img-7 {
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.479), rgba(0, 0, 0, 0.274)), url('../images/services/nurse-1.png');
   }
 
-  .how-it-works .mobile-view .how-bg.img-8{
-    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.479),rgba(0, 0, 0, 0.274) ),url('../images/services/nurse-2.png');
+  .how-it-works .mobile-view .how-bg.img-8 {
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.479), rgba(0, 0, 0, 0.274)), url('../images/services/nurse-2.png');
   }
-  .how-it-works .mobile-view .how-bg.img-9{
-    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.479),rgba(0, 0, 0, 0.274) ),url('../images/services/nurse-3.png');
-  }
-  .how-it-works .mobile-view .how-bg.img-10{
-    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.479),rgba(0, 0, 0, 0.274) ),url('../images/services/nurse-4.png');
-  }
-    /* images for pharm-consult nurse */
-    .how-it-works .mobile-view .how-bg.img-11{
-      background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.479),rgba(0, 0, 0, 0.274) ),url('../images/services/pharm-consult-1.png');
-    }
-  
-    .how-it-works .mobile-view .how-bg.img-12{
-      background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.479),rgba(0, 0, 0, 0.274) ),url('../images/services/pharm-consult-2.png');
-    }
-    .how-it-works .mobile-view .how-bg.img-13{
-      background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.781),rgba(0, 0, 0, 0.445) ),url('../images/services/pharm-consult-3.png');
-    }
-    .how-it-works .mobile-view .how-bg.img-14{
-      background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.479),rgba(0, 0, 0, 0.274) ),url('../images/services/pharm-consult-4.png');
-    }
-    /* images for doc consult*/
-    .how-it-works .mobile-view .how-bg.img-11{
-      background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.479),rgba(0, 0, 0, 0.274) ),url('../images/services/doc-consult-1.png');
-    }
-  
-    .how-it-works .mobile-view .how-bg.img-12{
-      background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.479),rgba(0, 0, 0, 0.274) ),url('../images/services/doc-consult-2.png');
-    }
-    .how-it-works .mobile-view .how-bg.img-13{
-      background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.438),rgba(0, 0, 0, 0.288) ),url('../images/services/doc-consult-3.png');
-    }
-    .how-it-works .mobile-view .how-bg.img-14{
-      background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.479),rgba(0, 0, 0, 0.274) ),url('../images/services/doc-consult-4.png');
-    }
 
-  .how-it-works .mobile-view .how-bg .custom-number{
+  .how-it-works .mobile-view .how-bg.img-9 {
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.479), rgba(0, 0, 0, 0.274)), url('../images/services/nurse-3.png');
+  }
+
+  .how-it-works .mobile-view .how-bg.img-10 {
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.479), rgba(0, 0, 0, 0.274)), url('../images/services/nurse-4.png');
+  }
+
+  /* images for pharm-consult nurse */
+  .how-it-works .mobile-view .how-bg.img-11 {
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.479), rgba(0, 0, 0, 0.274)), url('../images/services/pharm-consult-1.png');
+  }
+
+  .how-it-works .mobile-view .how-bg.img-12 {
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.479), rgba(0, 0, 0, 0.274)), url('../images/services/pharm-consult-2.png');
+  }
+
+  .how-it-works .mobile-view .how-bg.img-13 {
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.781), rgba(0, 0, 0, 0.445)), url('../images/services/pharm-consult-3.png');
+  }
+
+  .how-it-works .mobile-view .how-bg.img-14 {
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.479), rgba(0, 0, 0, 0.274)), url('../images/services/pharm-consult-4.png');
+  }
+
+  /* images for doc consult*/
+  .how-it-works .mobile-view .how-bg.img-11 {
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.479), rgba(0, 0, 0, 0.274)), url('../images/services/doc-consult-1.png');
+  }
+
+  .how-it-works .mobile-view .how-bg.img-12 {
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.479), rgba(0, 0, 0, 0.274)), url('../images/services/doc-consult-2.png');
+  }
+
+  .how-it-works .mobile-view .how-bg.img-13 {
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.438), rgba(0, 0, 0, 0.288)), url('../images/services/doc-consult-3.png');
+  }
+
+  .how-it-works .mobile-view .how-bg.img-14 {
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.479), rgba(0, 0, 0, 0.274)), url('../images/services/doc-consult-4.png');
+  }
+
+  .how-it-works .mobile-view .how-bg .custom-number {
     font-size: 170px;
     line-height: 1;
     display: inline-block;
@@ -2399,12 +2647,12 @@ section.about-us-info .about-img:hover img{
     opacity: 0.5;
   }
 
-  .how-it-works .mobile-view .how-bg:hover .custom-number{
+  .how-it-works .mobile-view .how-bg:hover .custom-number {
     visibility: none;
-    opacity:0;
+    opacity: 0;
   }
-  
-  .how-it-works .mobile-view .how-bg:hover .how-bg.img-1{
+
+  .how-it-works .mobile-view .how-bg:hover .how-bg.img-1 {
     transform: scaleX(1.1);
   }
 
@@ -2458,23 +2706,155 @@ section.about-us-info .about-img:hover img{
   margin-right: 1rem;
 }
 
+/***************************************
+      Table component
+***************************************/
+.table-component .table thead {
+  background-color: #EEF8FC;
+  color: #000000;
 
 
+}
+
+.table-component .table thead tr th {
+  padding: 3rem;
+  border-bottom: none;
+}
+
+.table-component .table tbody tr td {
+  padding: 2rem;
+
+}
+
+/***************************************
+      TO TOP
+***************************************/
+#totop {
+  font-weight: 900;
+  color: #fff;
+  display: none;
+  position: fixed;
+  right: 34px;
+  bottom: 50px;
+  z-index: 999;
+  height: 0;
+  width: 0;
+  font-size: 0;
+  text-align: center;
+  padding-top: 3px;
+  line-height: 34px;
+  border-radius: 3px;
+  transition: .3s ease-in-out;
+}
+
+#totop.top-visible {
+  height: 40px;
+  width: 40px;
+  font-size: 22px;
+  display: inline;
+}
+
+@keyframes jump {
+  0% {
+    bottom: 20px;
+  }
+
+  50% {
+    bottom: 40px;
+  }
+
+  100% {
+    bottom: 20px;
+  }
+}
+
+#totop.top-visible {
+  animation: jump 4s infinite;
+  background-color: var(--as-primary-color-4);
+}
+
+/***************************************
+      style preloader
+***************************************/
 
 
-.js .slider-single > .list-group-item:nth-child(1n+2) { display: none }
+.loader-bg::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  opacity: 0.04;
+  inset: 0;
+  height: 100%;
+  z-index: -1;
+  background-image: url(../images/bg_lines.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 200%;
+}
+.loader-bg {
+  position: fixed;
+  background: linear-gradient(127deg, #1141B6, #4DC0C1);
+  top: 0;
+  z-index: 100000000000000000000;
+  width: 100%;
+  height: 100%;
+}
 
-.js .slider-single.slick-initialized >.list-group-item:nth-child(1n+2) { display: block }
+.loader{
+  background: var(--as-primary-color-3);
+  border-radius: 50%;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: calc(50vh - 75px);
+  left: calc(50vw - 75px);
+  text-align: center;
+  animation: loader 2s linear infinite;
+  opacity: 0;
+  visibility: hidden;
+  
+}
+.loader img{
+  width: 150px;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  animation: loader 2s ease-out infinite;
+  opacity: 0;
+  visibility: hidden;
+  
+}
+/* .loader:before, .loader:after{
+  content: '';
+  border: 1em solid var(--as-primary-color-3);
+  border-radius: 50%;
+  height: inherit;
+  width: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: loader 2s linear infinite;
+  opacity: 0;
+}
+.loader:before{
+  animation-delay: .5s;
+} */
 
-
-
-
-
-
-
-.slider-nav .slick-slide { cursor: pointer; }
-
-.slick-slide.is-active h3 {
-	color: #c00;
-	background-color: #fff
+@keyframes loader {
+  0%{
+    transform: scale(0);
+    opacity: 0;
+    visibility: hidden;
+   
+  }
+  50%{
+    opacity: 1;
+    visibility: visible;
+    
+  }
+  100%{
+    transform: scale(1);
+    opacity: 0;
+    visibility: hidden;
+  }
 }

@@ -33,12 +33,20 @@
     <link rel="stylesheet" href="assets/css/themify-icons.css">
     <link rel="stylesheet" href="assets/css/plugin/slick.css">
     <link rel="stylesheet" href="assets/css/plugin/nice-select.css">
+    <link rel="stylesheet" href="assets/css/plugin/sweet-alert.css">
     <link rel="stylesheet" href="assets/css/bs-css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
 <body>
+     <!-- preloader starts -->
+     <div class="loader-bg">
+        <div class="loader">
+            <img src="assets/images/logo-2.png" alt="all_smart">
+        </div>
+    </div>
+    <!-- preloader ends -->
     <!-- Start Heading Area -->
     <header class="header mt-5">
         <div class="header-top mb-5">
@@ -94,76 +102,76 @@
         </div>
         </div>
         <!-- End of Header Top -->
-        <!-- start of main nav -->
-        <div class="header-nav bg-white  pt-2">
-            <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light ">
-                    <div class="container-fluid">
-                        <span class="border  p-3">
-                            <a class="navbar-brand text-dark" href="#">Menu</a>
-                            <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                        </span>
-
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav-scroll"
-                                style="--bs-scroll-height:500px;">
-                                <li class="nav-item me-5">
-                                    <a class="nav-link active " aria-current="page" href="index.html">Home</a>
-                                </li>
-                                <li class="nav-item me-5">
-                                    <a class="nav-link " aria-current="page" href="about-us.html">About Us</a>
-                                </li>
-                                <li class="nav-item dropdown me-5">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">Services</a>
-                                    <ul class="dropdown-menu ps-2 pt-4 pb-5 pe-5" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item f-16 fw-400 " href="home-lab-test.html">Home Lab
-                                                Test</a></li>
-                                        <li><a class="dropdown-item f-16 fw-400 " href="lab-visit.html">Book Lab
-                                                Visit</a></li>
-                                        <li><a class="dropdown-item f-16 fw-400 " href="home-care-nurse.html">Home Care
-                                                Nurse</a></li>
-                                        <li><a class="dropdown-item f-16 fw-400 " href="pharm-consult.html">Pharmacist
-                                                Consultation</a></li>
-                                        <li><a class="dropdown-item f-16 fw-400 " href="doc-consult.html">Doctor
-                                                Consultation</a></li>
-                                    </ul>
-                                </li>
-
-                                <li class="nav-item me-5">
-                                    <a class="nav-link" href="membership.html" tabindex="-1"
-                                        aria-disabled="true">Membership</a>
-                                </li>
-                                <li class="nav-item me-5">
-                                    <a class="nav-link" href="pharm-supply.html" tabindex="-1" aria-disabled="true">
-                                        Pharmaceutical
-                                        Supply</a>
-                                </li>
-                            </ul>
-                            <form class="d-flex">
-
-                                <button class="btn btn-outline-as-primary me-3" type="submit">Download app</button>
-                                <button class="btn btn-as-primary" type="submit">Login</button>
-
-                            </form>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </div>
-        <!-- end of main nav -->
     </header>
+    <!-- start of main nav -->
+    <div class="header-nav bg-white  pt-2 pb-2">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <div class="container-fluid">
+                    <span class="border  p-3">
+                        <a class="navbar-brand text-dark" href="#">Menu</a>
+                        <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </span>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav-scroll" style="--bs-scroll-height:500px;">
+                            <li class="nav-item me-5">
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item me-5">
+                                <a class="nav-link " aria-current="page" href="about-us.html">About Us</a>
+                            </li>
+                            <li class="nav-item dropdown me-5">
+                                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                                <ul class="dropdown-menu ps-2 pt-4 pb-5 pe-5" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item f-16 fw-400 " href="home-lab-test.html">Home Lab
+                                            Test</a></li>
+                                    <li><a class="dropdown-item f-16 fw-400 " href="lab-visit.html">Book Lab
+                                            Visit</a></li>
+                                    <li><a class="dropdown-item f-16 fw-400 " href="home-care-nurse.html">Home Care
+                                            Nurse</a></li>
+                                    <li><a class="dropdown-item f-16 fw-400 " href="pharm-consult.html">Pharmacist
+                                            Consultation</a></li>
+                                    <li><a class="dropdown-item f-16 fw-400 " href="doc-consult.html">Doctor
+                                            Consultation</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item me-5">
+                                <a class="nav-link" href="membership.html" tabindex="-1"
+                                    aria-disabled="true">Membership</a>
+                            </li>
+                            <li class="nav-item me-5">
+                                <a class="nav-link" href="pharm-supply.html" tabindex="-1" aria-disabled="true">
+                                    Pharmaceutical
+                                    Supply</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+
+                            <button class="btn btn-outline-as-primary me-3" onclick="download()" type="button">Download app</button>
+                            <button class="btn btn-as-primary" type="submit">Login</button>
+
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- end of main nav -->
     <!-- start main content -->
     <main>
         <section class="about-us item-bg10">
             <div class="about-content">
                 <h1 class="text-white">Book a Lab Visit</h1>
                 <div class="pwlr-lg-28 pwlr-sm-10">
-                    <p class="f-18 text-white lh-28">We understand that your time is precious, and that is why we are putting control in your hands. Book a lab visit from the comfort of your home.</p>
+                    <p class="f-18 text-white lh-28">We understand that your time is precious, and that is why we are
+                        putting control in your hands. Book a lab visit from the comfort of your home.</p>
                 </div>
             </div>
         </section>
@@ -255,7 +263,8 @@
                             <div class="tab-pane fade" id="list-messages" role="tabpanel"
                                 aria-labelledby="list-messages-list">
                                 <div class="tab-img container">
-                                    <img src="assets/images/services/lab-visit-3.jpg" height="100%" width="90%" class="img-fluid" style="border-radius: 2rem;" alt="visit-img">
+                                    <img src="assets/images/services/lab-visit-3.jpg" height="100%" width="90%"
+                                        class="img-fluid" style="border-radius: 2rem;" alt="visit-img">
                                 </div>
                             </div>
 
@@ -273,7 +282,7 @@
                                     </h5>
                                     <p class="text-white">
                                         Select a convenient date and time for your lab visit. No more waiting in
-                                            lines, you decide when it is best for you
+                                        lines, you decide when it is best for you
                                     </p>
                                 </div>
                             </div>
@@ -294,7 +303,7 @@
                         <div class="col-12">
                             <div class="how-bg img-6 p-5">
 
-                                
+
 
                                 <div class="col-10">
                                     <h5 class="text-white">
@@ -321,6 +330,17 @@
                         <p class="f-16 p-2">Fill this form below. Our team will get in touch with you shortly</p>
                     </div>
                     <div class="sign-up-form pwlr-5">
+                        <div class="col-12">
+                            <div class="form-group mb-5">
+                                <label for="who" class="mb-2"> Who is this service order for? </label>
+                                <select class="nice-select wide who" >
+                                    <option data-display="Who is this service order for?">Select 
+                                    </option>
+                                    <option value="self">Self</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group mb-5">
@@ -421,29 +441,65 @@
                                     <div class="col-md-8 mb-3">
                                         <div class="search-component">
                                             <i class="fa fa-search"></i>
-                                        <input type="text" placeholder="Search test name">
+                                            <input type="text" placeholder="Search test name">
                                         </div>
-                                        
+
                                     </div>
                                     <div class="col-md-4">
                                         <button class="btn as-search-btn">Search</button>
                                     </div>
                                 </div>
-                                
+
                             </div>
-                           
-                            <div class="sign-up-bottom-check-boxes ">
+
+                            <div class="sign-up-bottom-check-boxes">
                                 <div class="row">
                                     <div class="col-md-6 mb-4">
                                         <div class="row">
                                             <div class="col-6">
                                                 <div class="d-flex">
-                                                    <input type="checkbox" class="me-3 me-4"> <span class="f-12 fw-400"> Chlamydia N3,500 </span>
+                                                    <input type="checkbox" class="me-3 me-4"> <span class="f-12 fw-400">
+                                                        Full Blood Count  N3,600 </span>
                                                 </div>
                                             </div>
                                             <div class="col-6">
                                                 <div class="d-flex">
-                                                    <input type="checkbox" class="me-3 me-4"> <span class="f-12 fw-400"> Chlamydia N3,500 </span>
+                                                    <input type="checkbox" class="me-3 me-4"> <span class="f-12 fw-400">
+                                                        Hepatitis B N3,600 </span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="d-flex">
+                                                    <input type="checkbox" class="me-3 me-4"> <span class="f-12 fw-400">
+                                                        Blood Group  N3,600 </span>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="d-flex">
+                                                    <input type="checkbox" class="me-3 me-4"> <span class="f-12 fw-400">
+                                                        Widal N3,600 </span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="d-flex">
+                                                    <input type="checkbox" class="me-3 me-4"> <span class="f-12 fw-400">
+                                                        Clotting Profile N10,800 </span>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="d-flex">
+                                                    <input type="checkbox" class="me-3 me-4"> <span class="f-12 fw-400">
+                                                        WBC & DIFF  N1,440 </span>
                                                 </div>
                                             </div>
                                         </div>
@@ -451,157 +507,270 @@
                                     </div>
                                     <div class="col-md-6 mb-4">
                                         <div class="row">
+                                           
                                             <div class="col-6">
                                                 <div class="d-flex">
-                                                    <input type="checkbox" class="me-3 me-4"> <span class="f-12 fw-400"> Chlamydia N3,500 </span>
+                                                    <input type="checkbox" class="me-3 me-4"> <span class="f-12 fw-400">
+                                                        PCV N1,200</span>
                                                 </div>
                                             </div>
                                             <div class="col-6">
                                                 <div class="d-flex">
-                                                    <input type="checkbox" class="me-3 me-4"> <span class="f-12 fw-400"> Chlamydia N3,500 </span>
+                                                    <input type="checkbox" class="me-4"> <span class="f-11 fw-400">
+                                                        Malaria Blood Smear N3,600
+                                                    </span>
                                                 </div>
                                             </div>
                                         </div>
-                                        
+
                                     </div>
                                     <div class="col-md-6 mb-4">
                                         <div class="row">
                                             <div class="col-6">
                                                 <div class="d-flex">
-                                                    <input type="checkbox" class="me-3 me-4"> <span class="f-12 fw-400"> Chlamydia N3,500 </span>
+                                                    <input type="checkbox" class="me-3 me-4"> <span class="f-12 fw-400">
+                                                        Reticulocytes  N4,800 </span>
                                                 </div>
                                             </div>
                                             <div class="col-6">
                                                 <div class="d-flex">
-                                                    <input type="checkbox" class="me-3 me-4"> <span class="f-12 fw-400"> Chlamydia N3,500 </span>
+                                                    <input type="checkbox" class="me-3 me-4"> <span class="f-12 fw-400">
+                                                        CRP  N3,500 </span>
                                                 </div>
                                             </div>
                                         </div>
-                                        
+
                                     </div>
                                     <div class="col-md-6 mb-4">
                                         <div class="row">
                                             <div class="col-6">
                                                 <div class="d-flex">
-                                                    <input type="checkbox" class="me-3 me-4"> <span class="f-12 fw-400"> Chlamydia N3,500 </span>
+                                                    <input type="checkbox" class="me-3 me-4"> <span class="f-12 fw-400">
+                                                        Pregnancy Test N3,600</span>
                                                 </div>
                                             </div>
                                             <div class="col-6">
                                                 <div class="d-flex">
-                                                    <input type="checkbox" class="me-3 me-4"> <span class="f-12 fw-400"> Chlamydia N3,500 </span>
+                                                    <input type="checkbox" class="me-3 me-4"> <span class="f-12 fw-400">
+                                                        Iron Level  N3,600 </span>
                                                 </div>
                                             </div>
                                         </div>
-                                        
-                                    </div>
-                                    <div class="col-md-6 mb-4">
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <div class="d-flex">
-                                                    <input type="checkbox" class="me-3 me-4"> <span class="f-12 fw-400"> Chlamydia N3,500 </span>
-                                                </div>
-                                            </div>
-                                            <div class="col-6">
-                                                <div class="d-flex">
-                                                    <input type="checkbox" class="me-3 me-4"> <span class="f-12 fw-400"> Chlamydia N3,500 </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
-                                    <div class="col-md-6 mb-4">
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <div class="d-flex">
-                                                    <input type="checkbox" class="me-3 me-4"> <span class="f-12 fw-400"> Chlamydia N3,500 </span>
-                                                </div>
-                                            </div>
-                                            <div class="col-6">
-                                                <div class="d-flex">
-                                                    <input type="checkbox" class="me-3 me-4"> <span class="f-12 fw-400"> Chlamydia N3,500 </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
+
                                     </div>
                                     <div class="col-12 mt-4 d-flex align-items-center justify-content-center">
                                         <div class="d-flex mb-5">
                                             <i class="ti ti-angle-double-down me-3 mt-2 text-primary"></i>
-                                            <a href="#collapsible-button" data-bs-toggle="collapse" class="check-box-anchor"  role="button">View more test</a>
+                                            <a href="#collapsible-button" data-bs-toggle="collapse"
+                                                class="check-box-anchor" role="button">View more test</a>
                                         </div>
                                     </div>
 
                                     <div class="collapse" id="collapsible-button">
-                                        <div class="row">
-                                            <div class="col-md-6 mb-4">
-                                                <div class="row">
-                                                    <div class="col-6">
-                                                        <div class="d-flex">
-                                                            <input type="checkbox" class="me-3 me-4"> <span class="f-12 fw-400"> Chlamydia N3,500 </span>
+                                        <div class="overflow">
+                                            <div class="row">
+                                                <div class="col-md-6 mb-4">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <div class="d-flex">
+                                                                <input type="checkbox" class="me-3 me-4"> <span
+                                                                    class="f-12 fw-400">Platelet Count N1,200 </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="d-flex">
+                                                                <input type="checkbox" class="me-3 me-4"> <span
+                                                                    class="f-12 fw-400"> Stool MCS  N7,200 </span>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-6">
-                                                        <div class="d-flex">
-                                                            <input type="checkbox" class="me-3 me-4"> <span class="f-12 fw-400"> Chlamydia N3,500 </span>
-                                                        </div>
-                                                    </div>
+    
                                                 </div>
-                                                
-                                            </div>
-                                            <div class="col-md-6 mb-4">
-                                                <div class="row">
-                                                    <div class="col-6">
-                                                        <div class="d-flex">
-                                                            <input type="checkbox" class="me-3 me-4"> <span class="f-12 fw-400"> Chlamydia N3,500 </span>
+                                                <div class="col-md-6 mb-4">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <div class="d-flex">
+                                                                <input type="checkbox" class="me-3 me-4"> <span
+                                                                    class="f-12 fw-400"> Vitamin D25-OH  N26,400 </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="d-flex">
+                                                                <input type="checkbox" class="me-3 me-4"> <span
+                                                                    class="f-12 fw-400">Ferritin  N9,600 </span>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-6">
-                                                        <div class="d-flex">
-                                                            <input type="checkbox" class="me-3 me-4"> <span class="f-12 fw-400"> Chlamydia N3,500 </span>
-                                                        </div>
-                                                    </div>
+    
                                                 </div>
-                                                
-                                            </div>
-                                            <div class="col-md-6 mb-4">
-                                                <div class="row">
-                                                    <div class="col-6">
-                                                        <div class="d-flex">
-                                                            <input type="checkbox" class="me-3 me-4"> <span class="f-12 fw-400"> Chlamydia N3,500 </span>
+                                                <div class="col-md-6 mb-4">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <div class="d-flex">
+                                                                <input type="checkbox" class="me-3 me-4"> <span
+                                                                    class="f-12 fw-400"> Transferrin  N8,000</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="d-flex">
+                                                                <input type="checkbox" class="me-3 me-4"> <span
+                                                                    class="f-12 fw-400">Factor V111 N30,000</span>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-6">
-                                                        <div class="d-flex">
-                                                            <input type="checkbox" class="me-3 me-4"> <span class="f-12 fw-400"> Chlamydia N3,500 </span>
-                                                        </div>
-                                                    </div>
+    
                                                 </div>
-                                                
-                                            </div>
-                                            <div class="col-md-6 mb-4">
-                                                <div class="row">
-                                                    <div class="col-6">
-                                                        <div class="d-flex">
-                                                            <input type="checkbox" class="me-3 me-4"> <span class="f-12 fw-400"> Chlamydia N3,500 </span>
+                                                <div class="col-md-6 mb-4">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <div class="d-flex">
+                                                                <input type="checkbox" class="me-3 me-4"> <span
+                                                                    class="f-12 fw-400"> Factor X N30,000 </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="d-flex">
+                                                                <input type="checkbox" class="me-3 me-4"> <span
+                                                                    class="f-12 fw-400">Zinc  N48,720</span>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-6">
-                                                        <div class="d-flex">
-                                                            <input type="checkbox" class="me-3 me-4"> <span class="f-12 fw-400"> Chlamydia N3,500 </span>
-                                                        </div>
-                                                    </div>
+    
                                                 </div>
-                                                
+                                                <div class="col-md-6 mb-4">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <div class="d-flex">
+                                                                <input type="checkbox" class="me-3 me-4"> <span
+                                                                    class="f-12 fw-400"> ESR N1,800 </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="d-flex">
+                                                                <input type="checkbox" class="me-3 me-4"> <span
+                                                                    class="f-12 fw-400"> Protein C N71,760 </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+    
+                                                </div>
+                                                <div class="col-md-6 mb-4">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <div class="d-flex">
+                                                                <input type="checkbox" class="me-3 me-4"> <span
+                                                                    class="f-12 fw-400"> Tuberculosis  N36,000 </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="d-flex">
+                                                                <input type="checkbox" class="me-3 me-4"> <span
+                                                                    class="f-12 fw-400"> Pap Smear  N14,400</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+    
+                                                </div>
+                                                <div class="col-md-6 mb-4">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <div class="d-flex">
+                                                                <input type="checkbox" class="me-3 me-4"> <span
+                                                                    class="f-12 fw-400"> STD Panel 1  N36,000 </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="d-flex">
+                                                                <input type="checkbox" class="me-3 me-4"> <span
+                                                                    class="f-12 fw-400"> STD Panel2 N60,000</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+    
+                                                </div>
+                                                <div class="col-md-6 mb-4">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <div class="d-flex">
+                                                                <input type="checkbox" class="me-3 me-4"> <span
+                                                                    class="f-12 fw-400"> STD Panel3 N72,000 </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="d-flex">
+                                                                <input type="checkbox" class="me-3 me-4"> <span
+                                                                    class="f-12 fw-400"> Throat Swab N8,400 </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+    
+                                                </div>
+                                                <div class="col-md-6 mb-4">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <div class="d-flex">
+                                                                <input type="checkbox" class="me-3 me-4"> <span
+                                                                    class="f-12 fw-400"> Urine Cytology N16,800 </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="d-flex">
+                                                                <input type="checkbox" class="me-3 me-4"> <span
+                                                                    class="f-12 fw-400"> WBC Total  N1,800 </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+    
+                                                </div>
+                                                <div class="col-md-6 mb-4">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <div class="d-flex">
+                                                                <input type="checkbox" class="me-3 me-4"> <span
+                                                                    class="f-12 fw-400">Urine Microscopy N1,800 </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="d-flex">
+                                                                <input type="checkbox" class="me-3 me-4"> <span
+                                                                    class="f-12 fw-400">Genotype N3,600 </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+    
+                                                </div>
+                                                <div class="col-md-6 mb-4">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <div class="d-flex">
+                                                                <input type="checkbox" class="me-3 me-4"> <span
+                                                                    class="f-12 fw-400">Stool Microscopy N1,800 </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="d-flex">
+                                                                <input type="checkbox" class="me-3 me-4"> <span
+                                                                    class="f-12 fw-400">Protein S  N71,760 </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+    
+                                                </div>
+                                              
                                             </div>
                                         </div>
+                                       
                                     </div>
                                 </div>
                             </div>
                         </div>
-                       
+
                     </div>
                     <div class="register-button pt-5 pb-5">
-                        <button class="btn as-register-btn f-16 fw-600 text-white"> Submit</button>
+                        <a href="order-summary.html">
+                            <button class="btn as-register-btn f-16 fw-600 text-white"> Submit</button>
+                        </a>
+                       
                     </div>
                 </div>
             </div>
@@ -640,16 +809,16 @@
                                     mobile app</span>
                             </div>
                             <div class="downonlod-btn">
-                                <a href="https://play.google.com/store/apps" target="_blank" class="store-btn mb-3">
+                                <button   type="button" onclick="download()" class="store-btn mb-3">
                                     <img src="assets/images/g-play-logo.png" class=""></img>
                                     <span>Download on</span>
                                     <p class="f-16">Google Play</p>
-                                </a>
-                                <a href="https://www.apple.com/store" target="_blank" class="store-btn active">
+                                </button>
+                                <button type="button" onclick="download()" class="store-btn active">
                                     <i class="fa fa-apple"></i>
                                     <span>Download on</span>
                                     <p class="f-16">Apple Store</p>
-                                </a>
+                                </button>
                             </div>
                         </div>
 
@@ -661,7 +830,7 @@
     <!-- end main content -->
     <!-- beginning of footer -->
     <footer>
-        <div class="container pwlr-sm-5" >
+        <div class="container pwlr-sm-5">
             <div class="row">
                 <div class="col-md-3 mb-5">
                     <div class="logo-div">
@@ -811,10 +980,33 @@
         </div>
     </footer>
 
+      <!--back-to-top start-->
+      <a id="totop" href="#top">
+        <i class="fa fa-angle-up"></i>
+    </a>
+    <!--back-to-top end-->
+<!-- modal -->
+    <div class="modal fade" id="who-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-5 ">
+                <h5 class="lh-28">kindly fill in the details of the person you are ordering this service for</h5>
+            </div>
+        
+          </div>
+        </div>
+      </div>
+    
+
+
     <script src="assets/js/bs-js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/plugin/jquery.nice-select.min.js"></script>
     <script src="assets/js/plugin/slick.js"></script>
+    <script src="assets/js/plugin/sweet-alert.js"></script>
     <script src="assets/js/plugin.js"></script>
     <script src="assets/js/main.js"></script>
 
