@@ -2251,14 +2251,15 @@ section.about-us-info .about-img:hover img {
 .sign-up .card.card-body .sign-up-form .sign-up-bottom .sign-up-bottom-check-boxes input[type="checkbox"] {
   position: relative;
   cursor: pointer;
+
 }
 
 .sign-up .card.card-body .sign-up-form .sign-up-bottom .sign-up-bottom-check-boxes input[type=checkbox]:before {
   content: "";
-  display: block;
+  display: inline-block;
   position: absolute;
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 25px;
   top: 0;
   left: 0;
   border: .8px solid #555555;
@@ -2277,8 +2278,8 @@ section.about-us-info .about-img:hover img {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   position: absolute;
-  top: 2px;
-  left: 6px;
+  top: 6px;
+  left: 8px;
 }
 
 .sign-up .card.card-body .register-button .as-register-btn,
