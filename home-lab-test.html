@@ -41,11 +41,11 @@
 
 <body>
       <!-- preloader starts -->
-      <div class="loader-bg">
+      <!-- <div class="loader-bg">
         <div class="loader">
             <img src="assets/images/logo-2.png" alt="all_smart">
         </div>
-    </div>
+    </div> -->
     <!-- preloader ends -->
     <!-- Start Heading Area -->
     <header class="header mt-5">
@@ -459,8 +459,8 @@
                             </div>
 
                             <div class="sign-up-bottom-check-boxes">
-                                <div class="row">
-                                    <div class="col-md-6 mb-4">
+                                <div class="row" id="api">
+                                    <!-- <div class="col-md-6 mb-4">
                                         <div class="row">
                                             <div class="col-6">
                                                 <div class="d-flex">
@@ -563,7 +563,7 @@
                                             </div>
                                         </div>
 
-                                    </div>
+                                    </div> -->
                                     <div class="col-12 mt-4 d-flex align-items-center justify-content-center">
                                         <div class="d-flex mb-5">
                                             <i class="ti ti-angle-double-down me-3 mt-2 text-primary"></i>
@@ -574,25 +574,9 @@
 
                                     <div class="collapse" id="collapsible-button">
                                         <div class="overflow">
-                                            <div class="row">
-                                                <div class="col-md-6 mb-4">
-                                                    <div class="row">
-                                                        <div class="col-6">
-                                                            <div class="d-flex">
-                                                                <input type="checkbox" class="me-3 me-4"> <span
-                                                                    class="f-12 fw-400">Platelet Count N1,200 </span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-6">
-                                                            <div class="d-flex">
-                                                                <input type="checkbox" class="me-3 me-4"> <span
-                                                                    class="f-12 fw-400"> Stool MCS  N7,200 </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-    
-                                                </div>
-                                                <div class="col-md-6 mb-4">
+                                            <div class="row" id="collapse-row">
+                                               
+                                                <!-- <div class="col-md-6 mb-4">
                                                     <div class="row">
                                                         <div class="col-6">
                                                             <div class="d-flex">
@@ -761,7 +745,7 @@
                                                         </div>
                                                     </div>
     
-                                                </div>
+                                                </div> -->
                                               
                                             </div>
                                         </div>
@@ -875,7 +859,7 @@
                                     <p>Members</p>
                                 </a>
                                 <a href="pharm-supply.html">
-                                    <p>pharmaceutical Supply</p>
+                                    <p>Pharmaceutical Supply</p>
                                 </a>
 
 
@@ -1016,5 +1000,68 @@
 
     <script>
         $('select').niceSelect();
+
+        $.ajax({
+    url: 'https://backend.allsmartcare.com/api/v1/services/allLabtest',
+    method: "GET",
+    success: function (response) {
+       console.log(response.status);
+        const data = response.test;
+        console.log(data)
+       if(response.status == true){
+            $.each(data, (index, item) =>{
+                if(index <= 12){
+                    $('#api').prepend(`
+                    
+                    <div class="col-md-6 mb-4">
+                        <div class="row">
+                                <div class="d-flex justify-content-start align-items-center checkbox me-3">
+                                    <label class="me-5">
+                                        <input type="checkbox" class="me-3 me-4"><span class="checked-span"></span>
+                                    </label>
+                                    <span class="f-12 fw-400 span-text">
+                                      ${item.name} NGN ${parseFloat(item.price).toLocaleString('en-NG')} </span>
+                                </div>
+                        </div>
+                        
+                    </div>
+                    
+                    `) 
+                } else if(index > 12){
+                    $('#collapse-row').append(`
+                    
+                    <div class="col-md-6 mb-4">
+                        
+                        <div class="row">
+                                <div class="d-flex justify-content-start align-items-center checkbox me-3">
+                                    <label class="me-5">
+                                        <input type="checkbox" class="me-3 me-4"><span class="checked-span"></span>
+                                    </label>
+                                    <span class="f-12 fw-400 span-text">
+                                      ${item.name} NGN ${parseFloat(item.price).toLocaleString('en-NG')} </span>
+                                </div>
+                        </div>
+                        
+                    </div>
+                    
+                    `)
+                }
+                   
+                
+            })
+            
+          
+    
+       }
+
+    }
+}).fail(function (xhr, status, error) {
+    Swal.fire(
+            'Something Went Wrong',
+            'Check your Internet Connection',
+            'error'
+            );
+})
     </script>
+    
 </body>

@@ -134,10 +134,6 @@ p {
   color: var(--as-black-1);
   margin-bottom: 1.5rem;
   font-weight: 400;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
   font-size: 1.4rem;
 }
 
@@ -162,6 +158,7 @@ a:active {
 a:hover {
   color: var(--as-secondary-color);
 }
+
 
 /* ----------------------------------------------------
     input and button type focus outline disable
@@ -745,7 +742,7 @@ label {
   height: 33.75px;
   top: 0;
   left: 0;
-  border: 3px solid #111111;
+  border: 2px solid #111111;
   border-radius: 2px;
   background-color: white;
 }
@@ -836,6 +833,7 @@ label {
   color: #fff;
 }
 
+
 /*-------------------------------------------
             header styling
 -------------------------------------------*/
@@ -924,6 +922,7 @@ label {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  
 }
 
 .header-center {
@@ -1227,7 +1226,7 @@ main {
 .vaccination-section .custom-card p {
   color: rgba(3, 1, 102, 1);
   line-height: 2.8rem;
-  width: 80%;
+  width: 90%;
   font-weight: 500;
   margin-bottom: 5rem;
 }
@@ -1381,7 +1380,7 @@ main {
 }
 
 .card .services-bg.img-4 {
-  background-image: url(../images/home-services/pharm-consult.png);
+  background-image: url(../images/home-services/pharm-consult.jpg);
 
 }
 
@@ -1835,7 +1834,8 @@ section.about-us.item-bg6 {
 }
 
 section.about-us.item-bg7 {
-  background-image: url(../images/bg-img/contact-bg.png);
+  background-image: linear-gradient(to bottom right, rgba(3, 1, 102, 0.384), rgba(12, 10, 168, 0.322)), url(../images/bg-img/contact-bg.jpg);
+
 }
 
 section.about-us.item-bg8 {
@@ -1921,11 +1921,23 @@ section.about-us-info .about-img:hover img {
   padding: 10rem 0;
   background-color: var(--as-primary-color-5);
 }
-
+.v-m-section .v-m-img{
+  margin-top: 14rem;
+}
 .v-m-section .v-m-img img {
   box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
   width: 90%;
+  height: 45vh;
+
   border-radius: 5rem;
+}
+@media screen and (max-width:992px) {
+  .v-m-section .v-m-img{
+    margin-top: 0;
+  }
+  .v-m-section .v-m-img img {
+    height: 40vh;
+  }
 }
 
 .v-m-section .vision {
@@ -2114,8 +2126,9 @@ section.about-us-info .about-img:hover img {
 
 }
 
+
 .sign-up.order-summary .summary-card.card.card-body::-webkit-scrollbar {
-  width: 10px;
+  width: 1rem;
 }
 
 .sign-up.order-summary .summary-card.card.card-body::-webkit-scrollbar-track {
@@ -2248,39 +2261,61 @@ section.about-us-info .about-img:hover img {
 }
 
 
-.sign-up .card.card-body .sign-up-form .sign-up-bottom .sign-up-bottom-check-boxes input[type="checkbox"] {
+.sign-up .card.card-body .sign-up-form .sign-up-bottom .sign-up-bottom-check-boxes .checkbox .span-text{
+  margin-top: 18px;
+
+}
+.sign-up .card.card-body .sign-up-form .sign-up-bottom .sign-up-bottom-check-boxes .checkbox label{
   position: relative;
-  cursor: pointer;
 
 }
 
-.sign-up .card.card-body .sign-up-form .sign-up-bottom .sign-up-bottom-check-boxes input[type=checkbox]:before {
+.sign-up .card.card-body .sign-up-form .sign-up-bottom .sign-up-bottom-check-boxes  .checked-span {
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  padding-left: 25px;
+  margin-right: 15px;
+}
+
+.sign-up .card.card-body .sign-up-form .sign-up-bottom .sign-up-bottom-check-boxes  .checked-span:before {
   content: "";
   display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
   position: absolute;
-  width: 20px;
-  height: 25px;
-  top: 0;
   left: 0;
-  border: .8px solid #555555;
-  border-radius: 2px;
-  background-color: white;
+  box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
 }
 
-.sign-up .card.card-body .sign-up-form .sign-up-bottom .sign-up-bottom-check-boxes input[type=checkbox]:checked:after {
-  content: "";
+.sign-up .card.card-body .sign-up-form .sign-up-bottom .sign-up-bottom-check-boxes input[type=checkbox] {
   display: block;
-  width: 5px;
-  height: 10px;
-  border: solid black;
-  border-width: 0 2px 2px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
   position: absolute;
-  top: 6px;
-  left: 8px;
+  visibility: hidden;
 }
+.sign-up .card.card-body .sign-up-form .sign-up-bottom .sign-up-bottom-check-boxes .checkbox .checked-span:before {
+  border-radius: 3px;
+}
+
+.sign-up .card.card-body .sign-up-form .sign-up-bottom .sign-up-bottom-check-boxes input[type=checkbox]:checked ~ .checked-span::before{
+  display: inline-block;
+  content: "\2713";
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+  font-size: 20px;
+  color: #000;
+  text-align: center;
+  line-height: 12px;
+}
+
+
+
+
+
+
+
+
+
 
 .sign-up .card.card-body .register-button .as-register-btn,
 .sign-up .card.card-body .register-button .as-register-btn:link {
@@ -2418,6 +2453,7 @@ section.about-us-info .about-img:hover img {
   background: #030166B2;
   color: #fff;
   display: none;
+  transition:.4s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .form-group .nice-select {
@@ -2858,4 +2894,23 @@ section.about-us-info .about-img:hover img {
     opacity: 0;
     visibility: hidden;
   }
+}
+
+/***************************************
+      style nice select list
+***************************************/
+.nice-select .list{
+  overflow-x: auto !important;
+
+}
+.nice-select .list::-webkit-scrollbar{
+  width: 2px;
+}
+.nice-select .list::-webkit-scrollbar-track{
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10rem;
+}
+.nice-select .list::-webkit-scrollbar-thumb{
+  background-color: rgba(0, 0, 0, 0.13);
+  border-radius: 10rem;
 }

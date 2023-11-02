@@ -185,8 +185,10 @@
                 </div>
 
                 <form action="#">
+                    <div id="multiple-vaccines">
 
-                    <div class="card card-body bg-white mb-5 p-5 ">
+                    </div>
+                    <!-- <div class="card card-body bg-white mb-5 p-5 ">
                         <div class="row">
                             <div class="col-md-2">
                                 <h2 class="f-20">
@@ -501,7 +503,7 @@
                             </button>
                         
 
-                    </div>
+                    </div> -->
 
 
                 </form>
@@ -605,7 +607,7 @@
                                     <p>Members</p>
                                 </a>
                                 <a href="pharm-supply.html">
-                                    <p>pharmaceutical Supply</p>
+                                    <p>Pharmaceutical Supply</p>
                                 </a>
 
 
@@ -755,5 +757,53 @@
 
     <script>
         AOS.init();
+
+        $.ajax({
+            url: 'https://backend.allsmartcare.com/api/v1/vaccine',
+            method: "GET",
+            success: function (response) {
+          
+                const data = response.data;
+               
+                if (response.status == true) {
+                    $.each(data, (index, item) => {
+                        if (item.status == 'active') {
+                            $('#multiple-vaccines').prepend(`
+                            <div class="card card-body bg-white mb-5 p-5 ">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <h2 class="f-20">
+                                    ${item.name}
+                                </h2>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="package-text mb-5">
+                                    ${item.description}
+                                </div>
+
+                            </div>
+                            <div class="col-md-4 check-box-component">
+                                <div class="d-flex justify-content-evenly">
+                                    <h2 class="f-20 me-5 ">
+                                        NGN ${parseFloat(item.price).toLocaleString('en-NG')}
+                                    </h2>
+                                    <input type="checkbox" class="me-3 me-4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                              `)
+                        } 
+
+                    })
+
+
+
+                }
+
+            }
+        }).fail(function (xhr, status, error) {
+            console.log(xhr, status, error);
+        })
     </script>
 </body>

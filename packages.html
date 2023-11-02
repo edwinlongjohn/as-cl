@@ -195,7 +195,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="multiple-text-component">
+                <div class="multiple-text-component ">
                     <a href="multi-packages.html">
                         <button class="btn btn-multiple">
                             Select Multiple Packages
@@ -204,61 +204,64 @@
                     </a>
 
                 </div>
-                <div class="card card-body bg-card-package mb-5 p-5" data-aos="fade-right" data-aos-duration="100"
-                    data-aos-easing="ease-in-sine">
-                    <div class="row">
-                        <div class="col-md-2">
-                            <h2 class="f-20">
-                                Bronze Package
-                            </h2>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="package-text mb-5">
-                                Our Bronze Package is designed with foundational tests all conveniently conducted in
-                                your desired location. Take responsibility for your health.
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="d-flex">
-                                        <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Full Blood Count</p>
-                                    </div>
-                                    <div class="d-flex">
-                                        <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Blood Sugar Test (RBS/FBS)</p>
-                                    </div>
-                                    <div class="d-flex">
-                                        <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>MP/Widal (Malaria Parasite/Widal)</p>
-                                    </div>
-                                    <div class="d-flex">
-                                        <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>Urea/Creatinine</p>
-                                    </div>
-                                    <div class="d-flex">
-                                        <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
-                                        <p>ALT/AST</p>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="d-flex">
-                                <h2 class="f-20 me-5 ">
-                                    NGN 19,800
+                <div id="all-packages" class="mt-5">
+                    <!-- <div class="card card-body bg-card-package mb-5 p-5" data-aos="fade-right" data-aos-duration="100"
+                        data-aos-easing="ease-in-sine">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <h2 class="f-20">
+                                    Bronze Package
                                 </h2>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="package-text mb-5">
+                                    Our Bronze Package is designed with foundational tests all conveniently conducted in
+                                    your desired location. Take responsibility for your health.
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="d-flex">
+                                            <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
+                                            <p>Full Blood Count</p>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
+                                            <p>Blood Sugar Test (RBS/FBS)</p>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
+                                            <p>MP/Widal (Malaria Parasite/Widal)</p>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
+                                            <p>Urea/Creatinine</p>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
+                                            <p>ALT/AST</p>
+                                        </div>
+                                    </div>
 
-                                <button class="btn btn-package-as-primary f-12 fw-600 plr-4 plr-sm-4 bg-as-primary"
-                                    data-bs-toggle="modal" data-bs-target="#packageModal">Order
-                                    Test
-                                </button>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="d-flex">
+                                    <h2 class="f-20 me-5 ">
+                                        NGN 19,800
+                                    </h2>
 
+                                    <button class="btn btn-package-as-primary f-12 fw-600 plr-4 plr-sm-4 bg-as-primary"
+                                        data-bs-toggle="modal" data-bs-target="#packageModal">Order
+                                        Test
+                                    </button>
+
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
-                <div class="card card-body bg-card-package mb-5 p-5" data-aos="fade-right" data-aos-duration="200"
+
+                <!-- <div class="card card-body bg-card-package mb-5 p-5" data-aos="fade-right" data-aos-duration="200"
                     data-aos-easing="ease-in-sine">
                     <div class="row">
                         <div class="col-md-2">
@@ -932,7 +935,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
 
 
@@ -1034,7 +1037,7 @@
                                     <p>Members</p>
                                 </a>
                                 <a href="pharm-supply.html">
-                                    <p>pharmaceutical Supply</p>
+                                    <p>Pharmaceutical Supply</p>
                                 </a>
 
 
@@ -1185,5 +1188,85 @@
 
     <script>
         AOS.init();
+
+        $.ajax({
+            url: 'https://backend.allsmartcare.com/api/v1/packages',
+            method: "GET",
+            success: function (response) {
+                console.log(response.status);
+                const data = response.data;
+                console.log(data)
+                if (response.status == true) {
+                    $.each(data, (index, item) => {
+                        if (item.status == 'active') {
+                            $('#all-packages').prepend(`
+                            <div class="card card-body bg-card-package mb-5 p-5" data-aos="fade-right" data-aos-duration="100"
+                        data-aos-easing="ease-in-sine">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <h2 class="f-20">
+                                    ${item.name}
+                                </h2>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="package-text mb-5">
+                                    Our Bronze Package is designed with foundational tests all conveniently conducted in
+                                    your desired location. Take responsibility for your health.
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="d-flex">
+                                            <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
+                                            <p>Full Blood Count</p>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
+                                            <p>Blood Sugar Test (RBS/FBS)</p>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
+                                            <p>MP/Widal (Malaria Parasite/Widal)</p>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
+                                            <p>Urea/Creatinine</p>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="check-box me-3"><i class="fa fa-check-circle"></i></div>
+                                            <p>ALT/AST</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="d-flex">
+                                    <h2 class="f-20 me-5 ">
+                                        NGN ${parseFloat(item.price).toLocaleString('en-NG')}
+                                    </h2>
+
+                                    <button class="btn btn-package-as-primary f-12 fw-600 plr-4 plr-sm-4 bg-as-primary"
+                                        data-bs-toggle="modal" data-bs-target="#packageModal">Order
+                                        Test
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    `)
+                        } 
+
+                    })
+
+
+
+                }
+
+            }
+        }).fail(function (xhr, status, error) {
+            console.log(xhr, status, error);
+        })
     </script>
 </body>
