@@ -58,7 +58,9 @@ selectAnswer.on('change', ()=>{
     };
 
 })
-
+$('.no-pop-up-message').on('click', ()=>{
+    $('.no-pop-up-message').css('display', 'none');
+});
 selectWho.on('change', () =>{
     console.log(selectWho.val());
     if(selectWho.val() === 'other'){
@@ -83,3 +85,6 @@ selectWhoTab1.on('change', () =>{
 setTimeout(() => {
     $('.loader-bg').fadeToggle();
 }, 1500);
+
+
+

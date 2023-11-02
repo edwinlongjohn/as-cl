@@ -193,8 +193,11 @@
                 </div>
 
 
+                <div class="mt-5" id="all-vaccines">
 
-                <div class="card card-body bg-white mb-5 p-5 " data-aos="fade-right" data-aos-duration="100"
+                </div>
+
+                <!-- <div class="card card-body bg-white mb-5 p-5 " data-aos="fade-right" data-aos-duration="100"
                     data-aos-easing="ease-in-sine">
                     <div class="row">
                         <div class="col-md-2">
@@ -511,7 +514,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
 
 
@@ -614,7 +617,7 @@
                                     <p>Members</p>
                                 </a>
                                 <a href="pharm-supply.html">
-                                    <p>pharmaceutical Supply</p>
+                                    <p>Pharmaceutical Supply</p>
                                 </a>
 
 
@@ -767,5 +770,54 @@
 
     <script>
         AOS.init();
+
+        $.ajax({
+            url: 'https://backend.allsmartcare.com/api/v1/vaccine',
+            method: "GET",
+            success: function (response) {
+                console.log(response.status);
+                const data = response.data;
+                console.log(data)
+                if (response.status == true) {
+                    $.each(data, (index, item) => {
+                        if (item.status == 'active') {
+                            $('#all-vaccines').prepend(` 
+                            <div class="card card-body bg-white mb-5 p-5 " data-aos="fade-right" data-aos-duration="100"
+                    data-aos-easing="ease-in-sine">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <h2 class="f-20">
+                                ${item.name}
+                            </h2>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="package-text mb-5">
+                                ${item.description}
+                            </div>
+
+                        </div>
+                        <div class="col-md-4">
+                            <div class="d-flex">
+                                <h2 class="f-20 me-5 ">
+                                    NGN ${parseFloat(item.price).toLocaleString('en-NG')}
+                                </h2>
+                               
+                                    <button class="btn btn-package-as-primary f-12 fw-600 plr-4 bg-as-primary-1" data-bs-toggle="modal" data-bs-target="#vaccineModal">Order Vaccine</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>`)
+                        } 
+
+                    })
+
+
+
+                }
+
+            }
+        }).fail(function (xhr, status, error) {
+            console.log(xhr, status, error);
+        })
     </script>
 </body>
